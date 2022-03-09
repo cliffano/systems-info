@@ -1,9 +1,9 @@
 ---
-name: Retrieve ubuntu-latest systems info
+name: GitHub Actions Ubuntu 20.04
 on: [workflow_dispatch]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
         with:
@@ -12,9 +12,8 @@ jobs:
         with:
           ruby-version: 2.6
       - run: gem install facter
-      - run: pwd
-      - run: facter --yaml
-      - run: ls -alrth
+      - run: mkdir -p data/github-actions/
+      - run: facter --yaml > data/github-actions/ubuntu-20.04.yaml
       - run: git config --global user.email "pakkun@cliffano.com"
       - run: git config --global user.name "pakkunbot"
       - uses: ad-m/github-push-action@master
