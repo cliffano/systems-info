@@ -1,0 +1,22 @@
+---
+name: Retrieve ubuntu-latest systems info
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+      - uses: ruby/setup-ruby@v1
+      - run: gem install facter
+      - run: pwd
+      - run: facter --yaml
+      - run: ls -alrth
+      - run: git config --global user.email "pakkun@cliffano.com"
+      - run: git config --global user.name "pakkunbot"
+      - uses: ad-m/github-push-action@master
+        with:
+          tags: true
+          github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
