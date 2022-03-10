@@ -11,15 +11,14 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.1
-      - run: |
-          gem install facter
-          mkdir -p data/github-actions/
-          facter --yaml > data/github-actions/macos-10.15.yaml
-          git config --global user.email "pakkun@cliffano.com"
-          git config --global user.name "pakkunbot"
-          git add -A
-          git commit -am "Update GitHub Actions macOS 10.15 data."
-          git pull --rebase
+      - run: gem install facter
+      - run: mkdir -p data/github-actions/
+      - run: facter --yaml > data/github-actions/macos-10.15.yaml
+      - run: git config --global user.email "pakkun@cliffano.com"
+      - run: git config --global user.name "pakkunbot"
+      - run: git add -A
+      - run: git commit -am "Update GitHub Actions macOS 10.15 data."
+      - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
           tags: true
