@@ -4,8 +4,8 @@ az_metadata:
     customData: ""
     isHostCompatibilityLayerVm: 'false'
     licenseType: ""
-    location: "centralus"
-    name: CUS-GHEUS1U18CUSC25-0005
+    location: eastus
+    name: EUS-EUS1GHUBT18EUS9-0005
     offer: ""
     osProfile:
       adminUsername: ""
@@ -21,8 +21,8 @@ az_metadata:
     provider: Microsoft.Compute
     publicKeys: []
     publisher: ""
-    resourceGroupName: gheus1u18cusc25
-    resourceId: "/subscriptions/3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a/resourceGroups/gheus1u18cusc25/providers/Microsoft.Compute/virtualMachines/CUS-GHEUS1U18CUSC25-0005"
+    resourceGroupName: eus1ghubt18eus9
+    resourceId: "/subscriptions/97ef0cff-e9f6-46fd-bd52-0ae4959909ed/resourceGroups/eus1ghubt18eus9/providers/Microsoft.Compute/virtualMachines/EUS-EUS1GHUBT18EUS9-0005"
     securityProfile:
       secureBootEnabled: 'false'
       virtualTpmEnabled: 'false'
@@ -30,7 +30,7 @@ az_metadata:
     storageProfile:
       dataDisks: []
       imageReference:
-        id: "/subscriptions/3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a/resourceGroups/gheus1u18cusc25/providers/Microsoft.Compute/galleries/gheus1u18cusc25/images/factory/versions/0.0.30764991"
+        id: "/subscriptions/97ef0cff-e9f6-46fd-bd52-0ae4959909ed/resourceGroups/eus1ghubt18eus9/providers/Microsoft.Compute/galleries/eus1ghubt18eus9/images/factory/versions/0.0.30764953"
         offer: ""
         publisher: ""
         sku: ""
@@ -46,20 +46,20 @@ az_metadata:
         image:
           uri: ""
         managedDisk:
-          id: "/subscriptions/3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a/resourceGroups/gheus1u18cusc25/providers/Microsoft.Compute/disks/CUS-GHEUS1U18CUSC25-0005-e9f762b3"
+          id: "/subscriptions/97ef0cff-e9f6-46fd-bd52-0ae4959909ed/resourceGroups/eus1ghubt18eus9/providers/Microsoft.Compute/disks/EUS-EUS1GHUBT18EUS9-0005-3c4b4977"
           storageAccountType: "Standard_LRS"
-        name: CUS-GHEUS1U18CUSC25-0005-e9f762b3
+        name: EUS-EUS1GHUBT18EUS9-0005-3c4b4977
         osType: "Linux"
         vhd:
           uri: ""
         writeAcceleratorEnabled: 'false'
-    subscriptionId: 3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a
+    subscriptionId: 97ef0cff-e9f6-46fd-bd52-0ae4959909ed
     tags: platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
     tagsList:
     - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
       value: 'true'
     version: ""
-    vmId: f02764e0-6256-46d8-beb8-586a8a038973
+    vmId: 1aaf2d06-c3bd-4350-9280-03014dd25163
     vmScaleSetName: ""
     vmSize: "Standard_DS2_v2"
     zone: ""
@@ -67,14 +67,14 @@ az_metadata:
     interface:
     - ipv4:
         ipAddress:
-        - privateIpAddress: 10.1.0.29
+        - privateIpAddress: 10.1.0.5
           publicIpAddress: ""
         subnet:
         - address: 10.1.0.0
           prefix: '16'
       ipv6:
         ipAddress: []
-      macAddress: 000D3A96F53A
+      macAddress: 000D3A1EE077
 cloud:
   provider: azure
 disks:
@@ -104,7 +104,7 @@ dmi:
   manufacturer: "Microsoft Corporation"
   product:
     name: "Virtual Machine"
-    uuid: e06427f0-5662-d846-beb8-586a8a038973
+    uuid: 062daf1a-bdc3-5043-9280-03014dd25163
 facterversion: 4.2.7
 filesystems: btrfs,ext2,ext3,ext4,squashfs,vfat
 fips_enabled: false
@@ -122,9 +122,9 @@ kernelmajversion: '5.4'
 kernelrelease: 5.4.0-1070-azure
 kernelversion: 5.4.0
 load_averages:
-  15m: 0.05
-  1m: 0.45
-  5m: 0.14
+  15m: 0.19
+  1m: 1.64
+  5m: 0.53
 memory:
   swap:
     available: 4.00 GiB
@@ -135,18 +135,18 @@ memory:
     used: "0 bytes"
     used_bytes: 0
   system:
-    available: 5.97 GiB
-    available_bytes: 6408146944
-    capacity: 12.07%
+    available: 5.96 GiB
+    available_bytes: 6396243968
+    capacity: 12.23%
     total: 6.79 GiB
     total_bytes: 7287775232
-    used: 838.88 MiB
-    used_bytes: 879628288
+    used: 850.23 MiB
+    used_bytes: 891531264
 networking:
   dhcp: 168.63.129.16
-  domain: "enwboytzjfcu5bhukaepkbifbh.gx.internal.cloudapp.net"
-  fqdn: "fv-az295-111.enwboytzjfcu5bhukaepkbifbh.gx.internal.cloudapp.net"
-  hostname: fv-az295-111
+  domain: "hc3i5yflqbme3ffviljuxrnuce.bx.internal.cloudapp.net"
+  fqdn: "fv-az120-977.hc3i5yflqbme3ffviljuxrnuce.bx.internal.cloudapp.net"
+  hostname: fv-az120-977
   interfaces:
     docker0:
       bindings:
@@ -154,26 +154,26 @@ networking:
         netmask: 255.255.0.0
         network: 172.17.0.0
       ip: 172.17.0.1
-      mac: "02:42:7a:fa:d6:b4"
+      mac: "02:42:a6:1b:b2:ef"
       mtu: 1500
       netmask: 255.255.0.0
       network: 172.17.0.0
     eth0:
       bindings:
-      - address: 10.1.0.29
+      - address: 10.1.0.5
         netmask: 255.255.0.0
         network: 10.1.0.0
       bindings6:
-      - address: "fe80::20d:3aff:fe96:f53a"
+      - address: "fe80::20d:3aff:fe1e:e077"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
         flags:
         - "permanent"
       dhcp: 168.63.129.16
-      ip: 10.1.0.29
-      ip6: "fe80::20d:3aff:fe96:f53a"
-      mac: "00:0d:3a:96:f5:3a"
+      ip: 10.1.0.5
+      ip6: "fe80::20d:3aff:fe1e:e077"
+      mac: "00:0d:3a:1e:e0:77"
       mtu: 1500
       netmask: 255.255.0.0
       netmask6: "ffff:ffff:ffff:ffff::"
@@ -200,9 +200,9 @@ networking:
       network: 127.0.0.0
       network6: "::1"
       scope6: host
-  ip: 10.1.0.29
-  ip6: "fe80::20d:3aff:fe96:f53a"
-  mac: "00:0d:3a:96:f5:3a"
+  ip: 10.1.0.5
+  ip6: "fe80::20d:3aff:fe1e:e077"
+  mac: "00:0d:3a:1e:e0:77"
   mtu: 1500
   netmask: 255.255.0.0
   netmask6: "ffff:ffff:ffff:ffff::"
@@ -248,20 +248,20 @@ partitions:
   /dev/sdb1:
     filesystem: "ntfs"
     label: "Temporary Storage"
-    partuuid: f02764e0-01
+    partuuid: 1aaf2d06-01
     size: 14.00 GiB
     size_bytes: 15030288384
-    uuid: 5EBAC8C2BAC89843
+    uuid: E272A1C572A19EB3
 path: "/opt/hostedtoolcache/Ruby/3.1.1/x64/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 processors:
   cores: 2
   count: 2
   isa: x86_64
   models:
-  - "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz"
-  - "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz"
+  - "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz"
+  - "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz"
   physicalcount: 1
-  speed: 2.59 GHz
+  speed: 2.79 GHz
   threads: 1
 ruby:
   platform: "x86_64-linux"
@@ -270,32 +270,32 @@ ruby:
 ssh:
   dsa:
     fingerprints:
-      sha1: SSHFP 2 1 5396e64e910ce17b8976b13c48a319a5b2e679a8
-      sha256: SSHFP 2 2 4457a7bb4b7ed465999fb448bbccf116cea845d075ecc047e19b6420b19cdd9a
-    key: "AAAAB3NzaC1kc3MAAACBAK+f0GU9XdxE3lbsTSn3TQyOMvDaTy7gkg5f4KEuhINeqOycdjNdznAg+k/hWo63TCUJlZUB2bYpCjM5+hWE+eeq/6uGzt7xWsb6sswfBdRMHIHTidQGseHWcRJJ8Gp/y/SrjWVJoGh7DgODeffU4DzWy8S5UfdlhMvBQra9j5ozAAAAFQCzO5xluRNeCr/h8XwnJX0m1YbiIQAAAIEAlvDhY+U4/BEmrIOEz2b/bufiu+h2UidpjtvRfKmcjpjS9RipwsKomgxLHanQViWZhPWB+5pEuo4gAiKnYAU9gfF52Haun5cUcA4W6GC7comrVy5lK5ENduhLUw86bXKt7nxVSa0Es4mO8V31ZXavyKRLHa7Awzq35G5+KqgiBhUAAACBAJq4KLJUNlmzh/VBajB4Y9OCGaN6yRp8o98/91g95oW6TRNL6Qk8qN4WCTfEs5i/XiIEEazh9jm36oIC1GeaoEooL6ReVzi1XRPJ7l2xFlikGEDMCdNOydeEmv/+EZJnebfjOce5+P8OaU84dK36pwqb9OiJ9a4BC4Dj1Lp1+UxF"
+      sha1: SSHFP 2 1 b3c6ad50026cd334f1622292e96bf2e2e86c3241
+      sha256: SSHFP 2 2 90e15640fba8810cd40fd1cb0e35f1d6aef6c8988e37965d9ab71204166c0c09
+    key: "AAAAB3NzaC1kc3MAAACBAKYF+wIl8QbkdUCqm5tsQcp/xs2BJ32Se+OUly4EqpTgAm1+PJ9RVDgsHEcPfoy1Ox1RpE2pSWAgEaVtrmHcV8D65f6D6BzTMLCCgeQCZmjn25XBg9QiYv4r2g4O3cyPfOIN5VtTX86XQNZhhrZpQc7Ky5Z0taqro26SenLIIV23AAAAFQDVy/5wqvQygHlW0EEqc2ShHPjCQwAAAIEAkB9HMrH8gvF8xLV16WTv+0QvLokJnFYmOEy9kuVECnAiJ5kB23OpZzlPWrbbkwgeWdcuesxwAGy7mPi23mUUYdGN/OM4+aItI4QrQ7JfXzE0ld86Ut5IfaAlW6hBe8OFXDlv6DZJ0N/vm3lLCoDK8U61GF5VHCKjT0uPW+rnxf4AAACAOr07Fwgh2Y0LWUDg0o+2xQpo6giP9avLQ4AbnAPjKPfUTjYkt0tDdxSl1s9pIU0kR+UPqE0g/5KpMA0h/iHvwyELm3l7/r06KBtRJ/w0EswiYqoGinEC9Osd7bVVRGMAFAjeeGZs/rIsftim7V/rCLGXvZJnI3yPdkBimys83nc="
     type: ssh-dss
   ecdsa:
     fingerprints:
-      sha1: SSHFP 3 1 9d6be041ae21d45e3b49b9d4984b16a56de824a3
-      sha256: SSHFP 3 2 53c87117647ea87f63ceb0503f932cf619d0252f7c6287ad5e1f0869d6c01a41
-    key: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNaFp0GmBpXHqQ7z+aV3NqpPwr0T12ACRJHhtib0HedVc7bpdDAcN8LErBMs33faVjov405eyFNGdaKANK6l2x8="
+      sha1: SSHFP 3 1 79b05d3273adf357355721b56660bbd9a6f792f8
+      sha256: SSHFP 3 2 14bfdacb0fce1314a2eb3149bb0329f20ee7a890869432b5a3b02a990c606f79
+    key: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC/2mo7lF7ouEy0UBMjYxpzUvvuqLj8k6uDQUB3Ry5OjRAm97lG4S/ULopToBHMqUaoTCucQu2XqmBNRZUhBdOg="
     type: "ecdsa-sha2-nistp256"
   ed25519:
     fingerprints:
-      sha1: SSHFP 4 1 d71475a500245eedf845b5409e3a23cd9c4a2ecd
-      sha256: SSHFP 4 2 e4dbe5cfbea369f3cd94b929b1abff1034566d243fafc8388cd2f87fdb62f1e6
-    key: "AAAAC3NzaC1lZDI1NTE5AAAAIPmr7X+viSSal6O8dsJGJ1iX5JUaIv19K/mgKsmzTion"
+      sha1: SSHFP 4 1 be57ef14ae3f54ef3909e9f544989a0da6f02240
+      sha256: SSHFP 4 2 5a38d5ed3d5e0397fa26ca818425c37715430e99b73a012d1cc7e18ef7151481
+    key: "AAAAC3NzaC1lZDI1NTE5AAAAIPk50qPlOkwzIrx/zf6LW6h6Z2NrRsS5bm65zaKv2vcK"
     type: ssh-ed25519
   rsa:
     fingerprints:
-      sha1: SSHFP 1 1 428851f4ee2c60251ddf0c19c5a1cc93ca9a36d2
-      sha256: SSHFP 1 2 4405429bc9aae4690e910969fbfe3d8b53e64f57f9187b42f510ca1857725900
-    key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCbRH+klFHRNkvyP7eomhiv/gmxafoWT/bFpCy8/TZ4iRDNhKFrzHsvJMpsUYPfU/ERdo0zdeo3o2LdQ+c9VNlCVNWnAPhJXlcjo7j9fYQ3q+XBt6vII1fxvg8m9Z8oUCtDSlSfngZBxinYV7EnHK4CXWN3sM076bymSDns/tJSyCiJCdGtKkiLm6VQM5KzZzCaDPy66IUfqK7imSoz9jXv4sFqtHMCQTvSc91qIoQyiJko86gvJWyvJMdPuUoRWH5sjOi87WV6rR/UqEmgxZ+pBQ1gktMIJN+Ikhtd8pZ0Xm4wq7mCIwhACGIV52A+Tspsv71bUGF4CnbKUYf+hJoJ"
+      sha1: SSHFP 1 1 65e416a7701ab9e4d5a4b1b75be77ab99ffc3d14
+      sha256: SSHFP 1 2 1b10d6cfef1833be885b4515921c4e944b7d31e29496e6ed5b2c8088c721c55b
+    key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQC/qKoK5aPR3u4ZVFlfnYOU6reZfKTd8R3MHtAc3VQosOJfW5CwHoZ7rrK4ZZ4QMfUwvevBmvAP1K0lJj5bExqwiHBo8+FrT0AFeTSBV9T+J8xFzRX0DxM8kpmcnYCTXEj/i8sG3fPjWUmD0EShNWlFw8QLMcCY59E+aafIB0XzIjFPIX03Mzs6+X4UoVD1oW5Vz6nkENjfcpzCQJTidj4+CKc6wXLXEeq6N8viUnFpweVbqNAwE3oMxlK8ygE1tyVTk6kWxH9iz8des+HBUDa/3cda58uT9A8aYc3bLOfy5T1t5cUyQkZKCA56XbvpT3sWXC8RdgGq2VZbF+mnM1DF"
     type: ssh-rsa
 system_uptime:
   days: 0
   hours: 0
-  seconds: 46
+  seconds: 47
   uptime: "0:00 hours"
 timezone: UTC
 virtual: "hyperv"
