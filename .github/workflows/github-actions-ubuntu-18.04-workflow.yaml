@@ -1,9 +1,9 @@
 ---
-name: GitHub Actions Ubuntu 20.04
+name: GitHub Actions Ubuntu 18.04
 on: [workflow_dispatch]
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3
         with:
@@ -13,11 +13,11 @@ jobs:
           ruby-version: 3.1.1
       - run: gem install facter
       - run: mkdir -p data/github-actions/
-      - run: facter --yaml > data/github-actions/ubuntu-20.04.yaml
+      - run: facter --yaml > data/github-actions/ubuntu-18.04.yaml
       - run: git config --global user.email "pakkun@cliffano.com"
       - run: git config --global user.name "pakkunbot"
       - run: git add -A
-      - run: git commit -am "Update GitHub Actions Ubuntu 20.04 data."
+      - run: git commit -am "Update GitHub Actions Ubuntu 18.04 data."
       - uses: ad-m/github-push-action@master
         with:
           tags: true
