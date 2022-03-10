@@ -15,35 +15,35 @@ kernelmajversion: '20.6'
 kernelrelease: 20.6.0
 kernelversion: 20.6.0
 load_averages:
-  15m: 2.63
-  1m: 1.82
-  5m: 2.37
+  15m: 3.18
+  1m: 18.62
+  5m: 7.99
 memory:
   system:
-    available: 3.71 GiB
-    available_bytes: 3980955648
-    capacity: 73.52%
+    available: 8.67 GiB
+    available_bytes: 9312935936
+    capacity: 38.05%
     total: 14.00 GiB
     total_bytes: 15032385536
-    used: 10.29 GiB
-    used_bytes: 11051429888
+    used: 5.33 GiB
+    used_bytes: 5719449600
 networking:
-  dhcp: 10.213.4.132
+  dhcp: 10.212.7.132
   domain: local
-  fqdn: Mac-1646905583502.local
-  hostname: Mac-1646905583502
+  fqdn: Mac-1646910728218.local
+  hostname: Mac-1646910728218
   interfaces:
     en0:
       bindings:
-      - address: 10.213.4.134
+      - address: 10.212.7.242
         netmask: 255.255.255.128
-        network: 10.213.4.128
-      dhcp: 10.213.4.132
-      ip: 10.213.4.134
-      mac: "00:50:56:ac:ba:86"
+        network: 10.212.7.128
+      dhcp: 10.212.7.132
+      ip: 10.212.7.242
+      mac: "00:50:56:81:1d:0d"
       mtu: 1500
       netmask: 255.255.255.128
-      network: 10.213.4.128
+      network: 10.212.7.128
     gif0:
       mtu: 1280
     lo0:
@@ -72,31 +72,31 @@ networking:
       mtu: 1280
     utun0:
       bindings6:
-      - address: "fe80::c976:dcc:532f:7b9a"
+      - address: "fe80::76a9:36ef:b099:f9c7"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
-      ip6: "fe80::c976:dcc:532f:7b9a"
+      ip6: "fe80::76a9:36ef:b099:f9c7"
       mtu: 1380
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
       scope6: "link"
     utun1:
       bindings6:
-      - address: "fe80::6a2:7cf8:6865:fa2c"
+      - address: "fe80::9f98:b394:3b25:dabf"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
-      ip6: "fe80::6a2:7cf8:6865:fa2c"
+      ip6: "fe80::9f98:b394:3b25:dabf"
       mtu: 2000
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
       scope6: "link"
-  ip: 10.213.4.134
-  mac: "00:50:56:ac:ba:86"
+  ip: 10.212.7.242
+  mac: "00:50:56:81:1d:0d"
   mtu: 1500
   netmask: 255.255.255.128
-  network: 10.213.4.128
+  network: 10.212.7.128
   primary: "en0"
 os:
   architecture: x86_64
@@ -159,7 +159,7 @@ ssh:
 system_profiler:
   boot_mode: "Normal"
   boot_volume: "Macintosh HD"
-  computer_name: Mac-1646905583502.local
+  computer_name: Mac-1646910728218.local
   cores: '3'
   hardware_uuid: 4203018E-580F-C1B5-9525-B745CECA79EB
   kernel_version: "Darwin 20.6.0"
@@ -172,15 +172,15 @@ system_profiler:
   processor_speed: 3.33 GHz
   processors: '1'
   secure_virtual_memory: "Enabled"
-  serial_number: VMSaHQCotJJM
+  serial_number: "VMwHBEh4yus9"
   smc_version: 2.8f0
   system_version: macOS 11.6.4 (20G417)
-  uptime: "14 minutes"
+  uptime: "2 minutes"
   username: "runner (runner)"
 system_uptime:
   days: 0
   hours: 0
-  seconds: 834
-  uptime: "0:13 hours"
+  seconds: 116
+  uptime: "0:01 hours"
 timezone: UTC
 virtual: vmware
