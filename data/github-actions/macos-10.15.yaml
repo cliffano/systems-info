@@ -1,0 +1,185 @@
+dmi:
+  product:
+    name: VMware7,1
+facterversion: 4.2.7
+filesystems: apfs,autofs,devfs,vmhgfs
+identity:
+  gid: 20
+  group: staff
+  privileged: false
+  uid: 501
+  user: "runner"
+is_virtual: true
+kernel: "Darwin"
+kernelmajversion: '19.6'
+kernelrelease: 19.6.0
+kernelversion: 19.6.0
+load_averages:
+  15m: 1.78
+  1m: 3.31
+  5m: 2.01
+memory:
+  system:
+    available: 4.69 GiB
+    available_bytes: 5031981056
+    capacity: 66.53%
+    total: 14.00 GiB
+    total_bytes: 15032385536
+    used: 9.31 GiB
+    used_bytes: 10000404480
+networking:
+  dhcp: 10.213.9.4
+  domain: local
+  fqdn: Mac-1646908418881.local
+  hostname: Mac-1646908418881
+  interfaces:
+    en0:
+      bindings:
+      - address: 10.213.9.96
+        netmask: 255.255.255.128
+        network: 10.213.9.0
+      dhcp: 10.213.9.4
+      ip: 10.213.9.96
+      mac: "00:50:56:ac:d4:03"
+      mtu: 1500
+      netmask: 255.255.255.128
+      network: 10.213.9.0
+    gif0:
+      mtu: 1280
+    lo0:
+      bindings:
+      - address: 127.0.0.1
+        netmask: 255.0.0.0
+        network: 127.0.0.0
+      bindings6:
+      - address: "::1"
+        netmask: "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+        network: "::1"
+        scope6: host
+      - address: "fe80::1"
+        netmask: "ffff:ffff:ffff:ffff::"
+        network: "fe80::"
+        scope6: "link"
+      ip: 127.0.0.1
+      ip6: "::1"
+      mtu: 16384
+      netmask: 255.0.0.0
+      netmask6: "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+      network: 127.0.0.0
+      network6: "::1"
+      scope6: host
+    stf0:
+      mtu: 1280
+    utun0:
+      bindings6:
+      - address: "fe80::f711:37c9:5441:75da"
+        netmask: "ffff:ffff:ffff:ffff::"
+        network: "fe80::"
+        scope6: "link"
+      ip6: "fe80::f711:37c9:5441:75da"
+      mtu: 1380
+      netmask6: "ffff:ffff:ffff:ffff::"
+      network6: "fe80::"
+      scope6: "link"
+    utun1:
+      bindings6:
+      - address: "fe80::59e7:9d45:f572:752f"
+        netmask: "ffff:ffff:ffff:ffff::"
+        network: "fe80::"
+        scope6: "link"
+      ip6: "fe80::59e7:9d45:f572:752f"
+      mtu: 2000
+      netmask6: "ffff:ffff:ffff:ffff::"
+      network6: "fe80::"
+      scope6: "link"
+  ip: 10.213.9.96
+  mac: "00:50:56:ac:d4:03"
+  mtu: 1500
+  netmask: 255.255.255.128
+  network: 10.213.9.0
+  primary: "en0"
+os:
+  architecture: x86_64
+  family: "Darwin"
+  hardware: x86_64
+  macosx:
+    build: 19H1715
+    product: Mac OS X
+    version:
+      full: 10.15.7
+      major: '10.15'
+      minor: '7'
+  name: "Darwin"
+  release:
+    full: 19.6.0
+    major: '19'
+    minor: '6'
+path: "/Users/runner/hostedtoolcache/Ruby/3.1.1/x64/bin:/usr/local/opt/pipx_bin:/Users/runner/.cargo/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/sbin:/Users/runner/bin:/Users/runner/.yarn/bin:/Users/runner/Library/Android/sdk/tools:/Users/runner/Library/Android/sdk/platform-tools:/Users/runner/Library/Android/sdk/ndk-bundle:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/bin:/bin:/usr/sbin:/sbin:/Users/runner/.dotnet/tools:/Users/runner/.ghcup/bin:/Users/runner/hostedtoolcache/stack/2.7.3/x64"
+processors:
+  cores: 3
+  count: 3
+  isa: i386
+  models:
+  - "Intel(R) Xeon(R) CPU E5-1650 v2 @ 3.50GHz"
+  - "Intel(R) Xeon(R) CPU E5-1650 v2 @ 3.50GHz"
+  - "Intel(R) Xeon(R) CPU E5-1650 v2 @ 3.50GHz"
+  physicalcount: 3
+  speed: 3.34 GHz
+  threads: 1
+ruby:
+  platform: "x86_64-darwin19"
+  sitedir: "/Users/runner/hostedtoolcache/Ruby/3.1.1/x64/lib/ruby/site_ruby/3.1.0"
+  version: 3.1.1
+ssh:
+  dsa:
+    fingerprints:
+      sha1: SSHFP 2 1 610ee686c5f805220b8b0a77bb1815d5df4c2d94
+      sha256: SSHFP 2 2 134f7188c786e407d217afda379041cab4834dc7a0ec71d5426786d3a8ed7382
+    key: "AAAAB3NzaC1kc3MAAACBAMI+3mrVeQJmNfPivZ6Q4issxDhCi+mVDiicXoR1b2Lb4/SV3wiGPBBQycuCCi1DGuTdtJeUN4cRQGAyKCI5iIj5Y8zJ9dTq7zZ5Bg2e8PWIfPZEELSkcHGilMlIC0JbAzsWQY6hejlHbxyHDTaKrUHC/UdcMa7/q/oKelA03nuHAAAAFQCahxt807gLCczQuV9OSNYA3BJLhwAAAIAEdIIqtn5x+s62EqSgysBfL4KTf1mmFRkRTaZgczMT9fKZojSxlOjJRLTJ3xtBakw55SxjFxNzudYIuCKYtG5SG4FlVdegZfCynMAGVdLMLLYvKx6bYzTNGEFiD7+aNMw5js1HlQ4/jlSerUus83lMi9fZhVJ2jI/oh6sXiKyl3gAAAIBDuVpyvERDnyfUDIM/zy8rXKw6fxbC1+TDb0vnewisXzVXw/rxAcSze+dwyauc6pf+3N7cOLqz554io22g7/BcoSgjlAHSdyeFFjU5jtKFKp5l1caEq7ziowX9/kAHRRO4p+GEYrX912D7/gOLJjd9ne2jJbeQn4CVcIjBIKlMwA=="
+    type: ssh-dss
+  ecdsa:
+    fingerprints:
+      sha1: SSHFP 3 1 d429f29d218b28be228511796df292006569736b
+      sha256: SSHFP 3 2 fd9829ecdf53d8f05a8d6559212ae25971c2848c4a9bd2a25427eab166383f0b
+    key: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEL+KFQnBWClGaIU05fAK7DCcL5xUH40LxHUulBORg9YlEIRrvyYW4endJNK8bgRgBWGrwaun7vlgTJyTPuPb+c="
+    type: "ecdsa-sha2-nistp256"
+  ed25519:
+    fingerprints:
+      sha1: SSHFP 4 1 0ff23cbff5b550d16ff15802e292c6b9c89698aa
+      sha256: SSHFP 4 2 d73e6d5111ef5fde1a5c14bff6cbe15a81102f5274a434f4b5a930a598c84e81
+    key: "AAAAC3NzaC1lZDI1NTE5AAAAINvRHIHn4Al4aKjhhFZfJG2FRMqrPceo8TCaKyTNK7Jz"
+    type: ssh-ed25519
+  rsa:
+    fingerprints:
+      sha1: SSHFP 1 1 e68e3f7348db3e73351d586e5604676c27fc6bc0
+      sha256: SSHFP 1 2 38a1035328a08264458e10128560c90c31bacebaab4bc8dfe0e3417fadcc75dd
+    key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQDlYp3unmp2pgW7sGDpNVIkblaFwZM83fhmazq74AfiXWn5m8o85e7bLCvCMIY7ARYHTtWG5GC9Vff9PBXUFS9p4BY5DIzKaVprxrcplde5yjwnTB10mjCidaej0dATu6KZXzz37vToXJQ4m2awZ3EJ5d3KZy4UqK9sx9genslHTeCc0FTrhGumBAHExhpzH7m/i8zWDU66RAzRVBMrdov8/J6C9db9JDuNJCf42TnWENV8dyYbK6g55VWbsYaqR/upAOLEPdKrVIQ9SpK28Ep/Yf6W3Z64pWatvBY/F3lqOVUnhbsdqAW8iI5g5antUumsiBTdzZqbBiLtLKH3RBKd"
+    type: ssh-rsa
+system_profiler:
+  boot_mode: "Normal"
+  boot_rom_version: VMW71.00V.13989454.B64.1906190538
+  boot_volume: "Macintosh HD"
+  computer_name: Mac-1646908418881.local
+  cores: '3'
+  hardware_uuid: 4203018E-580F-C1B5-9525-B745CECA79EB
+  kernel_version: "Darwin 19.6.0"
+  l2_cache_per_core: 256 KB
+  l3_cache: 12 MB
+  memory: 14 GB
+  model_identifier: VMware7,1
+  model_name: Apple device
+  processor_speed: 3.33 GHz
+  processors: '1'
+  secure_virtual_memory: "Enabled"
+  serial_number: "VMO+0YHaJwFG"
+  smc_version: 2.8f0
+  system_version: macOS 10.15.7 (19H1715)
+  uptime: "28 minutes"
+  username: "runner (runner)"
+system_uptime:
+  days: 0
+  hours: 0
+  seconds: 1691
+  uptime: "0:28 hours"
+timezone: UTC
+virtual: vmware
