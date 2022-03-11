@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: 3.1.1
       - run: gem install facter
-      - run: md data/github-actions/ -ea 0
+      - run: md data/github-actions/windows-latest/ -ea 0
       - run: facter --hocon > data/github-actions/windows-latest/facter.hocon
         shell: bash
       - run: facter --json > data/github-actions/windows-latest/facter.json

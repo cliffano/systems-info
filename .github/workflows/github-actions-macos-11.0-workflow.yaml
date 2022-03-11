@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: 3.1.1
       - run: gem install facter
-      - run: mkdir -p data/github-actions/
+      - run: mkdir -p data/github-actions/macos-11.0/
       - run: facter --hocon > data/github-actions/macos-11.0/facter.hocon
       - run: facter --json > data/github-actions/macos-11.0/facter.json
       - run: facter --yaml > data/github-actions/macos-11.0/facter.yaml
