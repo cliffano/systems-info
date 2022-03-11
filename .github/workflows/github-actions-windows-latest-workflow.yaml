@@ -1,0 +1,31 @@
+---
+name: GitHub Actions Windows Latest
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.1
+      - run: gem install facter
+      - run: md data/github-actions/ -ea 0
+      - run: facter --hocon > data/github-actions/windows-latest/facter.hocon
+        shell: bash
+      - run: facter --json > data/github-actions/windows-latest/facter.json
+        shell: bash
+      - run: facter --yaml > data/github-actions/windows-latest/facter.yaml
+        shell: bash
+      - run: git config --global user.email "pakkun@cliffano.com"
+      - run: git config --global user.name "pakkunbot"
+      - run: git add -A
+      - run: git commit -am "Update GitHub Actions Windows latest data."
+      - run: git pull --rebase
+      - uses: ad-m/github-push-action@master
+        with:
+          tags: true
+          github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
