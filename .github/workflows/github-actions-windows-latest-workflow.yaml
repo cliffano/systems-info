@@ -11,7 +11,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.1
-      - run: gem install facter
+      - run: gem install ffi facter
       - run: md data/github-actions/windows-latest/ -ea 0
       - run: facter --hocon
       - run: facter --json
