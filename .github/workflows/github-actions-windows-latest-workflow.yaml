@@ -13,9 +13,9 @@ jobs:
           ruby-version: 3.1.1
       - run: gem install ffi facter
       - run: md data/github-actions/windows-latest/ -ea 0
-      - run: facter --hocon
-      - run: facter --json
-      - run: facter --yaml
+      - run: facter --hocon | Out-File data/github-actions/windows-latest/facter.hocon
+      - run: facter --json | Out-File data/github-actions/windows-latest/facter.json
+      - run: facter --yaml | Out-File data/github-actions/windows-latest/facter.yaml
       - run: git config --global user.email "pakkun@cliffano.com"
       - run: git config --global user.name "pakkunbot"
       - run: git add -A
