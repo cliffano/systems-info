@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: 3.1.1
       - run: gem install facter
-      - run: mkdir -p data/github-actions/ubuntu-20.04
+      - run: mkdir -p data/github-actions/ubuntu-20.04/
       - run: facter --hocon > data/github-actions/ubuntu-20.04/facter.hocon
       - run: facter --json > data/github-actions/ubuntu-20.04/facter.json
       - run: facter --yaml > data/github-actions/ubuntu-20.04/facter.yaml
