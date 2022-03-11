@@ -1,0 +1,320 @@
+az_metadata:
+  compute:
+    azEnvironment: AzurePublicCloud
+    customData: ""
+    isHostCompatibilityLayerVm: 'false'
+    licenseType: ""
+    location: westus
+    name: WUS-GHEUS1U20WUSC31-0093
+    offer: ""
+    osProfile:
+      adminUsername: ""
+      computerName: ""
+    osType: "Linux"
+    placementGroupId: ""
+    plan:
+      name: ""
+      product: ""
+      publisher: ""
+    platformFaultDomain: '0'
+    platformUpdateDomain: '0'
+    provider: Microsoft.Compute
+    publicKeys: []
+    publisher: ""
+    resourceGroupName: gheus1u20wusc31
+    resourceId: "/subscriptions/fad7bd87-ec3d-4801-ae6b-6cf1b1c33697/resourceGroups/gheus1u20wusc31/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS1U20WUSC31-0093"
+    securityProfile:
+      secureBootEnabled: 'false'
+      virtualTpmEnabled: 'false'
+    sku: ""
+    storageProfile:
+      dataDisks: []
+      imageReference:
+        id: "/subscriptions/fad7bd87-ec3d-4801-ae6b-6cf1b1c33697/resourceGroups/gheus1u20wusc31/providers/Microsoft.Compute/galleries/gheus1u20wusc31/images/factory/versions/0.0.30851958"
+        offer: ""
+        publisher: ""
+        sku: ""
+        version: ""
+      osDisk:
+        caching: "ReadOnly"
+        createOption: FromImage
+        diffDiskSettings:
+          option: Local
+        diskSizeGB: '86'
+        encryptionSettings:
+          enabled: 'false'
+        image:
+          uri: ""
+        managedDisk:
+          id: "/subscriptions/fad7bd87-ec3d-4801-ae6b-6cf1b1c33697/resourceGroups/gheus1u20wusc31/providers/Microsoft.Compute/disks/WUS-GHEUS1U20WUSC31-0093-d66b34bd"
+          storageAccountType: "Standard_LRS"
+        name: WUS-GHEUS1U20WUSC31-0093-d66b34bd
+        osType: "Linux"
+        vhd:
+          uri: ""
+        writeAcceleratorEnabled: 'false'
+    subscriptionId: fad7bd87-ec3d-4801-ae6b-6cf1b1c33697
+    tags: platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
+    tagsList:
+    - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
+      value: 'true'
+    version: ""
+    vmId: d5f5a3c2-bf22-4310-bb5e-45df8bcec2ad
+    vmScaleSetName: ""
+    vmSize: "Standard_DS2_v2"
+    zone: ""
+  network:
+    interface:
+    - ipv4:
+        ipAddress:
+        - privateIpAddress: 10.1.0.102
+          publicIpAddress: ""
+        subnet:
+        - address: 10.1.0.0
+          prefix: '16'
+      ipv6:
+        ipAddress: []
+      macAddress: 000D3A363BEF
+cloud:
+  provider: azure
+disks:
+  sda:
+    model: Virtual Disk
+    serial: 60022480c2c9ac9fe89c8634d72ea6ea
+    size: 86.00 GiB
+    size_bytes: 92341796864
+    type: hdd
+    vendor: Msft
+    wwn: '0x60022480c2c9ac9fe89c8634d72ea6ea'
+  sdb:
+    model: Virtual Disk
+    serial: 600224807f864f6d1c9ad299f784e6ef
+    size: 14.00 GiB
+    size_bytes: 15032385536
+    type: hdd
+    vendor: Msft
+    wwn: '0x600224807f864f6d1c9ad299f784e6ef'
+dmi:
+  bios:
+    release_date: "12/07/2018"
+    vendor: "American Megatrends Inc."
+    version: '090008'
+  board:
+    manufacturer: "Microsoft Corporation"
+    product: "Virtual Machine"
+  chassis:
+    asset_tag: "7783-7084-3265-9085-8269-3286-77"
+    type: Desktop
+  manufacturer: "Microsoft Corporation"
+  product:
+    name: "Virtual Machine"
+    uuid: c2a3f5d5-22bf-1043-bb5e-45df8bcec2ad
+facterversion: 4.2.7
+filesystems: ext2,ext3,ext4,squashfs,vfat
+fips_enabled: false
+hypervisors:
+  hyperv: {}
+identity:
+  gid: 121
+  group: docker
+  privileged: false
+  uid: 1001
+  user: "runner"
+is_virtual: true
+kernel: "Linux"
+kernelmajversion: '5.13'
+kernelrelease: 5.13.0-1014-azure
+kernelversion: 5.13.0
+load_averages:
+  15m: 0.04
+  1m: 0.22
+  5m: 0.1
+memory:
+  swap:
+    available: 4.00 GiB
+    available_bytes: 4294963200
+    capacity: 0.00%
+    total: 4.00 GiB
+    total_bytes: 4294963200
+    used: "0 bytes"
+    used_bytes: 0
+  system:
+    available: 5.98 GiB
+    available_bytes: 6415917056
+    capacity: 11.92%
+    total: 6.78 GiB
+    total_bytes: 7283851264
+    used: 827.73 MiB
+    used_bytes: 867934208
+networking:
+  dhcp: 168.63.129.16
+  domain: "ehxzt5fk3o4e1ahk02omj2f41g.dx.internal.cloudapp.net"
+  fqdn: "fv-az451-180.ehxzt5fk3o4e1ahk02omj2f41g.dx.internal.cloudapp.net"
+  hostname: fv-az451-180
+  interfaces:
+    docker0:
+      bindings:
+      - address: 172.17.0.1
+        netmask: 255.255.0.0
+        network: 172.17.0.0
+      ip: 172.17.0.1
+      mac: "02:42:49:ce:88:36"
+      mtu: 1500
+      netmask: 255.255.0.0
+      network: 172.17.0.0
+    eth0:
+      bindings:
+      - address: 10.1.0.102
+        netmask: 255.255.0.0
+        network: 10.1.0.0
+      bindings6:
+      - address: "fe80::20d:3aff:fe36:3bef"
+        netmask: "ffff:ffff:ffff:ffff::"
+        network: "fe80::"
+        scope6: "link"
+        flags:
+        - "permanent"
+      dhcp: 168.63.129.16
+      ip: 10.1.0.102
+      ip6: "fe80::20d:3aff:fe36:3bef"
+      mac: "00:0d:3a:36:3b:ef"
+      mtu: 1500
+      netmask: 255.255.0.0
+      netmask6: "ffff:ffff:ffff:ffff::"
+      network: 10.1.0.0
+      network6: "fe80::"
+      scope6: "link"
+    lo:
+      bindings:
+      - address: 127.0.0.1
+        netmask: 255.0.0.0
+        network: 127.0.0.0
+      bindings6:
+      - address: "::1"
+        netmask: "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+        network: "::1"
+        scope6: host
+        flags:
+        - "permanent"
+      ip: 127.0.0.1
+      ip6: "::1"
+      mtu: 65536
+      netmask: 255.0.0.0
+      netmask6: "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+      network: 127.0.0.0
+      network6: "::1"
+      scope6: host
+  ip: 10.1.0.102
+  ip6: "fe80::20d:3aff:fe36:3bef"
+  mac: "00:0d:3a:36:3b:ef"
+  mtu: 1500
+  netmask: 255.255.0.0
+  netmask6: "ffff:ffff:ffff:ffff::"
+  network: 10.1.0.0
+  network6: "fe80::"
+  primary: eth0
+  scope6: "link"
+os:
+  architecture: amd64
+  distro:
+    codename: focal
+    description: "Ubuntu 20.04.4 LTS"
+    id: "Ubuntu"
+    release:
+      full: '20.04'
+      major: '20.04'
+  family: "Debian"
+  hardware: x86_64
+  name: "Ubuntu"
+  release:
+    full: '20.04'
+    major: '20.04'
+  selinux:
+    enabled: false
+partitions:
+  /dev/loop0:
+    backing_file: "/var/lib/snapd/snaps/core20_1361.snap"
+    filesystem: squashfs
+    size: 61.89 MiB
+    size_bytes: 64897024
+  /dev/loop1:
+    backing_file: "/var/lib/snapd/snaps/snapd_14978.snap"
+    filesystem: squashfs
+    size: 43.59 MiB
+    size_bytes: 45703168
+  /dev/loop2:
+    backing_file: "/var/lib/snapd/snaps/lxd_22526.snap"
+    filesystem: squashfs
+    size: 67.92 MiB
+    size_bytes: 71221248
+  /dev/sda1:
+    filesystem: ext4
+    label: cloudimg-rootfs
+    partuuid: 03f906ae-7840-4b57-b252-b3dd464f60c6
+    size: 85.89 GiB
+    size_bytes: 92225388032
+    uuid: 51e3d798-124a-4bed-b845-8f1935d8d2a1
+  /dev/sda14:
+    size: 4.00 MiB
+    size_bytes: 4194304
+  /dev/sda15:
+    filesystem: vfat
+    label: UEFI
+    partuuid: 968f3566-417c-41c2-b1f5-fe6ea208f7ff
+    size: 106.00 MiB
+    size_bytes: 111149056
+    uuid: E2AC-1B4C
+  /dev/sdb1:
+    filesystem: "ntfs"
+    label: "Temporary Storage"
+    partuuid: d5f5a3c2-01
+    size: 14.00 GiB
+    size_bytes: 15030288384
+    uuid: 04302F6A302F61C2
+path: "/opt/hostedtoolcache/Ruby/3.1.1/x64/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+processors:
+  cores: 2
+  count: 2
+  isa: x86_64
+  models:
+  - "Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz"
+  - "Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz"
+  physicalcount: 1
+  speed: 2.39 GHz
+  threads: 1
+ruby:
+  platform: "x86_64-linux"
+  sitedir: "/opt/hostedtoolcache/Ruby/3.1.1/x64/lib/ruby/site_ruby/3.1.0"
+  version: 3.1.1
+ssh:
+  dsa:
+    fingerprints:
+      sha1: SSHFP 2 1 b2b7db59bd25026c9ce7713121b76acf257564d3
+      sha256: SSHFP 2 2 2f2a90016b84fb7045ad1909a8a5d142d825053b6732889064e28ccbec9a8cee
+    key: "AAAAB3NzaC1kc3MAAACBALm2h3yHKAuW9DzzvSlktD1wrQjTkceLLzHNcmW5e5GoLcuredu987yDKqbGLfjKk5PuLDf4F9FnX/TjjJVdji+BzxvLhUAPAa8061LADsZCXCn8iFk3e+lIm+LwGT5dlPG2KXF7H2aHGK9iAUMM+ha4M67CjmeLbjHD68e3M90VAAAAFQDFiTLoJKFTnyFGDylFrFASEOjLcQAAAIAoBVogXQkdHkC3iVPozW9ulUFWmgFWdVIp4LfmezkNZyVNvwoT3UCsOeTqnaTMlEXYCivkdejOHrk08p9OVqD115BD1Q8VKIsBpw0nbgS7JWS1ILYKDnpVJOxnWEwwzjC0NeJWqF5DZgY1GR7x8cNV5+C1aLSbYAzv2SUMR9GZmwAAAIBBetjOVJNo/EAW04G2wF76QUddNqtcwU5MK9Ys66nOmcv+yFIIkRxVn/SRpiXROEKAlkjU7C7puzQVXYkQpJwfrN8lIJPoRRxHNoIudPR1CRItn6g2ewbFRC661AP+KnGSsM2mEdSXKFhRl85xcq+37qzFQ1XrcoLwobAEz4JRrg=="
+    type: ssh-dss
+  ecdsa:
+    fingerprints:
+      sha1: SSHFP 3 1 3c121c7298ff03c953dfd7dcfcb86b7a300c4bd2
+      sha256: SSHFP 3 2 d50ca3ba2b2b14385882055ef7bf0a63f26c2de4acb72a7dd24373b488c808f1
+    key: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLEEH6/ReSjDSnzRO+Piu2vdSXyIOCvl5iFsQjXOv5na3r9hJu/U7FnFwXUyqYhgw5A39M7ntdcJK8DLA7bWJbQ="
+    type: "ecdsa-sha2-nistp256"
+  ed25519:
+    fingerprints:
+      sha1: SSHFP 4 1 558310f28155c08cf01d10915b3496c7f538ef8a
+      sha256: SSHFP 4 2 18fb69595d9acd565fe27b838a6f80562f1b60e7d902beec91a6e31b5c8ae66a
+    key: "AAAAC3NzaC1lZDI1NTE5AAAAIMkKncL53zY43BH7+8UKo5pXukqEprPa6xk1K3ob5bCe"
+    type: ssh-ed25519
+  rsa:
+    fingerprints:
+      sha1: SSHFP 1 1 1671fb58e815ca7cfaeb7c2bceea9733da60b4bd
+      sha256: SSHFP 1 2 b39616871628f06e9d997569cf3ae76622e519d78917206110357b549ef37d33
+    key: "AAAAB3NzaC1yc2EAAAADAQABAAABgQDkWDmQI0FtG5JIaujcU+wtP97N2T6UPkRHhIkaq8AiCs3nvnNe/Ovmr4RRTx4E6HQG7G/8CzbOKVkzVr79MIVq7IOjgjGkPW+TWCtZrzxI3K7r6NVImocvGPgXgQqMz3DPNddVgkBHU7BqPjC81vMkJ/w/u8a4ViiCIev0ihwImc9MPp0lV7l8hzvSYzjwMM+zsbW0ziLk1ifvk7FlP4niftH/orGrHmav6fmRqKJk/YvwCsatIMXn5xTVWm9Gp3Rxb+U3rLukG1X9id/IQr4Qckzgt5HeEzbKCif+mO+lGqmQZ6AQRejE0tWa3sawbTATkG6emLrIMt5d0XwXTwPb7NBs4vcXSdRwIitE7GCiG0u+FMLynA9INXbxFbzaJS1ixU4YS9sWuD/PXBl9OCN4Yr/JU/QxTr2cjqq0BdWRSf77i00AO7G+V7EGBI7v5hch2+b+bwG30HBZHFjTnjVEQDvBzoX0P6AAFfLAJyi2L5MJu3AyFZ1fiOED+fXeWmk="
+    type: ssh-rsa
+system_uptime:
+  days: 0
+  hours: 0
+  seconds: 113
+  uptime: "0:01 hours"
+timezone: UTC
+virtual: "hyperv"
