@@ -6,7 +6,7 @@
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
       "location": "westus",
-      "name": "WUS-GHEUS1U18WUSC33-0056",
+      "name": "WUS-GHEUS1U18WUSC36-0001",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -26,8 +26,8 @@
 
       ],
       "publisher": "",
-      "resourceGroupName": "gheus1u18wusc33",
-      "resourceId": "/subscriptions/aaa70d3d-156a-4594-94d9-bbfa633ae026/resourceGroups/gheus1u18wusc33/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS1U18WUSC33-0056",
+      "resourceGroupName": "gheus1u18wusc36",
+      "resourceId": "/subscriptions/c8951ba8-d9d2-42f9-ae50-02d1b7afcd9e/resourceGroups/gheus1u18wusc36/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS1U18WUSC36-0001",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -38,7 +38,7 @@
 
         ],
         "imageReference": {
-          "id": "/subscriptions/aaa70d3d-156a-4594-94d9-bbfa633ae026/resourceGroups/gheus1u18wusc33/providers/Microsoft.Compute/galleries/gheus1u18wusc33/images/factory/versions/0.0.30903809",
+          "id": "/subscriptions/c8951ba8-d9d2-42f9-ae50-02d1b7afcd9e/resourceGroups/gheus1u18wusc36/providers/Microsoft.Compute/galleries/gheus1u18wusc36/images/factory/versions/0.0.30903817",
           "offer": "",
           "publisher": "",
           "sku": "",
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/aaa70d3d-156a-4594-94d9-bbfa633ae026/resourceGroups/gheus1u18wusc33/providers/Microsoft.Compute/disks/WUS-GHEUS1U18WUSC33-0056-8385b610",
+            "id": "/subscriptions/c8951ba8-d9d2-42f9-ae50-02d1b7afcd9e/resourceGroups/gheus1u18wusc36/providers/Microsoft.Compute/disks/WUS-GHEUS1U18WUSC36-0001-7edf15bb",
             "storageAccountType": "Standard_LRS"
           },
-          "name": "WUS-GHEUS1U18WUSC33-0056-8385b610",
+          "name": "WUS-GHEUS1U18WUSC36-0001-7edf15bb",
           "osType": "Linux",
           "vhd": {
             "uri": ""
@@ -69,7 +69,7 @@
           "writeAcceleratorEnabled": "false"
         }
       },
-      "subscriptionId": "aaa70d3d-156a-4594-94d9-bbfa633ae026",
+      "subscriptionId": "c8951ba8-d9d2-42f9-ae50-02d1b7afcd9e",
       "tags": "platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
       "tagsList": [
         {
@@ -78,7 +78,7 @@
         }
       ],
       "version": "",
-      "vmId": "995933f8-98c4-46a0-a20f-2231d44b8e87",
+      "vmId": "12ec119f-6204-4a25-b98c-f151397ee7c2",
       "vmScaleSetName": "",
       "vmSize": "Standard_DS2_v2",
       "zone": ""
@@ -89,7 +89,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.67",
+                "privateIpAddress": "10.1.0.35",
                 "publicIpAddress": ""
               }
             ],
@@ -105,7 +105,7 @@
 
             ]
           },
-          "macAddress": "000D3A34BA02"
+          "macAddress": "000D3A5D746E"
         }
       ]
     }
@@ -116,15 +116,15 @@
   "disks": {
     "sda": {
       "model": "Virtual Disk",
-      "size": "14.00 GiB",
-      "size_bytes": 15032385536,
+      "size": "86.00 GiB",
+      "size_bytes": 92341796864,
       "type": "hdd",
       "vendor": "Msft"
     },
     "sdb": {
       "model": "Virtual Disk",
-      "size": "86.00 GiB",
-      "size_bytes": 92341796864,
+      "size": "14.00 GiB",
+      "size_bytes": 15032385536,
       "type": "hdd",
       "vendor": "Msft"
     }
@@ -146,7 +146,7 @@
     "manufacturer": "Microsoft Corporation",
     "product": {
       "name": "Virtual Machine",
-      "uuid": "f8335999-c498-a046-a20f-2231d44b8e87"
+      "uuid": "9f11ec12-0462-254a-b98c-f151397ee7c2"
     }
   },
   "facterversion": "4.2.7",
@@ -169,9 +169,9 @@
   "kernelrelease": "5.4.0-1070-azure",
   "kernelversion": "5.4.0",
   "load_averages": {
-    "15m": 0.08,
-    "1m": 0.16,
-    "5m": 0.14
+    "15m": 0.12,
+    "1m": 0.98,
+    "5m": 0.35
   },
   "memory": {
     "swap": {
@@ -185,19 +185,19 @@
     },
     "system": {
       "available": "5.98 GiB",
-      "available_bytes": 6422503424,
-      "capacity": "11.87%",
+      "available_bytes": 6421045248,
+      "capacity": "11.89%",
       "total": "6.79 GiB",
       "total_bytes": 7287775232,
-      "used": "825.19 MiB",
-      "used_bytes": 865271808
+      "used": "826.58 MiB",
+      "used_bytes": 866729984
     }
   },
   "networking": {
     "dhcp": "168.63.129.16",
-    "domain": "ku3lqr0aiaqu5kfj3xdpchcrvd.dx.internal.cloudapp.net",
-    "fqdn": "fv-az452-659.ku3lqr0aiaqu5kfj3xdpchcrvd.dx.internal.cloudapp.net",
-    "hostname": "fv-az452-659",
+    "domain": "1d4eecmzj5luvpyspzf3bgtdve.dx.internal.cloudapp.net",
+    "fqdn": "fv-az459-416.1d4eecmzj5luvpyspzf3bgtdve.dx.internal.cloudapp.net",
+    "hostname": "fv-az459-416",
     "interfaces": {
       "docker0": {
         "bindings": [
@@ -208,7 +208,7 @@
           }
         ],
         "ip": "172.17.0.1",
-        "mac": "02:42:bc:78:c1:58",
+        "mac": "02:42:cd:da:6e:2c",
         "mtu": 1500,
         "netmask": "255.255.0.0",
         "network": "172.17.0.0"
@@ -216,14 +216,14 @@
       "eth0": {
         "bindings": [
           {
-            "address": "10.1.0.67",
+            "address": "10.1.0.35",
             "netmask": "255.255.0.0",
             "network": "10.1.0.0"
           }
         ],
         "bindings6": [
           {
-            "address": "fe80::20d:3aff:fe34:ba02",
+            "address": "fe80::20d:3aff:fe5d:746e",
             "netmask": "ffff:ffff:ffff:ffff::",
             "network": "fe80::",
             "scope6": "link",
@@ -233,9 +233,9 @@
           }
         ],
         "dhcp": "168.63.129.16",
-        "ip": "10.1.0.67",
-        "ip6": "fe80::20d:3aff:fe34:ba02",
-        "mac": "00:0d:3a:34:ba:02",
+        "ip": "10.1.0.35",
+        "ip6": "fe80::20d:3aff:fe5d:746e",
+        "mac": "00:0d:3a:5d:74:6e",
         "mtu": 1500,
         "netmask": "255.255.0.0",
         "netmask6": "ffff:ffff:ffff:ffff::",
@@ -272,9 +272,9 @@
         "scope6": "host"
       }
     },
-    "ip": "10.1.0.67",
-    "ip6": "fe80::20d:3aff:fe34:ba02",
-    "mac": "00:0d:3a:34:ba:02",
+    "ip": "10.1.0.35",
+    "ip6": "fe80::20d:3aff:fe5d:746e",
+    "mac": "00:0d:3a:5d:74:6e",
     "mtu": 1500,
     "netmask": "255.255.0.0",
     "netmask6": "ffff:ffff:ffff:ffff::",
@@ -307,14 +307,6 @@
   },
   "partitions": {
     "/dev/sda1": {
-      "filesystem": "ntfs",
-      "label": "Temporary Storage",
-      "partuuid": "995933f8-01",
-      "size": "14.00 GiB",
-      "size_bytes": 15030288384,
-      "uuid": "70ACC5AEACC56EE2"
-    },
-    "/dev/sdb1": {
       "filesystem": "ext4",
       "label": "cloudimg-rootfs",
       "partuuid": "2d1f068d-5584-458f-b9c6-8a4a9432d004",
@@ -322,17 +314,25 @@
       "size_bytes": 92225388032,
       "uuid": "d6e2eef9-116b-4b81-b84d-54ff0b0352ef"
     },
-    "/dev/sdb14": {
+    "/dev/sda14": {
       "size": "4.00 MiB",
       "size_bytes": 4194304
     },
-    "/dev/sdb15": {
+    "/dev/sda15": {
       "filesystem": "vfat",
       "label": "UEFI",
       "partuuid": "efbe5a37-1ed9-48cd-bf66-f26295bebe74",
       "size": "106.00 MiB",
       "size_bytes": 111149056,
       "uuid": "3E4D-5BBC"
+    },
+    "/dev/sdb1": {
+      "filesystem": "ntfs",
+      "label": "Temporary Storage",
+      "partuuid": "12ec119f-01",
+      "size": "14.00 GiB",
+      "size_bytes": 15030288384,
+      "uuid": "C68A2E3B8A2E27FF"
     }
   },
   "path": "/opt/hostedtoolcache/Ruby/3.1.1/x64/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
@@ -345,7 +345,7 @@
       "Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz"
     ],
     "physicalcount": 1,
-    "speed": "2.39 GHz",
+    "speed": "2.40 GHz",
     "threads": 1
   },
   "ruby": {
@@ -356,42 +356,42 @@
   "ssh": {
     "dsa": {
       "fingerprints": {
-        "sha1": "SSHFP 2 1 f5c8a8d7badbda49df1d9b7baa73ab4b98e12529",
-        "sha256": "SSHFP 2 2 b11acf63c6b6a1bbf8c385a5768370bd62be55ead2f74126136a52a59b8ad620"
+        "sha1": "SSHFP 2 1 118b5510832f9ee56061d1009b53c138d869d173",
+        "sha256": "SSHFP 2 2 4eda50d80d2f014541f335dcf03267ecca6c6b32d67eaf4adee8171f6715a0f7"
       },
-      "key": "AAAAB3NzaC1kc3MAAACBALuNBFFE0WKJnSgpgRo4uIevQW32PsyY8naXhGB1hMXoV5bcTlqV46AMcOdWEyNbc0wQhlSHscntXRoxaRedBzcIBgTEdecjDhN2DhtP+EydXn/L5NxgxonDi3idB0McZP/sj8DeaMuIPV1InDcEOETS+PV5vli9NXJVWpo/TNjBAAAAFQDxN9hxFWQJDwRAhm4UUGZSdDfDiwAAAIEAphryxeGlhplYVBdJaH4GLGKwPqDg7FLNbfP9/Q37E11v0ARGNhOWweQhTLKmOL1B+GiIZAmFG1GSbYZdz0bK0+maqPHUIU4WMHmdSn6hB2ib8ZXSph9om+u+SH0tzNwKRtsg4e9Z0BnwxZQxZCqwS2mmTrLHzJSrirgY+cAXGHMAAACAZDMCgii3pw94MxoPuK5me/E4QFfy5iuJpemL6l9OariecE+JCAAfvX0+nI7y3PvUApbB6VxW2OZNWGTgqs8PXoLTY89CXRqzXEMf19WypXUm3reatoEk5MPS8k6glKai8Qe2aZ1DhoWKUuRiSVMOi0X5fjF9lXBtKBovx5K3u74=",
+      "key": "AAAAB3NzaC1kc3MAAACBAKscBmBF7F8KxvnU+pXTDnevhZ+oSw+7xNRpuWZz1sw64oMlfUXXgY6n/4EzJfvqntqmQKgE9ptV6TdWQlg0CnaGGueslYclGT1hMWvWi1vZo00bldE3WiKXYy9Km6l9I155w9K2B3VW2RJyRZMbK/R/ydOuuKLNEvh0a8uULGM9AAAAFQC1wLWWlRHG3Ho7S165c/AZKtcXcQAAAIAxt3AtiGJ1HkIy8IlUU8kTBrUiv9QjaStyQsoai/Z1kOHQBmWfTZQsnzOmf+tHmFvRgVLt8cr1hLiHd8iw8F8Y74BNPBO9ed38jaV3KWFyuXFwzlU4cQgb0n762riRAPKbPJu5qM/pltVwMs83ewj6Sz+5qaSbiA1nTPuoljuKvAAAAIAXVI4JpTVku7e8kqpoT2IzXjMEVT4+baviYgCFcI5rObwFIFsUoVOHvbiLgewjhpKe9CPj7IBVekkDFEcep5uDpy7CJ/0zdVthA6HmyACZYhGA+tGMDe48FBWRTZJ4uUpmjwca28H1/H482umdYv+l2Bft39W2w0USLyUpKhpY5g==",
       "type": "ssh-dss"
     },
     "ecdsa": {
       "fingerprints": {
-        "sha1": "SSHFP 3 1 c5363863fb790e7e3a8dca5303499507ab051ea2",
-        "sha256": "SSHFP 3 2 e4759bfba785f1b57d98b00102554e375000ce44310eb84d8300b24eaca1edc4"
+        "sha1": "SSHFP 3 1 88718a00bdb8a6e0925c7c36b0afe115de08827c",
+        "sha256": "SSHFP 3 2 1143f789a8a2d66ddd436c21510c6e78e5c243e19bfa1873bbde2d574f047a94"
       },
-      "key": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJw8rWrJ309Sw2L8YnBkHQHA9HKfzGsJ1WkLdbMdpYYjqO0O0Sia/cl1PRdFfZJXJwmpz54d1dtwPkL5jS/H/jY=",
+      "key": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCnZvdXkBoJVwdJPg09BZGpaqU5sDS48RX7NzqxEMpkbpIJCZEXCKEf5FPWs+52qKBZFeSNrG6oswf803XAnd2A=",
       "type": "ecdsa-sha2-nistp256"
     },
     "ed25519": {
       "fingerprints": {
-        "sha1": "SSHFP 4 1 0374bc5d12db975b2b704f6e21121eb88438ce26",
-        "sha256": "SSHFP 4 2 035d9caaef8686ca8980eff2b08f736dcff8aa0a2b4cf073bfad8c9bbedf2e58"
+        "sha1": "SSHFP 4 1 a88e6a131191f7139a36d8919f56b8c781d5715f",
+        "sha256": "SSHFP 4 2 1e800c271703270e6c14821f233133fdfdbdee481f40b6d0d0ea4480fb15c2d3"
       },
-      "key": "AAAAC3NzaC1lZDI1NTE5AAAAIGH1d3foS5Bh51JiZvPxRlMzPqjzfiIqoknxgS3bQQKc",
+      "key": "AAAAC3NzaC1lZDI1NTE5AAAAIFh2OYnLhjiqXHOqUnVr2mAbVqxAh64XutDrHiSLn2ou",
       "type": "ssh-ed25519"
     },
     "rsa": {
       "fingerprints": {
-        "sha1": "SSHFP 1 1 1320e18dcf6739a982a03a6439c0bb38439e10b8",
-        "sha256": "SSHFP 1 2 dbd3d2dbda1f892d2a07fec653a05bfc51ceb43d1d552bd204789ddd8a526e3e"
+        "sha1": "SSHFP 1 1 07b00a4a2828bb4af7d08007b1abdaeee8991efb",
+        "sha256": "SSHFP 1 2 4ae13ed5688c0c602dabf58a74a05c48abbd245fa5ec8fde5412a3c014fcb429"
       },
-      "key": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCepLJjSYUHh0QWh/RR93FepuJkFZiD52fhcA+tbE7RV7FX7TK4sdRDXpeoud4LRZDWuO3sz8WxV/svkwK2cToOpUd1tF6em8CRbYyaCIM0ZC9SMP6cTCYdqq3yOka+ql7rI9BhO5nzZfHp1L1yd8S8B7bT6ltWPuA/XcETZ6TyZr8i98S+ArWOqRJuB+twKJLnCJ0UuvNwCRKd5WeS/Lf5FzjxEqYnJQMsHxZ8aQqVBwKxMVAYXLcSJqvaGrQqcO8fc7O6G2oVeGnGkvAedZNBxX+NfDK2qpRNMbjXUOHYbfjSc4QtycMzcvrkmQSidnRhCb+9JYb1viLb9sIRS26j",
+      "key": "AAAAB3NzaC1yc2EAAAADAQABAAABAQC0/nlmz2W9y6RsupIdTa5vux8IJA/6bA78qr4IxwYzQgfTPpJtqp9WbHJZTV57vHyroa2cyKnJ8GBiiPmP/b111XkUvKPYN2N0WVyOdAOrfO0zLfWmcxSucDk+sO/6TEl3CYBf81KJRIGlLK9NsBj0Cgg3B4gML7Og0nWIoJicdyJb9/n4tYBk9q+avNhrMFMgJQbeLB80+CORivhL2A28Jhb/ashxGvIYtb2tr7Ah35oSEt6pmObcDBa/F8Pmj6sc27cJMJJtcb3lkdFjEocfzXFP13yBf7mFf2qf+AQdtJmILtvpytCmNPldot3Gm0c2u+7F3cGgbx+o8pFLAiCb",
       "type": "ssh-rsa"
     }
   },
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 297,
-    "uptime": "0:04 hours"
+    "seconds": 62,
+    "uptime": "0:01 hours"
   },
   "timezone": "UTC",
   "virtual": "hyperv"
