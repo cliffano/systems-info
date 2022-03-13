@@ -6,7 +6,7 @@
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
       "location": "westus",
-      "name": "WUS-GHEUS12019WUSC34-0008",
+      "name": "WUS-GHEUS12019WUSC34-0016",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -27,7 +27,7 @@
       ],
       "publisher": "",
       "resourceGroupName": "gheus12019wusc34",
-      "resourceId": "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus12019wusc34/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS12019WUSC34-0008",
+      "resourceId": "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus12019wusc34/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS12019WUSC34-0016",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus12019wusc34/providers/Microsoft.Compute/disks/WUS-GHEUS12019WUSC34-0008-7c6ab3ce",
+            "id": "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus12019wusc34/providers/Microsoft.Compute/disks/WUS-GHEUS12019WUSC34-0016-910ca9cc",
             "storageAccountType": "Premium_LRS"
           },
-          "name": "WUS-GHEUS12019WUSC34-0008-7c6ab3ce",
+          "name": "WUS-GHEUS12019WUSC34-0016-910ca9cc",
           "osType": "Windows",
           "vhd": {
             "uri": ""
@@ -78,7 +78,7 @@
         }
       ],
       "version": "",
-      "vmId": "574ef4df-6f94-479e-9aab-eeac880b3626",
+      "vmId": "c2a88848-73ce-4876-ba80-dd49f4f9a9de",
       "vmScaleSetName": "",
       "vmSize": "Standard_DS2_v2",
       "zone": ""
@@ -89,7 +89,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.45",
+                "privateIpAddress": "10.1.0.30",
                 "publicIpAddress": ""
               }
             ],
@@ -105,7 +105,7 @@
 
             ]
           },
-          "macAddress": "6045BD001AF2"
+          "macAddress": "6045BD001EA1"
         }
       ]
     }
@@ -117,8 +117,8 @@
     "manufacturer": "American Megatrends Inc.",
     "product": {
       "name": "Virtual Machine",
-      "serial_number": "0000-0006-2912-3496-9970-0345-90",
-      "uuid": "574EF4DF-6F94-479E-9AAB-EEAC880B3626"
+      "serial_number": "0000-0014-0266-1088-4207-3314-46",
+      "uuid": "C2A88848-73CE-4876-BA80-DD49F4F9A9DE"
     }
   },
   "facterversion": "4.2.7",
@@ -138,13 +138,13 @@
   "kernelversion": "10.0.17763",
   "memory": {
     "system": {
-      "available": "4.99 GiB",
-      "available_bytes": 5353914368,
-      "capacity": "28.76%",
+      "available": "4.94 GiB",
+      "available_bytes": 5307236352,
+      "capacity": "29.38%",
       "total": "7.00 GiB",
       "total_bytes": 7515721728,
-      "used": "2.01 GiB",
-      "used_bytes": 2161807360
+      "used": "2.06 GiB",
+      "used_bytes": 2208485376
     }
   },
   "networking": {
@@ -156,23 +156,23 @@
       "Ethernet": {
         "bindings": [
           {
-            "address": "10.1.0.45",
+            "address": "10.1.0.30",
             "netmask": "255.255.0.0",
             "network": "10.1.0.0"
           }
         ],
         "bindings6": [
           {
-            "address": "fe80::18d:d630:23c1:367d",
+            "address": "fe80::457:bf78:3096:ba2c",
             "netmask": "ffff:ffff:ffff:ffff::",
             "network": "fe80::",
             "scope6": "link"
           }
         ],
         "dhcp": "168.63.129.16",
-        "ip": "10.1.0.45",
-        "ip6": "fe80::18d:d630:23c1:367d",
-        "mac": "60:45:BD:00:1A:F2",
+        "ip": "10.1.0.30",
+        "ip6": "fe80::457:bf78:3096:ba2c",
+        "mac": "60:45:BD:00:1E:A1",
         "mtu": 1500,
         "netmask": "255.255.0.0",
         "netmask6": "ffff:ffff:ffff:ffff::",
@@ -183,34 +183,34 @@
       "vEthernet (nat)": {
         "bindings": [
           {
-            "address": "172.26.80.1",
+            "address": "172.21.112.1",
             "netmask": "255.255.240.0",
-            "network": "172.26.80.0"
+            "network": "172.21.112.0"
           }
         ],
         "bindings6": [
           {
-            "address": "fe80::9d12:13ab:7b33:3391",
+            "address": "fe80::d9ca:2244:4644:de6a",
             "netmask": "ffff:ffff:ffff:ffff::",
             "network": "fe80::",
             "scope6": "link"
           }
         ],
         "dhcp": null,
-        "ip": "172.26.80.1",
-        "ip6": "fe80::9d12:13ab:7b33:3391",
-        "mac": "00:15:5D:9B:FA:98",
+        "ip": "172.21.112.1",
+        "ip6": "fe80::d9ca:2244:4644:de6a",
+        "mac": "00:15:5D:09:CC:6D",
         "mtu": 1500,
         "netmask": "255.255.240.0",
         "netmask6": "ffff:ffff:ffff:ffff::",
-        "network": "172.26.80.0",
+        "network": "172.21.112.0",
         "network6": "fe80::",
         "scope6": "link"
       }
     },
-    "ip": "10.1.0.45",
-    "ip6": "fe80::18d:d630:23c1:367d",
-    "mac": "60:45:BD:00:1A:F2",
+    "ip": "10.1.0.30",
+    "ip6": "fe80::457:bf78:3096:ba2c",
+    "mac": "60:45:BD:00:1E:A1",
     "mtu": 1500,
     "netmask": "255.255.0.0",
     "netmask6": "ffff:ffff:ffff:ffff::",
@@ -242,7 +242,7 @@
     "count": 2,
     "isa": "x64",
     "models": [
-      "Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz"
+      "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"
     ],
     "physicalcount": 1,
     "threads": 1
@@ -255,8 +255,8 @@
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 1996,
-    "uptime": "0:33 hours"
+    "seconds": 1140,
+    "uptime": "0:19 hours"
   },
   "timezone": "Coordinated Universal Time",
   "virtual": "hyperv"
