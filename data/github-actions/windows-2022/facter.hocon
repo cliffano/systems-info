@@ -5,7 +5,7 @@
         isHostCompatibilityLayerVm=false
         licenseType=""
         location=westus
-        name=WUS-GHEUS1W22WUSC34-0078
+        name=WUS-GHEUS1W22WUSC34-0006
         offer=""
         osProfile={
             adminUsername=""
@@ -24,7 +24,7 @@
         publicKeys=[]
         publisher=""
         resourceGroupName=gheus1w22wusc34
-        resourceId="/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS1W22WUSC34-0078"
+        resourceId="/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS1W22WUSC34-0006"
         securityProfile={
             secureBootEnabled=false
             virtualTpmEnabled=false
@@ -53,10 +53,10 @@
                     uri=""
                 }
                 managedDisk={
-                    id="/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/disks/WUS-GHEUS1W22WUSC34-0078-2c3dac49"
+                    id="/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/disks/WUS-GHEUS1W22WUSC34-0006-188f7a63"
                     storageAccountType="Premium_LRS"
                 }
-                name=WUS-GHEUS1W22WUSC34-0078-2c3dac49
+                name=WUS-GHEUS1W22WUSC34-0006-188f7a63
                 osType=Windows
                 vhd={
                     uri=""
@@ -73,7 +73,7 @@
             }
         ]
         version=""
-        vmId="6f525e78-c7e8-4054-849a-15952ed7413d"
+        vmId="5caca8aa-c533-424d-a4f6-9b1c88075947"
         vmScaleSetName=""
         vmSize="Standard_DS2_v2"
         zone=""
@@ -84,7 +84,7 @@
                 ipv4={
                     ipAddress=[
                         {
-                            privateIpAddress="10.1.0.80"
+                            privateIpAddress="10.1.0.19"
                             publicIpAddress=""
                         }
                     ]
@@ -98,7 +98,7 @@
                 ipv6={
                     ipAddress=[]
                 }
-                macAddress="000D3A3455BF"
+                macAddress="000D3A34AA13"
             }
         ]
     }
@@ -110,8 +110,8 @@ dmi={
     manufacturer="American Megatrends Inc."
     product={
         name="Virtual Machine"
-        "serial_number"="0000-0008-0215-7775-9143-2479-56"
-        uuid="6F525E78-C7E8-4054-849A-15952ED7413D"
+        "serial_number"="0000-0006-6778-9779-8889-9804-93"
+        uuid="5CACA8AA-C533-424D-A4F6-9B1C88075947"
     }
 }
 facterversion="4.2.7"
@@ -130,13 +130,13 @@ kernelrelease="10.0.20348"
 kernelversion="10.0.20348"
 memory={
     system={
-        available="4.62 GiB"
-        "available_bytes"=4962570240
-        capacity="33.97%"
+        available="4.68 GiB"
+        "available_bytes"=5022560256
+        capacity="33.17%"
         total="7.00 GiB"
         "total_bytes"=7515721728
-        used="2.38 GiB"
-        "used_bytes"=2553151488
+        used="2.32 GiB"
+        "used_bytes"=2493161472
     }
 }
 networking={
@@ -148,23 +148,23 @@ networking={
         "Ethernet 3"={
             bindings=[
                 {
-                    address="10.1.0.80"
+                    address="10.1.0.19"
                     netmask="255.255.0.0"
                     network="10.1.0.0"
                 }
             ]
             bindings6=[
                 {
-                    address="fe80::ac03:f7a3:3751:ebe7"
+                    address="fe80::9dc6:9a5b:48da:ae8e"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
             dhcp="168.63.129.16"
-            ip="10.1.0.80"
-            ip6="fe80::ac03:f7a3:3751:ebe7"
-            mac="00:0D:3A:34:55:BF"
+            ip="10.1.0.19"
+            ip6="fe80::9dc6:9a5b:48da:ae8e"
+            mac="00:0D:3A:34:AA:13"
             mtu=1500
             netmask="255.255.0.0"
             netmask6="ffff:ffff:ffff:ffff::"
@@ -175,34 +175,34 @@ networking={
         "vEthernet (nat)"={
             bindings=[
                 {
-                    address="172.22.208.1"
+                    address="172.20.80.1"
                     netmask="255.255.240.0"
-                    network="172.22.208.0"
+                    network="172.20.80.0"
                 }
             ]
             bindings6=[
                 {
-                    address="fe80::6947:3455:dd65:b395"
+                    address="fe80::bc97:b478:b2c9:3431"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
             dhcp=null
-            ip="172.22.208.1"
-            ip6="fe80::6947:3455:dd65:b395"
-            mac="00:15:5D:59:92:35"
+            ip="172.20.80.1"
+            ip6="fe80::bc97:b478:b2c9:3431"
+            mac="00:15:5D:23:1F:B0"
             mtu=1500
             netmask="255.255.240.0"
             netmask6="ffff:ffff:ffff:ffff::"
-            network="172.22.208.0"
+            network="172.20.80.0"
             network6="fe80::"
             scope6=link
         }
     }
-    ip="10.1.0.80"
-    ip6="fe80::ac03:f7a3:3751:ebe7"
-    mac="00:0D:3A:34:55:BF"
+    ip="10.1.0.19"
+    ip6="fe80::9dc6:9a5b:48da:ae8e"
+    mac="00:0D:3A:34:AA:13"
     mtu=1500
     netmask="255.255.0.0"
     netmask6="ffff:ffff:ffff:ffff::"
@@ -235,7 +235,7 @@ processors={
     count=2
     isa=x64
     models=[
-        "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"
+        "Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz"
     ]
     physicalcount=1
     threads=1
@@ -248,8 +248,8 @@ ruby={
 "system_uptime"={
     days=0
     hours=0
-    seconds=603
-    uptime="0:10 hours"
+    seconds=562
+    uptime="0:09 hours"
 }
 timezone="Coordinated Universal Time"
 virtual=hyperv
