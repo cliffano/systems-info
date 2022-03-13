@@ -1,5 +1,5 @@
 ---
-name: GitHub Actions all GitHub-hosted runners system info
+name: GitHub Actions GitHub-hosted runners system info
 on: [workflow_dispatch]
 env:
   RUBY_VERSION: 3.1.1
@@ -36,10 +36,26 @@ jobs:
         with:
           name: macos-latest-facter
           path: data/
+  windows-latest:
+    runs-on: windows-latest
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install ffi facter
+      - run: md data/github-actions/windows-latest/ -ea 0
+      - run: facter --hocon | Out-File data/facter.hocon
+      - run: facter --json | Out-File data/facter.json
+      - run: facter --yaml | Out-File data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: windows-latest-facter
+          path: data/
   consolidate:
     needs:
       - ubuntu-latest
       - macos-latest
+      - windows-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -57,9 +73,15 @@ jobs:
         with:
           name: macos-latest-facter
           path: data/github-actions/macos-latest/
+      - run: rm -rf data/github-actions/windows-latest/*
+      - uses: actions/download-artifact@master
+        with:
+          name: windows-latest-facter
+          path: data/github-actions/windows-latest/
       - run: git add -A
       - run: git commit data/github-actions/ubuntu-latest/facter.* -m "Update GitHub Actions Ubuntu latest data."
       - run: git commit data/github-actions/macos-latest/facter.* -m "Update GitHub Actions macOS latest data."
+      - run: git commit data/github-actions/windows-latest/facter.* -m "Update GitHub Actions Windows latest data."
       - uses: ad-m/github-push-action@master
         with:
           tags: true
