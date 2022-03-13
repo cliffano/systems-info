@@ -1,0 +1,38 @@
+---
+name: All GitHub Actions runners system info
+on: [workflow_dispatch]
+env:
+  RUBY_VERSION: 3.1.1
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+      - run: git config --global user.email "pakkun@cliffano.com"
+      - run: git config --global user.name "pakkunbot"
+  ubuntu-latest:
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data/github-actions/ubuntu-latest/
+      - run: facter --hocon > data/github-actions/ubuntu-latest/facter.hocon
+      - run: facter --json > data/github-actions/ubuntu-latest/facter.json
+      - run: facter --yaml > data/github-actions/ubuntu-latest/facter.yaml
+      - run: git add data/github-actions/ubuntu-latest/*.*
+      - run: git commit data/github-actions/ubuntu-latest/*.* -m "Update GitHub Actions Ubuntu latest data."
+  update:
+    needs: ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+      - run: git pull --rebase
+      - uses: ad-m/github-push-action@master
+        with:
+          tags: true
+          github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
