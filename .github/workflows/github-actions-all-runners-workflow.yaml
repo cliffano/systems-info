@@ -19,6 +19,7 @@ jobs:
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
       - run: git checkout -b github-actions-ubuntu-latest
+      - run: git pull --rebase
       - run: git merge main
       - run: mkdir -p data/github-actions/ubuntu-latest/
       - run: facter --hocon > data/github-actions/ubuntu-latest/facter.hocon
@@ -44,6 +45,7 @@ jobs:
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
       - run: git checkout -b github-actions-macos-latest
+      - run: git pull --rebase
       - run: git merge main
       - run: mkdir -p data/github-actions/macos-latest/
       - run: facter --hocon > data/github-actions/macos-latest/facter.hocon
