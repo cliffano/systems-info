@@ -19,41 +19,41 @@
   "kernelrelease": "20.6.0",
   "kernelversion": "20.6.0",
   "load_averages": {
-    "15m": 2.2,
-    "1m": 2.64,
-    "5m": 2.34
+    "15m": 2.42,
+    "1m": 3.79,
+    "5m": 2.94
   },
   "memory": {
     "system": {
-      "available": "4.77 GiB",
-      "available_bytes": 5123063808,
-      "capacity": "65.92%",
+      "available": "3.75 GiB",
+      "available_bytes": 4022890496,
+      "capacity": "73.24%",
       "total": "14.00 GiB",
       "total_bytes": 15032385536,
-      "used": "9.23 GiB",
-      "used_bytes": 9909321728
+      "used": "10.25 GiB",
+      "used_bytes": 11009495040
     }
   },
   "networking": {
-    "dhcp": "10.212.9.132",
+    "dhcp": "10.212.18.132",
     "domain": "local",
-    "fqdn": "Mac-1647177678020.local",
-    "hostname": "Mac-1647177678020",
+    "fqdn": "Mac-1647177848730.local",
+    "hostname": "Mac-1647177848730",
     "interfaces": {
       "en0": {
         "bindings": [
           {
-            "address": "10.212.9.135",
+            "address": "10.212.18.170",
             "netmask": "255.255.255.128",
-            "network": "10.212.9.128"
+            "network": "10.212.18.128"
           }
         ],
-        "dhcp": "10.212.9.132",
-        "ip": "10.212.9.135",
-        "mac": "00:50:56:81:c7:1b",
+        "dhcp": "10.212.18.132",
+        "ip": "10.212.18.170",
+        "mac": "00:50:56:bc:f7:d0",
         "mtu": 1500,
         "netmask": "255.255.255.128",
-        "network": "10.212.9.128"
+        "network": "10.212.18.128"
       },
       "gif0": {
         "mtu": 1280
@@ -95,13 +95,13 @@
       "utun0": {
         "bindings6": [
           {
-            "address": "fe80::2aae:4e19:5256:486a",
+            "address": "fe80::5ec2:6363:eba6:4e56",
             "netmask": "ffff:ffff:ffff:ffff::",
             "network": "fe80::",
             "scope6": "link"
           }
         ],
-        "ip6": "fe80::2aae:4e19:5256:486a",
+        "ip6": "fe80::5ec2:6363:eba6:4e56",
         "mtu": 1380,
         "netmask6": "ffff:ffff:ffff:ffff::",
         "network6": "fe80::",
@@ -110,24 +110,24 @@
       "utun1": {
         "bindings6": [
           {
-            "address": "fe80::297e:3717:491d:e443",
+            "address": "fe80::9c7e:30e1:d823:e37b",
             "netmask": "ffff:ffff:ffff:ffff::",
             "network": "fe80::",
             "scope6": "link"
           }
         ],
-        "ip6": "fe80::297e:3717:491d:e443",
+        "ip6": "fe80::9c7e:30e1:d823:e37b",
         "mtu": 2000,
         "netmask6": "ffff:ffff:ffff:ffff::",
         "network6": "fe80::",
         "scope6": "link"
       }
     },
-    "ip": "10.212.9.135",
-    "mac": "00:50:56:81:c7:1b",
+    "ip": "10.212.18.170",
+    "mac": "00:50:56:bc:f7:d0",
     "mtu": 1500,
     "netmask": "255.255.255.128",
-    "network": "10.212.9.128",
+    "network": "10.212.18.128",
     "primary": "en0"
   },
   "os": {
@@ -207,7 +207,7 @@
   "system_profiler": {
     "boot_mode": "Normal",
     "boot_volume": "Macintosh HD",
-    "computer_name": "Mac-1647177678020.local",
+    "computer_name": "Mac-1647177848730.local",
     "cores": "3",
     "hardware_uuid": "4203018E-580F-C1B5-9525-B745CECA79EB",
     "kernel_version": "Darwin 20.6.0",
@@ -220,17 +220,17 @@
     "processor_speed": "3.33 GHz",
     "processors": "1",
     "secure_virtual_memory": "Enabled",
-    "serial_number": "VMoixC0wR8cq",
+    "serial_number": "VM/WWZTZWy+b",
     "smc_version": "2.8f0",
     "system_version": "macOS 11.6.4 (20G417)",
-    "uptime": "30 minutes",
+    "uptime": "31 minutes",
     "username": "runner (runner)"
   },
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 1811,
-    "uptime": "0:30 hours"
+    "seconds": 1864,
+    "uptime": "0:31 hours"
   },
   "timezone": "UTC",
   "virtual": "vmware"
