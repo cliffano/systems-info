@@ -13,21 +13,14 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install facter
-      - run: facter --hocon > facter.hocon
-      - run: facter --json > facter.json
-      - run: facter --yaml > facter.yaml
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: ubuntu-latest-facter.hocon
-          path: facter.hocon
-      - uses: actions/upload-artifact@master
-        with:
-          name: ubuntu-latest-facter.json
-          path: facter.json
-      - uses: actions/upload-artifact@master
-        with:
-          name: ubuntu-latest-facter.yaml
-          path: facter.yaml
+          name: ubuntu-latest-facter
+          path: data/
   macos-latest:
     runs-on: macos-latest
     steps:
@@ -35,21 +28,14 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install facter
-      - run: facter --hocon > facter.hocon
-      - run: facter --json > facter.json
-      - run: facter --yaml > facter.yaml
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: macos-latest-facter.hocon
-          path: facter.hocon
-      - uses: actions/upload-artifact@master
-        with:
-          name: macos-latest-facter.json
-          path: facter.json
-      - uses: actions/upload-artifact@master
-        with:
-          name: macos-latest-facter.yaml
-          path: facter.yaml
+          name: macos-latest-facter
+          path: data/
   consolidate:
     needs:
       - ubuntu-latest
@@ -61,30 +47,16 @@ jobs:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
+      - run: rm -rf data/github-actions/ubuntu-latest/*
       - uses: actions/download-artifact@master
         with:
-          name: ubuntu-latest-facter.hocon
-          path: data/github-actions/ubuntu-latest/facter.hocon
+          name: ubuntu-latest-facter
+          path: data/github-actions/ubuntu-latest/
+      - run: rm -rf data/github-actions/macos-latest/*
       - uses: actions/download-artifact@master
         with:
-          name: ubuntu-latest-facter.json
-          path: data/github-actions/ubuntu-latest/facter.json
-      - uses: actions/download-artifact@master
-        with:
-          name: ubuntu-latest-facter.yaml
-          path: data/github-actions/ubuntu-latest/facter.yaml
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-latest-facter.hocon
-          path: data/github-actions/macos-latest/facter.hocon
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-latest-facter.json
-          path: data/github-actions/macos-latest/facter.json
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-latest-facter.yaml
-          path: data/github-actions/macos-latest/facter.yaml
+          name: macos-latest-facter
+          path: data/github-actions/macos-latest/
       - run: git add -A
       - run: git commit data/github-actions/ubuntu-latest/facter.* -m "Update GitHub Actions Ubuntu latest data."
       - run: git commit data/github-actions/macos-latest/facter.* -m "Update GitHub Actions macOS latest data."
