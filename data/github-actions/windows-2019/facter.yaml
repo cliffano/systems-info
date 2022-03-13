@@ -1,0 +1,219 @@
+az_metadata:
+  compute:
+    azEnvironment: AzurePublicCloud
+    customData: ""
+    isHostCompatibilityLayerVm: 'false'
+    licenseType: ""
+    location: westus
+    name: WUS-GHEUS12019WUSC34-0008
+    offer: ""
+    osProfile:
+      adminUsername: ""
+      computerName: ""
+    osType: "Windows"
+    placementGroupId: ""
+    plan:
+      name: ""
+      product: ""
+      publisher: ""
+    platformFaultDomain: '0'
+    platformUpdateDomain: '0'
+    provider: Microsoft.Compute
+    publicKeys: []
+    publisher: ""
+    resourceGroupName: gheus12019wusc34
+    resourceId: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus12019wusc34/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS12019WUSC34-0008"
+    securityProfile:
+      secureBootEnabled: 'false'
+      virtualTpmEnabled: 'false'
+    sku: ""
+    storageProfile:
+      dataDisks: []
+      imageReference:
+        id: ""
+        offer: ""
+        publisher: ""
+        sku: ""
+        version: ""
+      osDisk:
+        caching: ReadWrite
+        createOption: Attach
+        diffDiskSettings:
+          option: ""
+        diskSizeGB: '256'
+        encryptionSettings:
+          enabled: 'false'
+        image:
+          uri: ""
+        managedDisk:
+          id: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus12019wusc34/providers/Microsoft.Compute/disks/WUS-GHEUS12019WUSC34-0008-7c6ab3ce"
+          storageAccountType: Premium_LRS
+        name: WUS-GHEUS12019WUSC34-0008-7c6ab3ce
+        osType: "Windows"
+        vhd:
+          uri: ""
+        writeAcceleratorEnabled: 'false'
+    subscriptionId: f47a99bc-e25a-45b9-a376-fe6c89f7c82e
+    tags: platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
+    tagsList:
+    - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
+      value: 'true'
+    version: ""
+    vmId: 574ef4df-6f94-479e-9aab-eeac880b3626
+    vmScaleSetName: ""
+    vmSize: "Standard_DS2_v2"
+    zone: ""
+  network:
+    interface:
+    - ipv4:
+        ipAddress:
+        - privateIpAddress: 10.1.0.45
+          publicIpAddress: ""
+        subnet:
+        - address: 10.1.0.0
+          prefix: '16'
+      ipv6:
+        ipAddress: []
+      macAddress: 6045BD001AF2
+cloud:
+  provider: azure
+dmi:
+  manufacturer: "American Megatrends Inc."
+  product:
+    name: "Virtual Machine"
+    serial_number: "0000-0006-2912-3496-9970-0345-90"
+    uuid: 574EF4DF-6F94-479E-9AAB-EEAC880B3626
+facterversion: 4.2.7
+fips_enabled: false
+hypervisors:
+  hyperv: {}
+identity:
+  privileged: true
+  user: "fv-az455-661\\runneradmin"
+is_virtual: true
+kernel: "windows"
+kernelmajversion: '10.0'
+kernelrelease: 10.0.17763
+kernelversion: 10.0.17763
+memory:
+  system:
+    available: 5.00 GiB
+    available_bytes: 5374005248
+    capacity: 28.50%
+    total: 7.00 GiB
+    total_bytes: 7515721728
+    used: 1.99 GiB
+    used_bytes: 2141716480
+networking:
+  dhcp: 168.63.129.16
+  domain: "q1uzzir4eycuxanwfv2w1rtuxg.dx.internal.cloudapp.net"
+  fqdn: "fv-az455-661.q1uzzir4eycuxanwfv2w1rtuxg.dx.internal.cloudapp.net"
+  hostname: fv-az455-661
+  interfaces:
+    Ethernet:
+      bindings:
+      - address: 10.1.0.45
+        netmask: 255.255.0.0
+        network: 10.1.0.0
+      bindings6:
+      - address: "fe80::18d:d630:23c1:367d"
+        netmask: "ffff:ffff:ffff:ffff::"
+        network: "fe80::"
+        scope6: "link"
+      dhcp: 168.63.129.16
+      ip: 10.1.0.45
+      ip6: "fe80::18d:d630:23c1:367d"
+      mac: "60:45:BD:00:1A:F2"
+      mtu: 1500
+      netmask: 255.255.0.0
+      netmask6: "ffff:ffff:ffff:ffff::"
+      network: 10.1.0.0
+      network6: "fe80::"
+      scope6: "link"
+    vEthernet (nat):
+      bindings:
+      - address: 172.26.80.1
+        netmask: 255.255.240.0
+        network: 172.26.80.0
+      bindings6:
+      - address: "fe80::9d12:13ab:7b33:3391"
+        netmask: "ffff:ffff:ffff:ffff::"
+        network: "fe80::"
+        scope6: "link"
+      dhcp: ""
+      ip: 172.26.80.1
+      ip6: "fe80::9d12:13ab:7b33:3391"
+      mac: "00:15:5D:9B:FA:98"
+      mtu: 1500
+      netmask: 255.255.240.0
+      netmask6: "ffff:ffff:ffff:ffff::"
+      network: 172.26.80.0
+      network6: "fe80::"
+      scope6: "link"
+  ip: 10.1.0.45
+  ip6: "fe80::18d:d630:23c1:367d"
+  mac: "60:45:BD:00:1A:F2"
+  mtu: 1500
+  netmask: 255.255.0.0
+  netmask6: "ffff:ffff:ffff:ffff::"
+  network: 10.1.0.0
+  network6: "fe80::"
+  primary: "Ethernet"
+  scope6: "link"
+os:
+  architecture: x64
+  family: "windows"
+  hardware: x86_64
+  name: "windows"
+  release:
+    full: '2019'
+    major: '2019'
+  windows:
+    edition_id: "ServerDatacenter"
+    installation_type: Server
+    product_name: "Windows Server 2019 Datacenter"
+    release_id: '1809'
+    system32: "C:\\Windows\\system32"
+path: "C:\\Program Files\\PowerShell\\7;C:\\hostedtoolcache\\windows\\Ruby\\3.1.1\\x64\\bin;C:\\msys64\\ucrt64\\bin;C:\\msys64\\usr\\bin;C:\\Program
+  Files\\MongoDB\\Server\\5.0\\bin;C:\\aliyun-cli;C:\\vcpkg;C:\\cf-cli;C:\\Program
+  Files (x86)\\NSIS\\;C:\\tools\\zstd;C:\\Program Files\\Mercurial\\;C:\\hostedtoolcache\\windows\\stack\\2.7.5\\x64;C:\\cabal\\bin;C:\\\\ghcup\\bin;C:\\tools\\ghc-9.2.1\\bin;C:\\Program
+  Files\\dotnet;C:\\mysql\\bin;C:\\Program Files\\R\\R-4.1.2\\bin\\x64;C:\\SeleniumWebDrivers\\GeckoDriver;C:\\Program
+  Files (x86)\\sbt\\bin;C:\\Program Files (x86)\\GitHub CLI;C:\\Program Files\\Git\\bin;C:\\Program
+  Files (x86)\\pipx_bin;C:\\hostedtoolcache\\windows\\go\\1.15.15\\x64\\bin;C:\\hostedtoolcache\\windows\\Python\\3.7.9\\x64\\Scripts;C:\\hostedtoolcache\\windows\\Python\\3.7.9\\x64;C:\\tools\\kotlinc\\bin;C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\8.0.322-6\\x64\\bin;C:\\npm\\prefix;C:\\Program
+  Files (x86)\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\ProgramData\\kind;C:\\Program
+  Files\\Eclipse Foundation\\jdk-8.0.302.8-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\ProgramData\\Chocolatey\\bin;C:\\Program
+  Files\\Docker;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Microsoft\\Web
+  Platform Installer\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL
+  Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program
+  Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Microsoft
+  SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program
+  Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft
+  SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program
+  Files\\nodejs\\;C:\\Program Files\\OpenSSL\\bin;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\ProgramData\\chocolatey\\lib\\pulumi\\tools\\Pulumi\\bin;C:\\Program
+  Files\\TortoiseSVN\\bin;C:\\Program Files\\CMake\\bin;C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.4\\bin;C:\\Program
+  Files\\Microsoft Service Fabric\\bin\\Fabric\\Fabric.Code;C:\\Program Files\\Microsoft
+  SDKs\\Service Fabric\\Tools\\ServiceFabricLocalClusterManager;C:\\Program Files\\Git\\cmd;C:\\Program
+  Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\GitHub
+  CLI\\;c:\\tools\\php;C:\\Program Files (x86)\\sbt\\bin;C:\\SeleniumWebDrivers\\ChromeDriver\\;C:\\SeleniumWebDrivers\\EdgeDriver\\;C:\\Program
+  Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\SessionManagerPlugin\\bin\\;C:\\Program
+  Files\\Amazon\\AWSSAMCLI\\bin\\;C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk\\bin;C:\\Program
+  Files (x86)\\Microsoft BizTalk Server\\;C:\\Program Files\\LLVM\\bin;C:\\Users\\runneradmin\\.dotnet\\tools;C:\\Users\\runneradmin\\.cargo\\bin;C:\\Users\\runneradmin\\AppData\\Local\\Microsoft\\WindowsApps"
+processors:
+  cores: 2
+  count: 2
+  isa: x64
+  models:
+  - "Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz"
+  physicalcount: 1
+  threads: 1
+ruby:
+  platform: "x64-mingw-ucrt"
+  sitedir: "C:/hostedtoolcache/windows/Ruby/3.1.1/x64/lib/ruby/site_ruby/3.1.0"
+  version: 3.1.1
+system_uptime:
+  days: 0
+  hours: 0
+  seconds: 1999
+  uptime: "0:33 hours"
+timezone: "Coordinated Universal Time"
+virtual: "hyperv"
