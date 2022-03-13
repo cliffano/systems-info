@@ -226,16 +226,17 @@ jobs:
           name: windows-2019-facter
           path: data/github-actions/windows-2019/
       - run: git add -A
-      - run: git commit data/github-actions/ubuntu-latest/facter.* -m "Update GitHub Actions Ubuntu latest data."
-      - run: git commit data/github-actions/ubuntu-20.04/facter.* -m "Update GitHub Actions Ubuntu 20.04 data."
-      - run: git commit data/github-actions/ubuntu-18.04/facter.* -m "Update GitHub Actions Ubuntu 18.04 data."
-      - run: git commit data/github-actions/ubuntu-16.04/facter.* -m "Update GitHub Actions Ubuntu 16.04 data."
-      - run: git commit data/github-actions/macos-latest/facter.* -m "Update GitHub Actions macOS latest data."
-      - run: git commit data/github-actions/macos-11.0/facter.* -m "Update GitHub Actions macOS 11.0 data."
-      - run: git commit data/github-actions/macos-10.15/facter.* -m "Update GitHub Actions macOS 10.15 data."
-      - run: git commit data/github-actions/windows-latest/facter.* -m "Update GitHub Actions Windows latest data."
-      - run: git commit data/github-actions/windows-2022/facter.* -m "Update GitHub Actions Windows 2022 data."
-      - run: git commit data/github-actions/windows-2019/facter.* -m "Update GitHub Actions Windows 2019 data."
+      - run: git commit data/github-actions/ubuntu-latest/* -m "Update GitHub Actions Ubuntu latest data."
+      - run: git commit data/github-actions/ubuntu-20.04/* -m "Update GitHub Actions Ubuntu 20.04 data."
+      - run: git commit data/github-actions/ubuntu-18.04/* -m "Update GitHub Actions Ubuntu 18.04 data."
+      - run: git commit data/github-actions/ubuntu-16.04/* -m "Update GitHub Actions Ubuntu 16.04 data."
+      - run: git commit data/github-actions/macos-latest/* -m "Update GitHub Actions macOS latest data."
+      - run: git commit data/github-actions/macos-11.0/* -m "Update GitHub Actions macOS 11.0 data."
+      - run: git commit data/github-actions/macos-10.15/* -m "Update GitHub Actions macOS 10.15 data."
+      - run: git commit data/github-actions/windows-latest/* -m "Update GitHub Actions Windows latest data."
+      - run: git commit data/github-actions/windows-2022/* -m "Update GitHub Actions Windows 2022 data."
+      - run: git commit data/github-actions/windows-2019/* -m "Update GitHub Actions Windows 2019 data."
+      - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
           tags: true
