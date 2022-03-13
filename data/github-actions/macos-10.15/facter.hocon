@@ -18,41 +18,41 @@ kernelmajversion="19.6"
 kernelrelease="19.6.0"
 kernelversion="19.6.0"
 "load_averages"={
-    "15m"=1.85
-    "1m"=2.09
-    "5m"=1.96
+    "15m"=2.28
+    "1m"=2.95
+    "5m"=2.42
 }
 memory={
     system={
         available="4.80 GiB"
-        "available_bytes"=5153087488
-        capacity="65.72%"
+        "available_bytes"=5159305216
+        capacity="65.68%"
         total="14.00 GiB"
         "total_bytes"=15032385536
         used="9.20 GiB"
-        "used_bytes"=9879298048
+        "used_bytes"=9873080320
     }
 }
 networking={
-    dhcp="10.213.1.4"
+    dhcp="10.213.7.4"
     domain=local
-    fqdn="Mac-1647176150758.local"
-    hostname=Mac-1647176150758
+    fqdn="Mac-1647173129642.local"
+    hostname=Mac-1647173129642
     interfaces={
         en0={
             bindings=[
                 {
-                    address="10.213.1.54"
+                    address="10.213.7.93"
                     netmask="255.255.255.128"
-                    network="10.213.1.0"
+                    network="10.213.7.0"
                 }
             ]
-            dhcp="10.213.1.4"
-            ip="10.213.1.54"
-            mac="00:50:56:b9:b7:64"
+            dhcp="10.213.7.4"
+            ip="10.213.7.93"
+            mac="00:50:56:bc:25:64"
             mtu=1500
             netmask="255.255.255.128"
-            network="10.213.1.0"
+            network="10.213.7.0"
         }
         gif0={
             mtu=1280
@@ -94,13 +94,13 @@ networking={
         utun0={
             bindings6=[
                 {
-                    address="fe80::1ff6:8ed6:8e4b:2e25"
+                    address="fe80::7647:8b16:80a:2971"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
-            ip6="fe80::1ff6:8ed6:8e4b:2e25"
+            ip6="fe80::7647:8b16:80a:2971"
             mtu=1380
             netmask6="ffff:ffff:ffff:ffff::"
             network6="fe80::"
@@ -109,24 +109,24 @@ networking={
         utun1={
             bindings6=[
                 {
-                    address="fe80::cc70:5450:48f:b8"
+                    address="fe80::7a72:e89a:59e7:9f85"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
-            ip6="fe80::cc70:5450:48f:b8"
+            ip6="fe80::7a72:e89a:59e7:9f85"
             mtu=2000
             netmask6="ffff:ffff:ffff:ffff::"
             network6="fe80::"
             scope6=link
         }
     }
-    ip="10.213.1.54"
-    mac="00:50:56:b9:b7:64"
+    ip="10.213.7.93"
+    mac="00:50:56:bc:25:64"
     mtu=1500
     netmask="255.255.255.128"
-    network="10.213.1.0"
+    network="10.213.7.0"
     primary=en0
 }
 os={
@@ -206,7 +206,7 @@ ssh={
     "boot_mode"=Normal
     "boot_rom_version"="VMW71.00V.13989454.B64.1906190538"
     "boot_volume"="Macintosh HD"
-    "computer_name"="Mac-1647176150758.local"
+    "computer_name"="Mac-1647173129642.local"
     cores="3"
     "hardware_uuid"="4203018E-580F-C1B5-9525-B745CECA79EB"
     "kernel_version"="Darwin 19.6.0"
@@ -218,17 +218,17 @@ ssh={
     "processor_speed"="3.33 GHz"
     processors="1"
     "secure_virtual_memory"=Enabled
-    "serial_number"=VMGYRD65g3ai
+    "serial_number"=VMEkdzbwLMXQ
     "smc_version"="2.8f0"
     "system_version"="macOS 10.15.7 (19H1715)"
-    uptime="56 minutes"
+    uptime="1:50"
     username="runner (runner)"
 }
 "system_uptime"={
     days=0
-    hours=0
-    seconds=3337
-    uptime="0:55 hours"
+    hours=1
+    seconds=6574
+    uptime="1:49 hours"
 }
 timezone=UTC
 virtual=vmware
