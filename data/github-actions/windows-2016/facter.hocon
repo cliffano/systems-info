@@ -1,0 +1,254 @@
+"az_metadata"={
+    compute={
+        azEnvironment=AzurePublicCloud
+        customData=""
+        isHostCompatibilityLayerVm=false
+        licenseType=""
+        location=eastus
+        name=EUS-GHEUS12017EUS8-0009
+        offer=""
+        osProfile={
+            adminUsername=""
+            computerName=""
+        }
+        osType=Windows
+        placementGroupId=""
+        plan={
+            name=""
+            product=""
+            publisher=""
+        }
+        platformFaultDomain="0"
+        platformUpdateDomain="0"
+        provider="Microsoft.Compute"
+        publicKeys=[]
+        publisher=""
+        resourceGroupName=gheus12017eus8
+        resourceId="/subscriptions/839575ee-f30e-4cca-814a-18e42b909000/resourceGroups/gheus12017eus8/providers/Microsoft.Compute/virtualMachines/EUS-GHEUS12017EUS8-0009"
+        securityProfile={
+            secureBootEnabled=false
+            virtualTpmEnabled=false
+        }
+        sku=""
+        storageProfile={
+            dataDisks=[]
+            imageReference={
+                id=""
+                offer=""
+                publisher=""
+                sku=""
+                version=""
+            }
+            osDisk={
+                caching=ReadWrite
+                createOption=Attach
+                diffDiskSettings={
+                    option=""
+                }
+                diskSizeGB="256"
+                encryptionSettings={
+                    enabled=false
+                }
+                image={
+                    uri=""
+                }
+                managedDisk={
+                    id="/subscriptions/839575ee-f30e-4cca-814a-18e42b909000/resourceGroups/gheus12017eus8/providers/Microsoft.Compute/disks/EUS-GHEUS12017EUS8-0009-558679f2"
+                    storageAccountType="Premium_LRS"
+                }
+                name=EUS-GHEUS12017EUS8-0009-558679f2
+                osType=Windows
+                vhd={
+                    uri=""
+                }
+                writeAcceleratorEnabled=false
+            }
+        }
+        subscriptionId="839575ee-f30e-4cca-814a-18e42b909000"
+        tags="platformsettings.host_environment.service.platform_optedin_for_rootcerts:true"
+        tagsList=[
+            {
+                name="platformsettings.host_environment.service.platform_optedin_for_rootcerts"
+                value=true
+            }
+        ]
+        version=""
+        vmId="78cb45d9-cbf3-4369-9ca7-7a0525717b21"
+        vmScaleSetName=""
+        vmSize="Standard_DS2_v2"
+        zone=""
+    }
+    network={
+        interface=[
+            {
+                ipv4={
+                    ipAddress=[
+                        {
+                            privateIpAddress="10.1.0.11"
+                            publicIpAddress=""
+                        }
+                    ]
+                    subnet=[
+                        {
+                            address="10.1.0.0"
+                            prefix="16"
+                        }
+                    ]
+                }
+                ipv6={
+                    ipAddress=[]
+                }
+                macAddress="00224825BE5C"
+            }
+        ]
+    }
+}
+cloud={
+    provider=azure
+}
+dmi={
+    manufacturer="American Megatrends Inc."
+    product={
+        name="Virtual Machine"
+        "serial_number"="0000-0008-7041-2750-6555-5526-17"
+        uuid="78CB45D9-CBF3-4369-9CA7-7A0525717B21"
+    }
+}
+facterversion="4.2.7"
+"fips_enabled"=false
+hypervisors={
+    hyperv={}
+}
+identity={
+    privileged=true
+    user="fv-az154-809\\runneradmin"
+}
+"is_virtual"=true
+kernel=windows
+kernelmajversion="10.0"
+kernelrelease="10.0.14393"
+kernelversion="10.0.14393"
+memory={
+    system={
+        available="5.03 GiB"
+        "available_bytes"=5399445504
+        capacity="28.16%"
+        total="7.00 GiB"
+        "total_bytes"=7515721728
+        used="1.97 GiB"
+        "used_bytes"=2116276224
+    }
+}
+networking={
+    dhcp="168.63.129.16"
+    domain="3b5qn3exnwju1msdxe5agy3tqe.bx.internal.cloudapp.net"
+    fqdn="fv-az154-809.3b5qn3exnwju1msdxe5agy3tqe.bx.internal.cloudapp.net"
+    hostname=fv-az154-809
+    interfaces={
+        Ethernet={
+            bindings=[
+                {
+                    address="10.1.0.11"
+                    netmask="255.255.0.0"
+                    network="10.1.0.0"
+                }
+            ]
+            bindings6=[
+                {
+                    address="fe80::d33:8cbe:6139:6954"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            dhcp="168.63.129.16"
+            ip="10.1.0.11"
+            ip6="fe80::d33:8cbe:6139:6954"
+            mac="00:22:48:25:BE:5C"
+            mtu=1500
+            netmask="255.255.0.0"
+            netmask6="ffff:ffff:ffff:ffff::"
+            network="10.1.0.0"
+            network6="fe80::"
+            scope6=link
+        }
+        "vEthernet (HNS Internal NIC)"={
+            bindings=[
+                {
+                    address="172.29.80.1"
+                    netmask="255.255.240.0"
+                    network="172.29.80.0"
+                }
+            ]
+            bindings6=[
+                {
+                    address="fe80::f88a:820:244:f750"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            dhcp=null
+            ip="172.29.80.1"
+            ip6="fe80::f88a:820:244:f750"
+            mac="00:15:5D:8E:54:5F"
+            mtu=1500
+            netmask="255.255.240.0"
+            netmask6="ffff:ffff:ffff:ffff::"
+            network="172.29.80.0"
+            network6="fe80::"
+            scope6=link
+        }
+    }
+    ip="10.1.0.11"
+    ip6="fe80::d33:8cbe:6139:6954"
+    mac="00:22:48:25:BE:5C"
+    mtu=1500
+    netmask="255.255.0.0"
+    netmask6="ffff:ffff:ffff:ffff::"
+    network="10.1.0.0"
+    network6="fe80::"
+    primary=Ethernet
+    scope6=link
+}
+os={
+    architecture=x64
+    family=windows
+    hardware="x86_64"
+    name=windows
+    release={
+        full="2016"
+        major="2016"
+    }
+    windows={
+        "edition_id"=ServerDatacenter
+        "installation_type"=Server
+        "product_name"="Windows Server 2016 Datacenter"
+        "release_id"="1607"
+        system32="C:\\Windows\\system32"
+    }
+}
+path="C:\\Program Files\\PowerShell\\7;C:\\hostedtoolcache\\windows\\Ruby\\3.1.1\\x64\\bin;C:\\msys64\\ucrt64\\bin;C:\\msys64\\usr\\bin;C:\\Program Files\\MongoDB\\Server\\5.0\\bin;C:\\vcpkg;C:\\cf-cli;C:\\Program Files (x86)\\NSIS\\;C:\\tools\\zstd;C:\\Program Files\\Mercurial\\;C:\\hostedtoolcache\\windows\\stack\\2.7.3\\x64;C:\\cabal\\bin;C:\\\\ghcup\\bin;C:\\tools\\ghc-9.2.1\\bin;C:\\Program Files\\dotnet;C:\\mysql\\bin;C:\\Program Files\\R\\R-4.1.2\\bin\\x64;C:\\SeleniumWebDrivers\\GeckoDriver;C:\\Program Files (x86)\\GitHub CLI;C:\\Program Files\\Git\\bin;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files (x86)\\pipx_bin;C:\\hostedtoolcache\\windows\\go\\1.15.15\\x64\\bin;C:\\hostedtoolcache\\windows\\Python\\3.7.9\\x64\\Scripts;C:\\hostedtoolcache\\windows\\Python\\3.7.9\\x64;C:\\tools\\kotlinc\\bin;C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\8.0.322-6\\x64\\bin;C:\\aliyun-cli;C:\\npm\\prefix;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\ProgramData\\kind;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\ProgramData\\Chocolatey\\bin;C:\\Program Files\\Docker;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft Service Fabric\\bin\\Fabric\\Fabric.Code;C:\\Program Files\\Microsoft SDKs\\Service Fabric\\Tools\\ServiceFabricLocalClusterManager;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\OpenSSL\\bin;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\ProgramData\\chocolatey\\lib\\pulumi\\tools\\Pulumi\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\CMake\\bin;C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.4\\bin;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\GitHub CLI\\;c:\\tools\\php;C:\\SeleniumWebDrivers\\ChromeDriver\\;C:\\SeleniumWebDrivers\\EdgeDriver\\;C:\\Program Files\\LLVM\\bin;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\SessionManagerPlugin\\bin\\;C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\;C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk\\bin;C:\\Users\\runneradmin\\.dotnet\\tools;C:\\Users\\runneradmin\\.cargo\\bin;C:\\Users\\runneradmin\\AppData\\Local\\Microsoft\\WindowsApps"
+processors={
+    cores=2
+    count=2
+    isa=x64
+    models=[
+        "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz"
+    ]
+    physicalcount=1
+    threads=1
+}
+ruby={
+    platform=x64-mingw-ucrt
+    sitedir="C:/hostedtoolcache/windows/Ruby/3.1.1/x64/lib/ruby/site_ruby/3.1.0"
+    version="3.1.1"
+}
+"system_uptime"={
+    days=0
+    hours=2
+    seconds=9431
+    uptime="2:37 hours"
+}
+timezone="Coordinated Universal Time"
+virtual=hyperv
