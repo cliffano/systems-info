@@ -1,5 +1,5 @@
 ---
-name: All GitHub Actions runners system info
+name: GitHub Actions all GitHub-hosted runners system info
 on: [workflow_dispatch]
 env:
   RUBY_VERSION: 3.1.1
@@ -26,7 +26,6 @@ jobs:
       - run: facter --yaml > data/github-actions/ubuntu-latest/facter.yaml
       - run: git add -A
       - run: git commit -am "Update GitHub Actions Ubuntu latest data."
-      - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
           tags: true
@@ -52,7 +51,6 @@ jobs:
       - run: facter --yaml > data/github-actions/macos-latest/facter.yaml
       - run: git add -A
       - run: git commit -am "Update GitHub Actions macOS latest data."
-      - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
           tags: true
