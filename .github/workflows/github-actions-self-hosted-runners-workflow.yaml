@@ -21,6 +21,51 @@ jobs:
         with:
           name: ubuntu-latest-facter
           path: data/
+  ubuntu-20.04:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ubuntu-20.04-facter
+          path: data/
+  ubuntu-18.04:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ubuntu-18.04-facter
+          path: data/
+  ubuntu-16.04:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ubuntu-16.04-facter
+          path: data/
   macos-latest:
     runs-on: macos-latest
     steps:
@@ -35,6 +80,36 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: macos-latest-facter
+          path: data/
+  macos-11.0:
+    runs-on: macos-11.0
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: macos-11.0-facter
+          path: data/
+  macos-10.15:
+    runs-on: macos-10.15
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: macos-10.15-facter
           path: data/
   windows-latest:
     runs-on: windows-latest
@@ -51,11 +126,48 @@ jobs:
         with:
           name: windows-latest-facter
           path: data/
+  windows-2022:
+    runs-on: windows-2022
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install ffi facter
+      - run: md data/github-actions/windows-2022/ -ea 0
+      - run: facter --hocon | Out-File data/facter.hocon
+      - run: facter --json | Out-File data/facter.json
+      - run: facter --yaml | Out-File data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: windows-2022-facter
+          path: data/
+  windows-2019:
+    runs-on: windows-2019
+    steps:
+      - uses: ruby/setup-ruby@master
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - run: gem install ffi facter
+      - run: md data/github-actions/windows-2019/ -ea 0
+      - run: facter --hocon | Out-File data/facter.hocon
+      - run: facter --json | Out-File data/facter.json
+      - run: facter --yaml | Out-File data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: windows-2019-facter
+          path: data/
   consolidate:
     needs:
       - ubuntu-latest
+      - ubuntu-20.04
+      - ubuntu-18.04
+      - ubuntu-16.04
       - macos-latest
+      - macos-11.0
+      - macos-10.15
       - windows-latest
+      - windows-2022
+      - windows-2019
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -68,20 +180,62 @@ jobs:
         with:
           name: ubuntu-latest-facter
           path: data/github-actions/ubuntu-latest/
+      - run: rm -rf data/github-actions/ubuntu-20.04/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ubuntu-20.04-facter
+          path: data/github-actions/ubuntu-20.04/
+      - run: rm -rf data/github-actions/ubuntu-18.04/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ubuntu-18.04-facter
+          path: data/github-actions/ubuntu-18.04/
+      - run: rm -rf data/github-actions/ubuntu-16.04/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ubuntu-16.04-facter
+          path: data/github-actions/ubuntu-16.04/
       - run: rm -rf data/github-actions/macos-latest/*
       - uses: actions/download-artifact@master
         with:
           name: macos-latest-facter
           path: data/github-actions/macos-latest/
+      - run: rm -rf data/github-actions/macos-11.0/*
+      - uses: actions/download-artifact@master
+        with:
+          name: macos-11.0-facter
+          path: data/github-actions/macos-11.0/
+      - run: rm -rf data/github-actions/macos-10.15/*
+      - uses: actions/download-artifact@master
+        with:
+          name: macos-10.15-facter
+          path: data/github-actions/macos-10.15/
       - run: rm -rf data/github-actions/windows-latest/*
       - uses: actions/download-artifact@master
         with:
           name: windows-latest-facter
           path: data/github-actions/windows-latest/
+      - run: rm -rf data/github-actions/windows-2022/*
+      - uses: actions/download-artifact@master
+        with:
+          name: windows-2022-facter
+          path: data/github-actions/windows-2022/
+      - run: rm -rf data/github-actions/windows-2019/*
+      - uses: actions/download-artifact@master
+        with:
+          name: windows-2019-facter
+          path: data/github-actions/windows-2019/
       - run: git add -A
       - run: git commit data/github-actions/ubuntu-latest/facter.* -m "Update GitHub Actions Ubuntu latest data."
+      - run: git commit data/github-actions/ubuntu-20.04/facter.* -m "Update GitHub Actions Ubuntu 20.04 data."
+      - run: git commit data/github-actions/ubuntu-18.04/facter.* -m "Update GitHub Actions Ubuntu 18.04 data."
+      - run: git commit data/github-actions/ubuntu-16.04/facter.* -m "Update GitHub Actions Ubuntu 16.04 data."
       - run: git commit data/github-actions/macos-latest/facter.* -m "Update GitHub Actions macOS latest data."
+      - run: git commit data/github-actions/macos-11.0/facter.* -m "Update GitHub Actions macOS 11.0 data."
+      - run: git commit data/github-actions/macos-10.15/facter.* -m "Update GitHub Actions macOS 10.15 data."
       - run: git commit data/github-actions/windows-latest/facter.* -m "Update GitHub Actions Windows latest data."
+      - run: git commit data/github-actions/windows-2022/facter.* -m "Update GitHub Actions Windows 2022 data."
+      - run: git commit data/github-actions/windows-2019/facter.* -m "Update GitHub Actions Windows 2019 data."
       - uses: ad-m/github-push-action@master
         with:
           tags: true
