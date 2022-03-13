@@ -5,7 +5,7 @@ az_metadata:
     isHostCompatibilityLayerVm: 'false'
     licenseType: ""
     location: westus
-    name: WUS-GHEUS1W22WUSC34-0236
+    name: WUS-GHEUS1W22WUSC34-0127
     offer: ""
     osProfile:
       adminUsername: ""
@@ -22,7 +22,7 @@ az_metadata:
     publicKeys: []
     publisher: ""
     resourceGroupName: gheus1w22wusc34
-    resourceId: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS1W22WUSC34-0236"
+    resourceId: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/virtualMachines/WUS-GHEUS1W22WUSC34-0127"
     securityProfile:
       secureBootEnabled: 'false'
       virtualTpmEnabled: 'false'
@@ -46,9 +46,9 @@ az_metadata:
         image:
           uri: ""
         managedDisk:
-          id: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/disks/WUS-GHEUS1W22WUSC34-0236-3ab2843a"
+          id: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/gheus1w22wusc34/providers/Microsoft.Compute/disks/WUS-GHEUS1W22WUSC34-0127-f4e72f5c"
           storageAccountType: Premium_LRS
-        name: WUS-GHEUS1W22WUSC34-0236-3ab2843a
+        name: WUS-GHEUS1W22WUSC34-0127-f4e72f5c
         osType: "Windows"
         vhd:
           uri: ""
@@ -59,7 +59,7 @@ az_metadata:
     - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
       value: 'true'
     version: ""
-    vmId: b5dbe665-4c5b-4cc5-bd81-7782b764f10e
+    vmId: f467f19d-8bce-4d7f-b79a-414d40a72ba8
     vmScaleSetName: ""
     vmSize: "Standard_DS2_v2"
     zone: ""
@@ -67,29 +67,29 @@ az_metadata:
     interface:
     - ipv4:
         ipAddress:
-        - privateIpAddress: 10.1.0.208
+        - privateIpAddress: 10.1.0.104
           publicIpAddress: ""
         subnet:
         - address: 10.1.0.0
           prefix: '16'
       ipv6:
         ipAddress: []
-      macAddress: 000D3A345B17
+      macAddress: 000D3A345CD1
 cloud:
   provider: azure
 dmi:
   manufacturer: "American Megatrends Inc."
   product:
     name: "Virtual Machine"
-    serial_number: "0000-0013-1043-2086-3511-7273-01"
-    uuid: B5DBE665-4C5B-4CC5-BD81-7782B764F10E
+    serial_number: "0000-0017-6113-1052-6813-3267-19"
+    uuid: F467F19D-8BCE-4D7F-B79A-414D40A72BA8
 facterversion: 4.2.7
 fips_enabled: false
 hypervisors:
   hyperv: {}
 identity:
   privileged: true
-  user: "fv-az456-116\\runneradmin"
+  user: "fv-az456-59\\runneradmin"
 is_virtual: true
 kernel: "windows"
 kernelmajversion: '10.0'
@@ -97,33 +97,33 @@ kernelrelease: 10.0.20348
 kernelversion: 10.0.20348
 memory:
   system:
-    available: 4.65 GiB
-    available_bytes: 4992913408
-    capacity: 33.57%
+    available: 4.51 GiB
+    available_bytes: 4842950656
+    capacity: 35.56%
     total: 7.00 GiB
     total_bytes: 7515721728
-    used: 2.35 GiB
-    used_bytes: 2522808320
+    used: 2.49 GiB
+    used_bytes: 2672771072
 networking:
   dhcp: 168.63.129.16
   domain: "4yqxsd2vd3ru5m1wslskbqmylf.dx.internal.cloudapp.net"
-  fqdn: "fv-az456-116.4yqxsd2vd3ru5m1wslskbqmylf.dx.internal.cloudapp.net"
-  hostname: fv-az456-116
+  fqdn: "fv-az456-59.4yqxsd2vd3ru5m1wslskbqmylf.dx.internal.cloudapp.net"
+  hostname: fv-az456-59
   interfaces:
     Ethernet 3:
       bindings:
-      - address: 10.1.0.208
+      - address: 10.1.0.104
         netmask: 255.255.0.0
         network: 10.1.0.0
       bindings6:
-      - address: "fe80::4c64:8e93:9f6f:ceaa"
+      - address: "fe80::c55:b122:59f2:29d"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
       dhcp: 168.63.129.16
-      ip: 10.1.0.208
-      ip6: "fe80::4c64:8e93:9f6f:ceaa"
-      mac: "00:0D:3A:34:5B:17"
+      ip: 10.1.0.104
+      ip6: "fe80::c55:b122:59f2:29d"
+      mac: "00:0D:3A:34:5C:D1"
       mtu: 1500
       netmask: 255.255.0.0
       netmask6: "ffff:ffff:ffff:ffff::"
@@ -132,27 +132,27 @@ networking:
       scope6: "link"
     vEthernet (nat):
       bindings:
-      - address: 192.168.224.1
+      - address: 172.20.112.1
         netmask: 255.255.240.0
-        network: 192.168.224.0
+        network: 172.20.112.0
       bindings6:
-      - address: "fe80::d8e8:535e:dd57:fb4e"
+      - address: "fe80::f414:7de2:6e26:8667"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
       dhcp: ""
-      ip: 192.168.224.1
-      ip6: "fe80::d8e8:535e:dd57:fb4e"
-      mac: "00:15:5D:2C:A6:61"
+      ip: 172.20.112.1
+      ip6: "fe80::f414:7de2:6e26:8667"
+      mac: "00:15:5D:C8:85:68"
       mtu: 1500
       netmask: 255.255.240.0
       netmask6: "ffff:ffff:ffff:ffff::"
-      network: 192.168.224.0
+      network: 172.20.112.0
       network6: "fe80::"
       scope6: "link"
-  ip: 10.1.0.208
-  ip6: "fe80::4c64:8e93:9f6f:ceaa"
-  mac: "00:0D:3A:34:5B:17"
+  ip: 10.1.0.104
+  ip6: "fe80::c55:b122:59f2:29d"
+  mac: "00:0D:3A:34:5C:D1"
   mtu: 1500
   netmask: 255.255.0.0
   netmask6: "ffff:ffff:ffff:ffff::"
@@ -200,7 +200,7 @@ processors:
   count: 2
   isa: x64
   models:
-  - "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz"
+  - "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"
   physicalcount: 1
   threads: 1
 ruby:
@@ -210,7 +210,7 @@ ruby:
 system_uptime:
   days: 0
   hours: 0
-  seconds: 443
-  uptime: "0:07 hours"
+  seconds: 337
+  uptime: "0:05 hours"
 timezone: "Coordinated Universal Time"
 virtual: "hyperv"
