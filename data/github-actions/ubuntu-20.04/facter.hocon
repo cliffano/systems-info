@@ -4,8 +4,8 @@
         customData=""
         isHostCompatibilityLayerVm=false
         licenseType=""
-        location=eastus
-        name=EUS-GHEUS1UBT20EUS2-0068
+        location=centralus
+        name=CUS-GHEUS1U20CUSC25-0114
         offer=""
         osProfile={
             adminUsername=""
@@ -23,8 +23,8 @@
         provider="Microsoft.Compute"
         publicKeys=[]
         publisher=""
-        resourceGroupName=gheus1ubt20eus2
-        resourceId="/subscriptions/88cf7d23-6b4b-4a09-8e14-f38f4c4e141c/resourceGroups/gheus1ubt20eus2/providers/Microsoft.Compute/virtualMachines/EUS-GHEUS1UBT20EUS2-0068"
+        resourceGroupName=gheus1u20cusc25
+        resourceId="/subscriptions/3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a/resourceGroups/gheus1u20cusc25/providers/Microsoft.Compute/virtualMachines/CUS-GHEUS1U20CUSC25-0114"
         securityProfile={
             secureBootEnabled=false
             virtualTpmEnabled=false
@@ -33,7 +33,7 @@
         storageProfile={
             dataDisks=[]
             imageReference={
-                id="/subscriptions/88cf7d23-6b4b-4a09-8e14-f38f4c4e141c/resourceGroups/gheus1ubt20eus2/providers/Microsoft.Compute/galleries/gheus1ubt20eus2/images/factory/versions/0.0.30905164"
+                id="/subscriptions/3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a/resourceGroups/gheus1u20cusc25/providers/Microsoft.Compute/galleries/gheus1u20cusc25/images/factory/versions/0.0.30905029"
                 offer=""
                 publisher=""
                 sku=""
@@ -53,10 +53,10 @@
                     uri=""
                 }
                 managedDisk={
-                    id="/subscriptions/88cf7d23-6b4b-4a09-8e14-f38f4c4e141c/resourceGroups/gheus1ubt20eus2/providers/Microsoft.Compute/disks/EUS-GHEUS1UBT20EUS2-0068-14f0696d"
+                    id="/subscriptions/3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a/resourceGroups/gheus1u20cusc25/providers/Microsoft.Compute/disks/CUS-GHEUS1U20CUSC25-0114-b9651d21"
                     storageAccountType="Standard_LRS"
                 }
-                name=EUS-GHEUS1UBT20EUS2-0068-14f0696d
+                name=CUS-GHEUS1U20CUSC25-0114-b9651d21
                 osType=Linux
                 vhd={
                     uri=""
@@ -64,7 +64,7 @@
                 writeAcceleratorEnabled=false
             }
         }
-        subscriptionId="88cf7d23-6b4b-4a09-8e14-f38f4c4e141c"
+        subscriptionId="3fba10de-a2b6-4b01-a8c1-f5bef1edeb2a"
         tags="platformsettings.host_environment.service.platform_optedin_for_rootcerts:true"
         tagsList=[
             {
@@ -73,7 +73,7 @@
             }
         ]
         version=""
-        vmId="13b3725c-e2a3-473a-b02b-a484660c1f3a"
+        vmId=ccf83078-cd2f-435b-a1bc-a8a9a1cd8b9b
         vmScaleSetName=""
         vmSize="Standard_DS2_v2"
         zone=""
@@ -84,7 +84,7 @@
                 ipv4={
                     ipAddress=[
                         {
-                            privateIpAddress="10.1.0.158"
+                            privateIpAddress="10.1.1.51"
                             publicIpAddress=""
                         }
                     ]
@@ -98,7 +98,7 @@
                 ipv6={
                     ipAddress=[]
                 }
-                macAddress="000D3A4EA17C"
+                macAddress="00224843C91D"
             }
         ]
     }
@@ -118,12 +118,12 @@ disks={
     }
     sdb={
         model="Virtual Disk"
-        serial="6002248015f059df88ce29dd7e80962f"
+        serial="60022480e4147b9448d666712c2845fe"
         size="14.00 GiB"
         "size_bytes"=15032385536
         type=hdd
         vendor=Msft
-        wwn="0x6002248015f059df88ce29dd7e80962f"
+        wwn="0x60022480e4147b9448d666712c2845fe"
     }
 }
 dmi={
@@ -143,7 +143,7 @@ dmi={
     manufacturer="Microsoft Corporation"
     product={
         name="Virtual Machine"
-        uuid="5c72b313-a3e2-3a47-b02b-a484660c1f3a"
+        uuid="7830f8cc-2fcd-5b43-a1bc-a8a9a1cd8b9b"
     }
 }
 facterversion="4.2.7"
@@ -165,9 +165,9 @@ kernelmajversion="5.11"
 kernelrelease="5.11.0-1028-azure"
 kernelversion="5.11.0"
 "load_averages"={
-    "15m"=0.12
-    "1m"=1.24
-    "5m"=0.34
+    "15m"=0.08
+    "1m"=0.25
+    "5m"=0.18
 }
 memory={
     swap={
@@ -180,20 +180,20 @@ memory={
         "used_bytes"=0
     }
     system={
-        available="5.97 GiB"
-        "available_bytes"=6406045696
-        capacity="12.06%"
+        available="5.96 GiB"
+        "available_bytes"=6395326464
+        capacity="12.21%"
         total="6.78 GiB"
         "total_bytes"=7284850688
-        used="838.09 MiB"
-        "used_bytes"=878804992
+        used="848.32 MiB"
+        "used_bytes"=889524224
     }
 }
 networking={
     dhcp="168.63.129.16"
-    domain="xlcsutvm5t3ellfcnbcbis3udb.bx.internal.cloudapp.net"
-    fqdn="fv-az182-728.xlcsutvm5t3ellfcnbcbis3udb.bx.internal.cloudapp.net"
-    hostname=fv-az182-728
+    domain="ie1vkwtfhimuhe55j3he1m2lab.gx.internal.cloudapp.net"
+    fqdn="fv-az296-367.ie1vkwtfhimuhe55j3he1m2lab.gx.internal.cloudapp.net"
+    hostname=fv-az296-367
     interfaces={
         docker0={
             bindings=[
@@ -204,7 +204,7 @@ networking={
                 }
             ]
             ip="172.17.0.1"
-            mac="02:42:00:f1:99:b4"
+            mac="02:42:63:3e:cf:b9"
             mtu=1500
             netmask="255.255.0.0"
             network="172.17.0.0"
@@ -212,14 +212,14 @@ networking={
         eth0={
             bindings=[
                 {
-                    address="10.1.0.158"
+                    address="10.1.1.51"
                     netmask="255.255.0.0"
                     network="10.1.0.0"
                 }
             ]
             bindings6=[
                 {
-                    address="fe80::20d:3aff:fe4e:a17c"
+                    address="fe80::222:48ff:fe43:c91d"
                     flags=[
                         permanent
                     ]
@@ -229,9 +229,9 @@ networking={
                 }
             ]
             dhcp="168.63.129.16"
-            ip="10.1.0.158"
-            ip6="fe80::20d:3aff:fe4e:a17c"
-            mac="00:0d:3a:4e:a1:7c"
+            ip="10.1.1.51"
+            ip6="fe80::222:48ff:fe43:c91d"
+            mac="00:22:48:43:c9:1d"
             mtu=1500
             netmask="255.255.0.0"
             netmask6="ffff:ffff:ffff:ffff::"
@@ -268,9 +268,9 @@ networking={
             scope6=host
         }
     }
-    ip="10.1.0.158"
-    ip6="fe80::20d:3aff:fe4e:a17c"
-    mac="00:0d:3a:4e:a1:7c"
+    ip="10.1.1.51"
+    ip6="fe80::222:48ff:fe43:c91d"
+    mac="00:22:48:43:c9:1d"
     mtu=1500
     netmask="255.255.0.0"
     netmask6="ffff:ffff:ffff:ffff::"
@@ -343,10 +343,10 @@ partitions={
     "/dev/sdb1"={
         filesystem=ntfs
         label="Temporary Storage"
-        partuuid="13b3725c-01"
+        partuuid=ccf83078-01
         size="14.00 GiB"
         "size_bytes"=15030288384
-        uuid="40403AA3403A9F98"
+        uuid="1C96883296880E88"
     }
 }
 path="/opt/hostedtoolcache/Ruby/3.1.1/x64/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
@@ -355,11 +355,11 @@ processors={
     count=2
     isa="x86_64"
     models=[
-        "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz",
-        "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"
+        "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz",
+        "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz"
     ]
     physicalcount=1
-    speed="2.10 GHz"
+    speed="2.59 GHz"
     threads=1
 }
 ruby={
@@ -370,42 +370,42 @@ ruby={
 ssh={
     dsa={
         fingerprints={
-            sha1="SSHFP 2 1 0df58c6da83a32d79f92dd8c735dfb076836eec0"
-            sha256="SSHFP 2 2 97de153a48413f7a54996ba755bbab7e6633283bed73b8961a797f077a3ef14f"
+            sha1="SSHFP 2 1 e776953967647b344b03c014139b1fda42477cb3"
+            sha256="SSHFP 2 2 3c9b6bd8d910f81d48c04422691fc93ff7e427ddbb40abc913986d47541c78f1"
         }
-        key="AAAAB3NzaC1kc3MAAACBAMHdFzQ46EQTmhNZQOs2bb6sZVgvS9plJ0Qm0pmkpgtTd4MkZyF2S46c8VcCrBRFmm0nrn82z0+LRpqLFYA/TlHMHdR3iOdAWYPiQwiYnErnOv1Aish8P9ViWQBkEn/HU8hfIAZ4CUoiJsB3wabozOhMyZpaTy5w0R4TqWoe4cZnAAAAFQDQJSazMRhpbNaWvgGYzbax+fzeTQAAAIAURUdN0V9CyLuqN5zqhfvs770U1hcxeESTipcm5JPhJZ6GE9ui3ZidHbPPbkN4G4LSJrovJhc/0eJwBOdHNPmROOLoUeg6nQxSs1sdpB0BPJoETkLw0KUNuPvw30TXolYqcPDZlBD2iHQOu57p2R4U8rl/TOpcbZLre4OK7liutAAAAIEAta4w4kW8G1u36gPzXHsYY5GAbR1SkvnlIhPQDEve5+4gxvcqx+9m44ztGLmydW8986EemtvyDbuOxtWUVzorx6yXbbeg2w5eMex6nf6lMZFPvTTAs+UFHng3kLVevJjEgSj9C49fowcq+n3cFsbTIBUaBD7bM9NGDIaksaBqCZ4="
+        key="AAAAB3NzaC1kc3MAAACBAJ4LV6dAGoe4btD9j25h9didKzVbbKAM2oSsRdIH6FDagX2l+iy/VIJ/vxk+3oA+8Lj+xlqHDpY+AAzQox2lgJUu1ofxrQ5HcCJmoEd547hOlw0CRno3pW7QrjSG4Kg38VPuK20MiexYSU56lsUgTB/hjA4P/cRa7+Vx/x84ITchAAAAFQCQpjAI/MWEueDmNf8qf4AnbqbOIwAAAIB4POEVgq5zp5IkCLbr41T0ODI7Qr8JhdjZ2gXZ6cdwtHkysFOZ619aYORzTtrqG06NGtpbnT7VKd0irwFQCCKIPUjFEq4FuZR2PWftROitpsqU6tl/5RFFk08narZOCk8HkbU1y2DNpHOKQGictF08LBmqo2BnmHqbTpTVVq4f5gAAAIAPKqvgS60Cm27QYrrde+xyrKWyfLQPFgSMNwl0OmV8M06znVRaMrQ2oWwNKuVrwuopctNE7rWdzkx3MLPbpYBaFrWQCptje6iSvHyhMkOjHHjU2bF7Vg8pqcsxCUJbMWHzlLVb0thPLXRgV2WKSWC+qcEB57n0/cUFeVtB3ahf9Q=="
         type=ssh-dss
     }
     ecdsa={
         fingerprints={
-            sha1="SSHFP 3 1 fe3bdab9a190737bc77423fa68b87b1ea1d0418f"
-            sha256="SSHFP 3 2 a783a5696c72013bb67373a0f9b17dc374ba7473d2370cdad8e1285772db81e2"
+            sha1="SSHFP 3 1 49d2f18ae530a8a5678c922fa9ae0300b85617b7"
+            sha256="SSHFP 3 2 ae6091d09428f5570ee4951dc6f1d320fd8159ef9069cd8a46142a8cb45b30e5"
         }
-        key="AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCF66PXIaYgk8PUS/Jwkx5FBX14htpvGyntx+5uyFbgS1EC/UMD1jz9gorhVJEw4Fef4zAh3qZdVkhAZ+KP3YW8="
+        key="AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKjhZ3drKw/yYVh4bNBndfmwwkQAxGY+AQmtj1qTYijzRoPErufEZyo9gxftIzkzwRV6jW7qkWE0CLLzSDoy9HA="
         type=ecdsa-sha2-nistp256
     }
     ed25519={
         fingerprints={
-            sha1="SSHFP 4 1 43213d20bad883c44eeb86f8af2e2b625bc0c9a3"
-            sha256="SSHFP 4 2 262a579f748b9e69167df5d2b50b111eb6cca9bd4643269ef3c44031eb33acc1"
+            sha1="SSHFP 4 1 ea32ab7e0ce8f6d29bf2e186238851759abb2887"
+            sha256="SSHFP 4 2 9fe7743293e126d3111837c21d117310dd1b1fa2ef8ff2d36a9496e49de7d302"
         }
-        key=AAAAC3NzaC1lZDI1NTE5AAAAIK9YH5AWSHs19AnEa6b8u03tKGlUlj6WcUpiJ6DffiPB
+        key="AAAAC3NzaC1lZDI1NTE5AAAAIMz8uJNwii+luIui+YyYIvMIpcVZHLVphZIhKt17zrQ1"
         type=ssh-ed25519
     }
     rsa={
         fingerprints={
-            sha1="SSHFP 1 1 8b236365b2a06277a4d87f068dcac1e412a32bb0"
-            sha256="SSHFP 1 2 a8ed3e50a32da8456593702987e6723740f25deccf5820036a5b9a9dc742a8ef"
+            sha1="SSHFP 1 1 6e85bdaccddb9e6048c7e172b62436607dca0813"
+            sha256="SSHFP 1 2 74f925159ee11fd0594341d3ecdbc641b3e3d0668ac21553938533260f761e49"
         }
-        key="AAAAB3NzaC1yc2EAAAADAQABAAABgQC6r2aCLfg7K9skXt7KUO1kKLaYSewyAGyFk+uEUk72dNihOs6tnRK2qz5FqjRkCMaiz6qffNn0tFuyuoDKoTWXN+yU/sIE0lzMP6lb4yX1Tiu1EWHGFvNJMeySaIRhxmrXboFBxX69UBvitHagtM58ylhsLWhTS2LOHVvQkX3vPX1bGMbuXifBvr9Kvg1EErDWI8iLIrgmjPx8bk0wLtS5o8X/aKWYDb20F09cEm5kF1pFWFRZu96as0bqwISEPQiI9+IMRlE8gOgHeHcTRQ8pqDEtB8jsllwP09SvQ9NaLNvCdhhmumbEmN1MORis7ATD/81NArx9m4MfMeLkxbYdeQ3GAVWZMIVFhbqsJswemsturd4L4rvkLSy9/Y08naGD7S3k3Q6E/LFoM2i9aeTJ6a6IHylVvPpBmt5PY6Rx7bu2x0yQCSG3fnJJgekoec94c+P4malkGdawM1ZWC/NMGUVBRr1T06HOV4+a42kR0VUpbzZGWD3YW5ZOMAg6OvE="
+        key="AAAAB3NzaC1yc2EAAAADAQABAAABgQCmUjim9qJWT9Eeoy7BWZayfLTKm5TbYY0Z3mzf6/JXZpNhUwWL39LMzcz54JEHwGF0oGPy+1/OGksFpeKaclhEGEF9TxIMv2FxU8a+WgpaYl4zTLIePsK+6pclhFmDB3sYuIFGoyoILb9r+4EAcIEzcsVZ2JcsIb/jVcMkaWhCkc1hRQ1rme+Cnk2am5jZmTZDVntTzWeEkieWUL22YrpahrXDSjgv3ZMmMeLolAoXhiAUB9g5D40WIi2l6+QzAEh8BmcLQFZA32asrB6nVySeFP74H9M81Du37TODISBk/MnrCnRMNmrXt8x3+xyp682z6eXPcT8dar9vw+gdhd+w40Dth21CjEDClcleYaWmteyfdtc5V3DfefjXZLOZ14lYdTp5HSCiS8Yt0JsjDDgtCoo5zGChvHykly7MiYHOkYUftvebHDzgD+Zq/91/dWWccSMaUJPP146+6SgBOiUXJQ2YOcm05k29THKeTwaOY4LSzfOeIKeKBWMdLiOgHU0="
         type=ssh-rsa
     }
 }
 "system_uptime"={
     days=0
     hours=0
-    seconds=38
-    uptime="0:00 hours"
+    seconds=138
+    uptime="0:02 hours"
 }
 timezone=UTC
 virtual=hyperv
