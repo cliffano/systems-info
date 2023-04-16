@@ -205,15 +205,15 @@ jobs:
           name: windows-2019-facter
           path: data/github-actions/windows-2019/
       - run: git add -A
-      - run: git commit data/github-actions/ubuntu-latest/* -m "Update GitHub Actions Ubuntu latest data."
-      - run: git commit data/github-actions/ubuntu-20.04/* -m "Update GitHub Actions Ubuntu 20.04 data."
-      - run: git commit data/github-actions/ubuntu-18.04/* -m "Update GitHub Actions Ubuntu 18.04 data."
-      - run: git commit data/github-actions/macos-latest/* -m "Update GitHub Actions macOS latest data."
-      - run: git commit data/github-actions/macos-11.0/* -m "Update GitHub Actions macOS 11.0 data."
-      - run: git commit data/github-actions/macos-10.15/* -m "Update GitHub Actions macOS 10.15 data."
-      - run: git commit data/github-actions/windows-latest/* -m "Update GitHub Actions Windows latest data."
-      - run: git commit data/github-actions/windows-2022/* -m "Update GitHub Actions Windows 2022 data."
-      - run: git commit data/github-actions/windows-2019/* -m "Update GitHub Actions Windows 2019 data."
+      - run: git commit data/github-actions/ubuntu-latest/* -m "Update data for GitHub Actions Ubuntu latest."
+      - run: git commit data/github-actions/ubuntu-20.04/* -m "Update data for GitHub Actions Ubuntu 20.04."
+      - run: git commit data/github-actions/ubuntu-18.04/* -m "Update data for GitHub Actions Ubuntu 18.04."
+      - run: git commit data/github-actions/macos-latest/* -m "Update data for GitHub Actions macOS latest."
+      - run: git commit data/github-actions/macos-11.0/* -m "Update data for GitHub Actions macOS 11.0."
+      - run: git commit data/github-actions/macos-10.15/* -m "Update data for GitHub Actions macOS 10.15."
+      - run: git commit data/github-actions/windows-latest/* -m "Update data for GitHub Actions Windows latest."
+      - run: git commit data/github-actions/windows-2022/* -m "Update data for GitHub Actions Windows 2022."
+      - run: git commit data/github-actions/windows-2019/* -m "Update data for GitHub Actions Windows 2019."
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
