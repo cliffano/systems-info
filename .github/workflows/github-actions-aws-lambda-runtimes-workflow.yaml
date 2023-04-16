@@ -19,7 +19,7 @@ jobs:
         with:
           name: ruby-latest-facter
           path: data/
-  ruby-latest:
+  ruby-3:
     runs-on: ubuntu-latest
     container:
       image: public.ecr.aws/lambda/ruby:3
@@ -31,9 +31,9 @@ jobs:
       - run: facter --yaml > data/facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: ruby-latest-facter
+          name: ruby-3-facter
           path: data/
-  ruby-latest:
+  ruby-2:
     runs-on: ubuntu-latest
     container:
       image: public.ecr.aws/lambda/ruby:2
@@ -45,7 +45,7 @@ jobs:
       - run: facter --yaml > data/facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: ruby-latest-facter
+          name: ruby-2-facter
           path: data/
   consolidate:
     needs:
