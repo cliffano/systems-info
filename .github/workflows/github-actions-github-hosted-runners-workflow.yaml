@@ -103,7 +103,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install ffi facter
-      - run: md data/github-actions/windows-latest/ -ea 0
+      - run: md data/github-actions-github-hosted-runners/windows-latest/ -ea 0
       - run: facter --hocon | Out-File data/facter.hocon
       - run: facter --json | Out-File data/facter.json
       - run: facter --yaml | Out-File data/facter.yaml
@@ -118,7 +118,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install ffi facter
-      - run: md data/github-actions/windows-2022/ -ea 0
+      - run: md data/github-actions-github-hosted-runners/windows-2022/ -ea 0
       - run: facter --hocon | Out-File data/facter.hocon
       - run: facter --json | Out-File data/facter.json
       - run: facter --yaml | Out-File data/facter.yaml
@@ -133,7 +133,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install ffi facter
-      - run: md data/github-actions/windows-2019/ -ea 0
+      - run: md data/github-actions-github-hosted-runners/windows-2019/ -ea 0
       - run: facter --hocon | Out-File data/facter.hocon
       - run: facter --json | Out-File data/facter.json
       - run: facter --yaml | Out-File data/facter.yaml
@@ -159,61 +159,61 @@ jobs:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
-      - run: rm -rf data/github-actions/ubuntu-latest/*
+      - run: rm -rf data/github-actions-github-hosted-runners/ubuntu-latest/*
       - uses: actions/download-artifact@master
         with:
           name: ubuntu-latest-facter
-          path: data/github-actions/ubuntu-latest/
-      - run: rm -rf data/github-actions/ubuntu-20.04/*
+          path: data/github-actions-github-hosted-runners/ubuntu-latest/
+      - run: rm -rf data/github-actions-github-hosted-runners/ubuntu-20.04/*
       - uses: actions/download-artifact@master
         with:
           name: ubuntu-20.04-facter
-          path: data/github-actions/ubuntu-20.04/
-      - run: rm -rf data/github-actions/ubuntu-18.04/*
+          path: data/github-actions-github-hosted-runners/ubuntu-20.04/
+      - run: rm -rf data/github-actions-github-hosted-runners/ubuntu-18.04/*
       - uses: actions/download-artifact@master
         with:
           name: ubuntu-18.04-facter
-          path: data/github-actions/ubuntu-18.04/
-      - run: rm -rf data/github-actions/macos-latest/*
+          path: data/github-actions-github-hosted-runners/ubuntu-18.04/
+      - run: rm -rf data/github-actions-github-hosted-runners/macos-latest/*
       - uses: actions/download-artifact@master
         with:
           name: macos-latest-facter
-          path: data/github-actions/macos-latest/
-      - run: rm -rf data/github-actions/macos-11.0/*
+          path: data/github-actions-github-hosted-runners/macos-latest/
+      - run: rm -rf data/github-actions-github-hosted-runners/macos-11.0/*
       - uses: actions/download-artifact@master
         with:
           name: macos-11.0-facter
-          path: data/github-actions/macos-11.0/
-      - run: rm -rf data/github-actions/macos-10.15/*
+          path: data/github-actions-github-hosted-runners/macos-11.0/
+      - run: rm -rf data/github-actions-github-hosted-runners/macos-10.15/*
       - uses: actions/download-artifact@master
         with:
           name: macos-10.15-facter
-          path: data/github-actions/macos-10.15/
-      - run: rm -rf data/github-actions/windows-latest/*
+          path: data/github-actions-github-hosted-runners/macos-10.15/
+      - run: rm -rf data/github-actions-github-hosted-runners/windows-latest/*
       - uses: actions/download-artifact@master
         with:
           name: windows-latest-facter
-          path: data/github-actions/windows-latest/
-      - run: rm -rf data/github-actions/windows-2022/*
+          path: data/github-actions-github-hosted-runners/windows-latest/
+      - run: rm -rf data/github-actions-github-hosted-runners/windows-2022/*
       - uses: actions/download-artifact@master
         with:
           name: windows-2022-facter
-          path: data/github-actions/windows-2022/
-      - run: rm -rf data/github-actions/windows-2019/*
+          path: data/github-actions-github-hosted-runners/windows-2022/
+      - run: rm -rf data/github-actions-github-hosted-runners/windows-2019/*
       - uses: actions/download-artifact@master
         with:
           name: windows-2019-facter
-          path: data/github-actions/windows-2019/
+          path: data/github-actions-github-hosted-runners/windows-2019/
       - run: git add -A
-      - run: git commit data/github-actions/ubuntu-latest/* -m "Update data for GitHub Actions Ubuntu latest via GitHub Actions."
-      - run: git commit data/github-actions/ubuntu-20.04/* -m "Update data for GitHub Actions Ubuntu 20.04 via GitHub Actions."
-      - run: git commit data/github-actions/ubuntu-18.04/* -m "Update data for GitHub Actions Ubuntu 18.04 via GitHub Actions."
-      - run: git commit data/github-actions/macos-latest/* -m "Update data for GitHub Actions macOS latest via GitHub Actions."
-      - run: git commit data/github-actions/macos-11.0/* -m "Update data for GitHub Actions macOS 11.0 via GitHub Actions."
-      - run: git commit data/github-actions/macos-10.15/* -m "Update data for GitHub Actions macOS 10.15 via GitHub Actions."
-      - run: git commit data/github-actions/windows-latest/* -m "Update data for GitHub Actions Windows latest via GitHub Actions."
-      - run: git commit data/github-actions/windows-2022/* -m "Update data for GitHub Actions Windows 2022 via GitHub Actions."
-      - run: git commit data/github-actions/windows-2019/* -m "Update data for GitHub Actions Windows 2019 via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/ubuntu-latest/* -m "Update data for GitHub Actions Ubuntu latest via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/ubuntu-20.04/* -m "Update data for GitHub Actions Ubuntu 20.04 via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/ubuntu-18.04/* -m "Update data for GitHub Actions Ubuntu 18.04 via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/macos-latest/* -m "Update data for GitHub Actions macOS latest via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/macos-11.0/* -m "Update data for GitHub Actions macOS 11.0 via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/macos-10.15/* -m "Update data for GitHub Actions macOS 10.15 via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/windows-latest/* -m "Update data for GitHub Actions Windows latest via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/windows-2022/* -m "Update data for GitHub Actions Windows 2022 via GitHub Actions."
+      - run: git commit data/github-actions-github-hosted-runners/windows-2019/* -m "Update data for GitHub Actions Windows 2019 via GitHub Actions."
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
