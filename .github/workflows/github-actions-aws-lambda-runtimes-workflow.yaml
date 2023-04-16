@@ -29,13 +29,13 @@ jobs:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
-      - run: rm -rf data/aws-lambda-runtimes-via-github-actions/ruby-latest/*
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-latest/*
       - uses: actions/download-artifact@master
         with:
           name: ruby-latest-facter
-          path: data/aws-lambda-runtimes-via-github-actions/ruby-latest/
+          path: data/github-actions-aws-lambda-runtimes/ruby-latest/
       - run: git add -A
-      - run: git commit data/aws-lambda-runtimes-via-github-actions/ruby-latest/* -m "Update data for AWS Lambda Runtime Ruby latest via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-latest/* -m "Update data for AWS Lambda Runtime Ruby latest via GitHub Actions."
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
