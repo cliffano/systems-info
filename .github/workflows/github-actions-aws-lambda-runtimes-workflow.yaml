@@ -19,6 +19,34 @@ jobs:
         with:
           name: ruby-latest-facter
           path: data/
+  ruby-latest:
+    runs-on: ubuntu-latest
+    container:
+      image: public.ecr.aws/lambda/ruby:3
+    steps:
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ruby-latest-facter
+          path: data/
+  ruby-latest:
+    runs-on: ubuntu-latest
+    container:
+      image: public.ecr.aws/lambda/ruby:2
+    steps:
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ruby-latest-facter
+          path: data/
   consolidate:
     needs:
       - ruby-latest
@@ -36,6 +64,8 @@ jobs:
           path: data/github-actions-aws-lambda-runtimes/ruby-latest/
       - run: git add -A
       - run: git commit data/github-actions-aws-lambda-runtimes/ruby-latest/* -m "Update data for AWS Lambda Runtime Ruby latest via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-3/* -m "Update data for AWS Lambda Runtime Ruby 3 via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-2/* -m "Update data for AWS Lambda Runtime Ruby 2 via GitHub Actions."
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
