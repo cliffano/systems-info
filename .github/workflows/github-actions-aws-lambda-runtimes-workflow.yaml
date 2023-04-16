@@ -62,6 +62,14 @@ jobs:
         with:
           name: ruby-latest-facter
           path: data/github-actions-aws-lambda-runtimes/ruby-latest/
+      - uses: actions/download-artifact@master
+        with:
+          name: ruby-3-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-3/
+      - uses: actions/download-artifact@master
+        with:
+          name: ruby-2-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-2/
       - run: git add -A
       - run: git commit data/github-actions-aws-lambda-runtimes/ruby-latest/* -m "Update data for AWS Lambda Runtime Ruby latest via GitHub Actions."
       - run: git commit data/github-actions-aws-lambda-runtimes/ruby-3/* -m "Update data for AWS Lambda Runtime Ruby 3 via GitHub Actions."
