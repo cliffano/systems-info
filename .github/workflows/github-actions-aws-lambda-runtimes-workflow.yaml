@@ -33,7 +33,7 @@ jobs:
         with:
           name: ruby-3-facter
           path: data/
-  ruby-3.2:
+  ruby-3_2:
     runs-on: ubuntu-latest
     container:
       image: public.ecr.aws/lambda/ruby:3.2
@@ -61,7 +61,7 @@ jobs:
         with:
           name: ruby-2-facter
           path: data/
-  ruby-2.7:
+  ruby-2_7:
     runs-on: ubuntu-latest
     container:
       image: public.ecr.aws/lambda/ruby:2.7
@@ -75,7 +75,7 @@ jobs:
         with:
           name: ruby-2.7-facter
           path: data/
-  ruby-2.5:
+  ruby-2_5:
     runs-on: ubuntu-latest
     container:
       image: public.ecr.aws/lambda/ruby:2.5
