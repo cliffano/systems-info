@@ -5,8 +5,8 @@
       "customData": "",
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
-      "location": "southcentralus",
-      "name": "SCUS-GHEUS3UB22SCUSC20-0016",
+      "location": "eastus2",
+      "name": "EUS2-GHEUS2UB22EUS2C8-0212",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -26,8 +26,8 @@
 
       ],
       "publisher": "",
-      "resourceGroupName": "gheus3ub22scusc20",
-      "resourceId": "/subscriptions/d3864d5a-da2b-4cda-af98-c8d0407e36d4/resourceGroups/gheus3ub22scusc20/providers/Microsoft.Compute/virtualMachines/SCUS-GHEUS3UB22SCUSC20-0016",
+      "resourceGroupName": "gheus2ub22eus2c8",
+      "resourceId": "/subscriptions/42cf0d96-bce5-46a4-872c-d466a117e4a2/resourceGroups/gheus2ub22eus2c8/providers/Microsoft.Compute/virtualMachines/EUS2-GHEUS2UB22EUS2C8-0212",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -38,7 +38,7 @@
 
         ],
         "imageReference": {
-          "id": "/subscriptions/d3864d5a-da2b-4cda-af98-c8d0407e36d4/resourceGroups/gheus3ub22scusc20/providers/Microsoft.Compute/galleries/gheus3ub22scusc20/images/factory/versions/0.0.46877456",
+          "id": "/subscriptions/42cf0d96-bce5-46a4-872c-d466a117e4a2/resourceGroups/gheus2ub22eus2c8/providers/Microsoft.Compute/galleries/gheus2ub22eus2c8/images/factory/versions/0.0.44483358",
           "offer": "",
           "publisher": "",
           "sku": "",
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/d3864d5a-da2b-4cda-af98-c8d0407e36d4/resourceGroups/gheus3ub22scusc20/providers/Microsoft.Compute/disks/SCUS-GHEUS3UB22SCUSC20-0016-5cdb20bc",
+            "id": "/subscriptions/42cf0d96-bce5-46a4-872c-d466a117e4a2/resourceGroups/gheus2ub22eus2c8/providers/Microsoft.Compute/disks/EUS2-GHEUS2UB22EUS2C8-0212-e405c65d",
             "storageAccountType": "Standard_LRS"
           },
-          "name": "SCUS-GHEUS3UB22SCUSC20-0016-5cdb20bc",
+          "name": "EUS2-GHEUS2UB22EUS2C8-0212-e405c65d",
           "osType": "Linux",
           "vhd": {
             "uri": ""
@@ -69,7 +69,7 @@
           "writeAcceleratorEnabled": "false"
         }
       },
-      "subscriptionId": "d3864d5a-da2b-4cda-af98-c8d0407e36d4",
+      "subscriptionId": "42cf0d96-bce5-46a4-872c-d466a117e4a2",
       "tags": "SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
       "tagsList": [
         {
@@ -98,7 +98,7 @@
         }
       ],
       "version": "",
-      "vmId": "647c7f29-595a-4c36-a890-21c5dbc32953",
+      "vmId": "21a83fdf-b983-44b6-8b6c-37594aca523f",
       "vmScaleSetName": "",
       "vmSize": "Standard_DS2_v2",
       "zone": ""
@@ -109,7 +109,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.24",
+                "privateIpAddress": "10.1.0.55",
                 "publicIpAddress": ""
               }
             ],
@@ -125,7 +125,7 @@
 
             ]
           },
-          "macAddress": "6045BDE2915C"
+          "macAddress": "0022484E1DA5"
         }
       ]
     }
@@ -158,7 +158,7 @@
     "board": {
       "manufacturer": "Microsoft Corporation",
       "product": "Virtual Machine",
-      "serial_number": "0000-0012-1462-4532-8697-5020-35"
+      "serial_number": "0000-0010-0464-6572-5403-1242-87"
     },
     "chassis": {
       "asset_tag": "7783-7084-3265-9085-8269-3286-77",
@@ -167,8 +167,8 @@
     "manufacturer": "Microsoft Corporation",
     "product": {
       "name": "Virtual Machine",
-      "serial_number": "0000-0007-2408-0211-6474-3916-06",
-      "uuid": "297f7c64-5a59-364c-a890-21c5dbc32953"
+      "serial_number": "0000-0002-4252-5862-9461-6567-58",
+      "uuid": "df3fa821-83b9-b644-8b6c-37594aca523f"
     }
   },
   "facterversion": "4.3.1",
@@ -191,9 +191,9 @@
   "kernelrelease": "5.15.0-1035-azure",
   "kernelversion": "5.15.0",
   "load_averages": {
-    "15m": 0.1,
-    "1m": 0.85,
-    "5m": 0.28
+    "15m": 0.21,
+    "1m": 0.83,
+    "5m": 0.48
   },
   "memory": {
     "swap": {
@@ -206,19 +206,19 @@
       "used_bytes": 0
     },
     "system": {
-      "available": "5.88 GiB",
-      "available_bytes": 6313742336,
-      "capacity": "13.29%",
+      "available": "5.89 GiB",
+      "available_bytes": 6322212864,
+      "capacity": "13.17%",
       "total": "6.78 GiB",
       "total_bytes": 7281270784,
-      "used": "922.71 MiB",
-      "used_bytes": 967528448
+      "used": "914.63 MiB",
+      "used_bytes": 959057920
     }
   },
   "networking": {
-    "domain": "ruvxqjmswdaexpdv5kjf3tcyhb.jx.internal.cloudapp.net",
-    "fqdn": "108b98459298.ruvxqjmswdaexpdv5kjf3tcyhb.jx.internal.cloudapp.net",
-    "hostname": "108b98459298",
+    "domain": "kj1d1bvagfkepeee5d5nvdvfwa.cx.internal.cloudapp.net",
+    "fqdn": "12ee80a2b629.kj1d1bvagfkepeee5d5nvdvfwa.cx.internal.cloudapp.net",
+    "hostname": "12ee80a2b629",
     "interfaces": {
       "eth0": {
         "bindings": [
@@ -276,19 +276,19 @@
   },
   "partitions": {
     "/dev/loop0": {
+      "backing_file": "/var/lib/snapd/snaps/lxd_24322.snap",
+      "size": "111.95 MiB",
+      "size_bytes": 117387264
+    },
+    "/dev/loop1": {
       "backing_file": "/var/lib/snapd/snaps/core20_1852.snap",
       "size": "63.32 MiB",
       "size_bytes": 66392064
     },
-    "/dev/loop1": {
+    "/dev/loop2": {
       "backing_file": "/var/lib/snapd/snaps/snapd_18596.snap",
       "size": "49.84 MiB",
       "size_bytes": 52260864
-    },
-    "/dev/loop2": {
-      "backing_file": "/var/lib/snapd/snaps/lxd_24322.snap",
-      "size": "111.95 MiB",
-      "size_bytes": 117387264
     },
     "/dev/sda1": {
       "size": "85.89 GiB",
@@ -326,8 +326,8 @@
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 132,
-    "uptime": "0:02 hours"
+    "seconds": 194,
+    "uptime": "0:03 hours"
   },
   "timezone": "UTC",
   "virtual": "hyperv"
