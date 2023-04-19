@@ -1,0 +1,338 @@
+{
+  "az_metadata": {
+    "compute": {
+      "azEnvironment": "AzurePublicCloud",
+      "customData": "",
+      "isHostCompatibilityLayerVm": "false",
+      "licenseType": "",
+      "location": "southcentralus",
+      "name": "SCUS-GHCUS3UB22SCUSC40-0093",
+      "offer": "",
+      "osProfile": {
+        "adminUsername": "",
+        "computerName": ""
+      },
+      "osType": "Linux",
+      "placementGroupId": "",
+      "plan": {
+        "name": "",
+        "product": "",
+        "publisher": ""
+      },
+      "platformFaultDomain": "0",
+      "platformUpdateDomain": "0",
+      "provider": "Microsoft.Compute",
+      "publicKeys": [
+
+      ],
+      "publisher": "",
+      "resourceGroupName": "ghcus3ub22scusc40",
+      "resourceId": "/subscriptions/2a794eb1-5467-4ddd-a6e2-d53f3330e998/resourceGroups/ghcus3ub22scusc40/providers/Microsoft.Compute/virtualMachines/SCUS-GHCUS3UB22SCUSC40-0093",
+      "securityProfile": {
+        "secureBootEnabled": "false",
+        "virtualTpmEnabled": "false"
+      },
+      "sku": "",
+      "storageProfile": {
+        "dataDisks": [
+
+        ],
+        "imageReference": {
+          "id": "/subscriptions/2a794eb1-5467-4ddd-a6e2-d53f3330e998/resourceGroups/ghcus3ub22scusc40/providers/Microsoft.Compute/galleries/ghcus3ub22scusc40/images/factory/versions/0.0.31725036",
+          "offer": "",
+          "publisher": "",
+          "sku": "",
+          "version": ""
+        },
+        "osDisk": {
+          "caching": "ReadOnly",
+          "createOption": "FromImage",
+          "diffDiskSettings": {
+            "option": "Local"
+          },
+          "diskSizeGB": "86",
+          "encryptionSettings": {
+            "enabled": "false"
+          },
+          "image": {
+            "uri": ""
+          },
+          "managedDisk": {
+            "id": "/subscriptions/2a794eb1-5467-4ddd-a6e2-d53f3330e998/resourceGroups/ghcus3ub22scusc40/providers/Microsoft.Compute/disks/SCUS-GHCUS3UB22SCUSC40-0093-f73b279c",
+            "storageAccountType": "Standard_LRS"
+          },
+          "name": "SCUS-GHCUS3UB22SCUSC40-0093-f73b279c",
+          "osType": "Linux",
+          "vhd": {
+            "uri": ""
+          },
+          "writeAcceleratorEnabled": "false"
+        }
+      },
+      "subscriptionId": "2a794eb1-5467-4ddd-a6e2-d53f3330e998",
+      "tags": "SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
+      "tagsList": [
+        {
+          "name": "SkipASMAV",
+          "value": "true"
+        },
+        {
+          "name": "SkipASMAzSecPack",
+          "value": "true"
+        },
+        {
+          "name": "SkipASMAzSecPackAutoConfig",
+          "value": "true"
+        },
+        {
+          "name": "SkipLinuxAzSecPack",
+          "value": "true"
+        },
+        {
+          "name": "SkipWindowsAzSecPack",
+          "value": "true"
+        },
+        {
+          "name": "platformsettings.host_environment.service.platform_optedin_for_rootcerts",
+          "value": "true"
+        }
+      ],
+      "version": "",
+      "vmId": "d3d05f1d-f386-4a2a-9605-db24af991462",
+      "vmScaleSetName": "",
+      "vmSize": "Standard_DS2_v2",
+      "zone": ""
+    },
+    "network": {
+      "interface": [
+        {
+          "ipv4": {
+            "ipAddress": [
+              {
+                "privateIpAddress": "10.1.0.87",
+                "publicIpAddress": ""
+              }
+            ],
+            "subnet": [
+              {
+                "address": "10.1.0.0",
+                "prefix": "16"
+              }
+            ]
+          },
+          "ipv6": {
+            "ipAddress": [
+
+            ]
+          },
+          "macAddress": "000D3A741004"
+        }
+      ]
+    }
+  },
+  "cloud": {
+    "provider": "azure"
+  },
+  "disks": {
+    "sda": {
+      "model": "Virtual Disk",
+      "size": "14.00 GiB",
+      "size_bytes": 15032385536,
+      "type": "hdd",
+      "vendor": "Msft"
+    },
+    "sdb": {
+      "model": "Virtual Disk",
+      "size": "86.00 GiB",
+      "size_bytes": 92341796864,
+      "type": "hdd",
+      "vendor": "Msft"
+    }
+  },
+  "dmi": {
+    "bios": {
+      "release_date": "12/07/2018",
+      "vendor": "American Megatrends Inc.",
+      "version": "090008"
+    },
+    "board": {
+      "manufacturer": "Microsoft Corporation",
+      "product": "Virtual Machine",
+      "serial_number": "0000-0010-8102-8743-1184-0943-06"
+    },
+    "chassis": {
+      "asset_tag": "7783-7084-3265-9085-8269-3286-77",
+      "type": "Desktop"
+    },
+    "manufacturer": "Microsoft Corporation",
+    "product": {
+      "name": "Virtual Machine",
+      "serial_number": "0000-0015-2628-0371-9402-9655-46",
+      "uuid": "1d5fd0d3-86f3-2a4a-9605-db24af991462"
+    }
+  },
+  "facterversion": "4.3.1",
+  "filesystems": "ext2,ext3,ext4,squashfs,vfat",
+  "fips_enabled": false,
+  "hypervisors": {
+    "hyperv": {
+    }
+  },
+  "identity": {
+    "gid": 0,
+    "group": "root",
+    "privileged": true,
+    "uid": 0,
+    "user": "root"
+  },
+  "is_virtual": true,
+  "kernel": "Linux",
+  "kernelmajversion": "5.15",
+  "kernelrelease": "5.15.0-1035-azure",
+  "kernelversion": "5.15.0",
+  "load_averages": {
+    "15m": 0.16,
+    "1m": 1.09,
+    "5m": 0.41
+  },
+  "memory": {
+    "swap": {
+      "available": "4.00 GiB",
+      "available_bytes": 4294963200,
+      "capacity": "0.00%",
+      "total": "4.00 GiB",
+      "total_bytes": 4294963200,
+      "used": "0 bytes",
+      "used_bytes": 0
+    },
+    "system": {
+      "available": "5.88 GiB",
+      "available_bytes": 6311313408,
+      "capacity": "13.32%",
+      "total": "6.78 GiB",
+      "total_bytes": 7281270784,
+      "used": "925.02 MiB",
+      "used_bytes": 969957376
+    }
+  },
+  "networking": {
+    "domain": "syazwzzmnolutc2p1qz3stsjqd.jx.internal.cloudapp.net",
+    "fqdn": "8e78223d1a2c.syazwzzmnolutc2p1qz3stsjqd.jx.internal.cloudapp.net",
+    "hostname": "8e78223d1a2c",
+    "interfaces": {
+      "eth0": {
+        "bindings": [
+          {
+            "address": "172.18.0.2",
+            "netmask": "255.255.0.0",
+            "network": "172.18.0.0"
+          }
+        ],
+        "ip": "172.18.0.2",
+        "mac": "02:42:ac:12:00:02",
+        "netmask": "255.255.0.0",
+        "network": "172.18.0.0"
+      },
+      "lo": {
+        "bindings": [
+          {
+            "address": "127.0.0.1",
+            "netmask": "255.0.0.0",
+            "network": "127.0.0.0"
+          }
+        ],
+        "ip": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "network": "127.0.0.0"
+      }
+    },
+    "ip": "172.18.0.2",
+    "mac": "02:42:ac:12:00:02",
+    "netmask": "255.255.0.0",
+    "network": "172.18.0.0",
+    "primary": "eth0"
+  },
+  "os": {
+    "architecture": "x86_64",
+    "distro": {
+      "codename": "n/a",
+      "description": "Amazon Linux AMI release 2018.03",
+      "id": "AmazonAMI",
+      "release": {
+        "full": "2018.03",
+        "major": "2018",
+        "minor": "03"
+      }
+    },
+    "family": "RedHat",
+    "hardware": "x86_64",
+    "name": "Amazon",
+    "release": {
+      "full": "2018.03",
+      "major": "2018",
+      "minor": "03"
+    },
+    "selinux": {
+      "enabled": false
+    }
+  },
+  "partitions": {
+    "/dev/loop0": {
+      "backing_file": "/var/lib/snapd/snaps/core20_1852.snap",
+      "size": "63.32 MiB",
+      "size_bytes": 66392064
+    },
+    "/dev/loop1": {
+      "backing_file": "/var/lib/snapd/snaps/snapd_18596.snap",
+      "size": "49.84 MiB",
+      "size_bytes": 52260864
+    },
+    "/dev/loop2": {
+      "backing_file": "/var/lib/snapd/snaps/lxd_24322.snap",
+      "size": "111.95 MiB",
+      "size_bytes": 117387264
+    },
+    "/dev/sda1": {
+      "size": "14.00 GiB",
+      "size_bytes": 15030288384
+    },
+    "/dev/sdb1": {
+      "size": "85.89 GiB",
+      "size_bytes": 92225388032
+    },
+    "/dev/sdb14": {
+      "size": "4.00 MiB",
+      "size_bytes": 4194304
+    },
+    "/dev/sdb15": {
+      "size": "106.00 MiB",
+      "size_bytes": 111149056
+    }
+  },
+  "path": "/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin",
+  "processors": {
+    "cores": 2,
+    "count": 2,
+    "isa": "x86_64",
+    "models": [
+      "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+      "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz"
+    ],
+    "physicalcount": 1,
+    "speed": "2.79 GHz",
+    "threads": 1
+  },
+  "ruby": {
+    "platform": "x86_64-linux",
+    "sitedir": "/var/lang/lib/ruby/site_ruby/2.5.0",
+    "version": "2.5.9"
+  },
+  "system_uptime": {
+    "days": 0,
+    "hours": 0,
+    "seconds": 155,
+    "uptime": "0:02 hours"
+  },
+  "timezone": "UTC",
+  "virtual": "hyperv"
+}
