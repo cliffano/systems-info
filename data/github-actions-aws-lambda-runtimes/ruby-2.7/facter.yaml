@@ -1,0 +1,245 @@
+az_metadata:
+  compute:
+    azEnvironment: AzurePublicCloud
+    customData: ""
+    isHostCompatibilityLayerVm: 'false'
+    licenseType: ""
+    location: westus
+    name: WUS-GHCUS2UB22WUSC38-0024
+    offer: ""
+    osProfile:
+      adminUsername: ""
+      computerName: ""
+    osType: "Linux"
+    placementGroupId: ""
+    plan:
+      name: ""
+      product: ""
+      publisher: ""
+    platformFaultDomain: '0'
+    platformUpdateDomain: '0'
+    provider: Microsoft.Compute
+    publicKeys: []
+    publisher: ""
+    resourceGroupName: ghcus2ub22wusc38
+    resourceId: "/subscriptions/f70ac934-f52e-473e-8fa8-8828f0384d27/resourceGroups/ghcus2ub22wusc38/providers/Microsoft.Compute/virtualMachines/WUS-GHCUS2UB22WUSC38-0024"
+    securityProfile:
+      secureBootEnabled: 'false'
+      virtualTpmEnabled: 'false'
+    sku: ""
+    storageProfile:
+      dataDisks: []
+      imageReference:
+        id: "/subscriptions/f70ac934-f52e-473e-8fa8-8828f0384d27/resourceGroups/ghcus2ub22wusc38/providers/Microsoft.Compute/galleries/ghcus2ub22wusc38/images/factory/versions/0.0.21919815"
+        offer: ""
+        publisher: ""
+        sku: ""
+        version: ""
+      osDisk:
+        caching: "ReadOnly"
+        createOption: FromImage
+        diffDiskSettings:
+          option: Local
+        diskSizeGB: '86'
+        encryptionSettings:
+          enabled: 'false'
+        image:
+          uri: ""
+        managedDisk:
+          id: "/subscriptions/f70ac934-f52e-473e-8fa8-8828f0384d27/resourceGroups/ghcus2ub22wusc38/providers/Microsoft.Compute/disks/WUS-GHCUS2UB22WUSC38-0024-3cdc9e85"
+          storageAccountType: "Standard_LRS"
+        name: WUS-GHCUS2UB22WUSC38-0024-3cdc9e85
+        osType: "Linux"
+        vhd:
+          uri: ""
+        writeAcceleratorEnabled: 'false'
+    subscriptionId: f70ac934-f52e-473e-8fa8-8828f0384d27
+    tags: SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
+    tagsList:
+    - name: SkipASMAV
+      value: 'true'
+    - name: SkipASMAzSecPack
+      value: 'true'
+    - name: "SkipASMAzSecPackAutoConfig"
+      value: 'true'
+    - name: "SkipLinuxAzSecPack"
+      value: 'true'
+    - name: "SkipWindowsAzSecPack"
+      value: 'true'
+    - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
+      value: 'true'
+    version: ""
+    vmId: 4d0fb2e1-2daf-4216-a0ac-45c31987e509
+    vmScaleSetName: ""
+    vmSize: "Standard_DS2_v2"
+    zone: ""
+  network:
+    interface:
+    - ipv4:
+        ipAddress:
+        - privateIpAddress: 10.1.0.40
+          publicIpAddress: ""
+        subnet:
+        - address: 10.1.0.0
+          prefix: '16'
+      ipv6:
+        ipAddress: []
+      macAddress: '0022480B9D3D'
+cloud:
+  provider: azure
+disks:
+  sda:
+    model: Virtual Disk
+    size: 14.00 GiB
+    size_bytes: 15032385536
+    type: hdd
+    vendor: Msft
+  sdb:
+    model: Virtual Disk
+    size: 86.00 GiB
+    size_bytes: 92341796864
+    type: hdd
+    vendor: Msft
+dmi:
+  bios:
+    release_date: "12/07/2018"
+    vendor: "American Megatrends Inc."
+    version: '090008'
+  board:
+    manufacturer: "Microsoft Corporation"
+    product: "Virtual Machine"
+    serial_number: "0000-0011-5777-0544-6311-9782-49"
+  chassis:
+    asset_tag: "7783-7084-3265-9085-8269-3286-77"
+    type: Desktop
+  manufacturer: "Microsoft Corporation"
+  product:
+    name: "Virtual Machine"
+    serial_number: "0000-0005-5528-5354-5774-9570-78"
+    uuid: e1b20f4d-af2d-1642-a0ac-45c31987e509
+facterversion: 4.3.1
+filesystems: ext2,ext3,ext4,squashfs,vfat
+fips_enabled: false
+hypervisors:
+  hyperv: {}
+identity:
+  gid: 0
+  group: root
+  privileged: true
+  uid: 0
+  user: root
+is_virtual: true
+kernel: "Linux"
+kernelmajversion: '5.15'
+kernelrelease: 5.15.0-1035-azure
+kernelversion: 5.15.0
+load_averages:
+  15m: 0.31
+  1m: 1.24
+  5m: 0.78
+memory:
+  swap:
+    available: 4.00 GiB
+    available_bytes: 4294963200
+    capacity: 0.00%
+    total: 4.00 GiB
+    total_bytes: 4294963200
+    used: "0 bytes"
+    used_bytes: 0
+  system:
+    available: 5.89 GiB
+    available_bytes: 6319939584
+    capacity: 13.20%
+    total: 6.78 GiB
+    total_bytes: 7281270784
+    used: 916.80 MiB
+    used_bytes: 961331200
+networking:
+  domain: "acpufv10jidexblnxa2om5daub.dx.internal.cloudapp.net"
+  fqdn: "74648fb3c1ab.acpufv10jidexblnxa2om5daub.dx.internal.cloudapp.net"
+  hostname: 74648fb3c1ab
+  interfaces:
+    eth0:
+      bindings:
+      - address: 172.18.0.2
+        netmask: 255.255.0.0
+        network: 172.18.0.0
+      ip: 172.18.0.2
+      mac: "02:42:ac:12:00:02"
+      netmask: 255.255.0.0
+      network: 172.18.0.0
+    lo:
+      bindings:
+      - address: 127.0.0.1
+        netmask: 255.0.0.0
+        network: 127.0.0.0
+      ip: 127.0.0.1
+      netmask: 255.0.0.0
+      network: 127.0.0.0
+  ip: 172.18.0.2
+  mac: "02:42:ac:12:00:02"
+  netmask: 255.255.0.0
+  network: 172.18.0.0
+  primary: eth0
+os:
+  architecture: x86_64
+  distro:
+    codename: Karoo
+    description: "Amazon Linux release 2 (Karoo)"
+    id: "Amazon"
+    release:
+      full: '2'
+      major: '2'
+  family: RedHat
+  hardware: x86_64
+  name: "Amazon"
+  release:
+    full: '2'
+    major: '2'
+  selinux:
+    enabled: false
+partitions:
+  /dev/loop0:
+    backing_file: "/var/lib/snapd/snaps/core20_1852.snap"
+    size: 63.32 MiB
+    size_bytes: 66392064
+  /dev/loop1:
+    backing_file: "/var/lib/snapd/snaps/snapd_18596.snap"
+    size: 49.84 MiB
+    size_bytes: 52260864
+  /dev/loop2:
+    backing_file: "/var/lib/snapd/snaps/lxd_24322.snap"
+    size: 111.95 MiB
+    size_bytes: 117387264
+  /dev/sda1:
+    size: 14.00 GiB
+    size_bytes: 15030288384
+  /dev/sdb1:
+    size: 85.89 GiB
+    size_bytes: 92225388032
+  /dev/sdb14:
+    size: 4.00 MiB
+    size_bytes: 4194304
+  /dev/sdb15:
+    size: 106.00 MiB
+    size_bytes: 111149056
+path: "/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin"
+processors:
+  count: 2
+  isa: x86_64
+  models:
+  - "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz"
+  - "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz"
+  physicalcount: 1
+  speed: 2.29 GHz
+ruby:
+  platform: "x86_64-linux"
+  sitedir: "/var/lang/lib/ruby/site_ruby/2.7.0"
+  version: 2.7.7
+system_uptime:
+  days: 0
+  hours: 0
+  seconds: 134
+  uptime: "0:02 hours"
+timezone: UTC
+virtual: "hyperv"
