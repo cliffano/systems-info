@@ -109,22 +109,27 @@ jobs:
         with:
           name: ruby-latest-facter
           path: data/github-actions-aws-lambda-runtimes/ruby-latest/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-3/*
       - uses: actions/download-artifact@master
         with:
           name: ruby-3-facter
           path: data/github-actions-aws-lambda-runtimes/ruby-3/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-3.2/*
       - uses: actions/download-artifact@master
         with:
           name: ruby-3.2-facter
           path: data/github-actions-aws-lambda-runtimes/ruby-3.2/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-2/*
       - uses: actions/download-artifact@master
         with:
           name: ruby-2-facter
           path: data/github-actions-aws-lambda-runtimes/ruby-2/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-2.7/*
       - uses: actions/download-artifact@master
         with:
           name: ruby-2.7-facter
           path: data/github-actions-aws-lambda-runtimes/ruby-2.7/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-2.5/*
       - uses: actions/download-artifact@master
         with:
           name: ruby-2.5-facter
