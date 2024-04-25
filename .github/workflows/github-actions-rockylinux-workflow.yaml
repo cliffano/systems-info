@@ -48,19 +48,19 @@ jobs:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
-      - run: rm -rf data/github-actions-aws-lambda-runtimes/rockylinux-8/*
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-8/*
       - uses: actions/download-artifact@master
         with:
           name: rockylinux-8-facter
           path: data/github-actions-rockylinux/rockylinux-8/
-      - run: rm -rf data/github-actions-aws-lambda-runtimes/rockylinux-9/*
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-9/*
       - uses: actions/download-artifact@master
         with:
           name: rockylinux-9-facter
           path: data/github-actions-rockylinux/rockylinux-9/
       - run: git add -A
-      - run: git commit data/github-actions-aws-lambda-runtimes/rockylinux-8/* -m "Update data for Rocky Linux 8 via GitHub Actions."
-      - run: git commit data/github-actions-aws-lambda-runtimes/rockylinux-9/* -m "Update data for Rocky Linux 9 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-8/* -m "Update data for Rocky Linux 8 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-9/* -m "Update data for Rocky Linux 9 via GitHub Actions."
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
