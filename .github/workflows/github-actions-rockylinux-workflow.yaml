@@ -6,21 +6,6 @@ env:
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
 jobs:
-  rockylinux-8:
-    runs-on: ubuntu-latest
-    container:
-      image: rockylinux:8
-    steps:
-      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: rockylinux-8-facter
-          path: data/
   rockylinux-9:
     runs-on: ubuntu-latest
     container:
@@ -36,11 +21,154 @@ jobs:
         with:
           name: rockylinux-9-facter
           path: data/
+  rockylinux-9_3:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:9.3
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-9.3-facter
+          path: data/
+  rockylinux-9_2:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:9.2
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-9.2-facter
+          path: data/
+  rockylinux-9_1:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:9.1
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-9.1-facter
+          path: data/
+  rockylinux-8:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:8
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-8-facter
+          path: data/
+  rockylinux-8_9:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:8.9
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-8.9-facter
+          path: data/
+  rockylinux-8_8:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:8.8
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-8.8-facter
+          path: data/
+  rockylinux-8_7:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:8.7
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-8.7-facter
+          path: data/
+  rockylinux-8_6:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:8.6
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-8.6-facter
+          path: data/
+  rockylinux-8_5:
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:8.5
+    steps:
+      - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: rockylinux-8.5-facter
+          path: data/
 
   consolidate:
     needs:
-      - rockylinux-8
       - rockylinux-9
+      - rockylinux-9_3
+      - rockylinux-9_2
+      - rockylinux-9_1
+      - rockylinux-8
+      - rockylinux-8_9
+      - rockylinux-8_8
+      - rockylinux-8_7
+      - rockylinux-8_6
+      - rockylinux-8_5
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -48,19 +176,67 @@ jobs:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-8/*
-      - uses: actions/download-artifact@master
-        with:
-          name: rockylinux-8-facter
-          path: data/github-actions-rockylinux/rockylinux-8/
       - run: rm -rf data/github-actions-rockylinux/rockylinux-9/*
       - uses: actions/download-artifact@master
         with:
           name: rockylinux-9-facter
           path: data/github-actions-rockylinux/rockylinux-9/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-9.3/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-9.3-facter
+          path: data/github-actions-rockylinux/rockylinux-9.3/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-9.2/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-9.2-facter
+          path: data/github-actions-rockylinux/rockylinux-9.2/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-9.1/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-9.1-facter
+          path: data/github-actions-rockylinux/rockylinux-9.1/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-8/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-8-facter
+          path: data/github-actions-rockylinux/rockylinux-8/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.9/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-8.9-facter
+          path: data/github-actions-rockylinux/rockylinux-8.9/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.8/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-8.8-facter
+          path: data/github-actions-rockylinux/rockylinux-8.8/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.7/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-8.7-facter
+          path: data/github-actions-rockylinux/rockylinux-8.7/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.6/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-8.6-facter
+          path: data/github-actions-rockylinux/rockylinux-8.6/
+      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.5/*
+      - uses: actions/download-artifact@master
+        with:
+          name: rockylinux-8.5-facter
+          path: data/github-actions-rockylinux/rockylinux-8.5/
       - run: git add -A
-      - run: git commit data/github-actions-rockylinux/rockylinux-8/* -m "Update data for Rocky Linux 8 via GitHub Actions."
       - run: git commit data/github-actions-rockylinux/rockylinux-9/* -m "Update data for Rocky Linux 9 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-9.3/* -m "Update data for Rocky Linux 9.3 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-9.2/* -m "Update data for Rocky Linux 9.2 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-9.1/* -m "Update data for Rocky Linux 9.1 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-8/* -m "Update data for Rocky Linux 8 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-8.9/* -m "Update data for Rocky Linux 8.9 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-8.8/* -m "Update data for Rocky Linux 8.8 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-8.7/* -m "Update data for Rocky Linux 8.7 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-8.6/* -m "Update data for Rocky Linux 8.6 via GitHub Actions."
+      - run: git commit data/github-actions-rockylinux/rockylinux-8.5/* -m "Update data for Rocky Linux 8.5 via GitHub Actions."
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
