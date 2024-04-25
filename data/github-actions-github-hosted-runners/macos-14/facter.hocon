@@ -1,0 +1,286 @@
+dmi={
+    product={
+        name="VirtualMac2,1"
+    }
+}
+facterversion="4.7.0"
+filesystems="apfs,autofs,devfs"
+identity={
+    gid=20
+    group=staff
+    privileged=false
+    uid=501
+    user=runner
+}
+"is_virtual"=false
+kernel=Darwin
+kernelmajversion="23.4"
+kernelrelease="23.4.0"
+kernelversion="23.4.0"
+"load_averages"={
+    "15m"=4.15
+    "1m"=0.89
+    "5m"=2.78
+}
+memory={
+    system={
+        available="124.59 MiB"
+        "available_bytes"=130646016
+        capacity="98.26%"
+        total="7.00 GiB"
+        "total_bytes"=7516192768
+        used="6.88 GiB"
+        "used_bytes"=7385546752
+    }
+}
+mountpoints={}
+networking={
+    dhcp="192.168.64.1"
+    domain=local
+    fqdn="Mac-1714039564684.local"
+    hostname=Mac-1714039564684
+    interfaces={
+        XHC8={
+            mtu=0
+        }
+        anpi0={
+            mac="3a:fd:52:d5:17:ad"
+            mtu=1500
+        }
+        en0={
+            bindings=[
+                {
+                    address="192.168.64.23"
+                    netmask="255.255.255.0"
+                    network="192.168.64.0"
+                }
+            ]
+            bindings6=[
+                {
+                    address="fe80::ca3:4243:dea6:54f2"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            dhcp="192.168.64.1"
+            ip="192.168.64.23"
+            ip6="fe80::ca3:4243:dea6:54f2"
+            mac="da:86:01:c2:86:28"
+            mtu=1500
+            netmask="255.255.255.0"
+            netmask6="ffff:ffff:ffff:ffff::"
+            network="192.168.64.0"
+            network6="fe80::"
+            scope6=link
+        }
+        en1={
+            mac="3a:fd:52:d5:17:8d"
+            mtu=1500
+        }
+        gif0={
+            mtu=1280
+        }
+        lo0={
+            bindings=[
+                {
+                    address="127.0.0.1"
+                    netmask="255.0.0.0"
+                    network="127.0.0.0"
+                }
+            ]
+            bindings6=[
+                {
+                    address="::1"
+                    netmask="ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+                    network="::1"
+                    scope6=host
+                },
+                {
+                    address="fe80::1"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip="127.0.0.1"
+            ip6="::1"
+            mtu=16384
+            netmask="255.0.0.0"
+            netmask6="ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+            network="127.0.0.0"
+            network6="::1"
+            scope6=host
+        }
+        stf0={
+            mtu=1280
+        }
+        utun0={
+            bindings6=[
+                {
+                    address="fe80::6f6d:5f74:27ff:981e"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::6f6d:5f74:27ff:981e"
+            mtu=2000
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
+        utun1={
+            bindings6=[
+                {
+                    address="fe80::ce81:b1c:bd2c:69e"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::ce81:b1c:bd2c:69e"
+            mtu=1000
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
+        utun2={
+            bindings6=[
+                {
+                    address="fe80::af0c:bbed:262c:8c9c"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::af0c:bbed:262c:8c9c"
+            mtu=1500
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
+        utun3={
+            bindings6=[
+                {
+                    address="fe80::8c7a:4952:5308:e0cb"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::8c7a:4952:5308:e0cb"
+            mtu=1380
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
+    }
+    ip="192.168.64.23"
+    ip6="fe80::ca3:4243:dea6:54f2"
+    mac="da:86:01:c2:86:28"
+    mtu=1500
+    netmask="255.255.255.0"
+    netmask6="ffff:ffff:ffff:ffff::"
+    network="192.168.64.0"
+    network6="fe80::"
+    primary=en0
+    scope6=link
+}
+os={
+    architecture=arm64
+    family=Darwin
+    hardware=arm64
+    macosx={
+        build="23E224"
+        product=macOS
+        version={
+            full="14.4.1"
+            major="14"
+            minor="4"
+            patch="1"
+        }
+    }
+    name=Darwin
+    release={
+        full="23.4.0"
+        major="23"
+        minor="4"
+    }
+}
+path="/Users/runner/hostedtoolcache/Ruby/3.1.1/arm64/bin:/Users/runner/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/runner/.cargo/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/sbin:/Users/runner/bin:/Users/runner/.yarn/bin:/Users/runner/Library/Android/sdk/tools:/Users/runner/Library/Android/sdk/platform-tools:/Library/Frameworks/Python.framework/Versions/Current/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/bin:/bin:/usr/sbin:/sbin:/Users/runner/.dotnet/tools"
+processors={
+    cores=3
+    count=3
+    isa=arm
+    models=[
+        "Apple M1 (Virtual)",
+        "Apple M1 (Virtual)",
+        "Apple M1 (Virtual)"
+    ]
+    physicalcount=3
+    threads=1
+}
+ruby={
+    platform=arm64-darwin22
+    sitedir="/Users/runner/hostedtoolcache/Ruby/3.1.1/arm64/lib/ruby/site_ruby/3.1.0"
+    version="3.1.1"
+}
+ssh={
+    dsa={
+        fingerprints={
+            sha1="SSHFP 2 1 a6a6eba794602320ceb1009c353e5fc83ae4c1d2"
+            sha256="SSHFP 2 2 ee3283cd147fd49b8bd5bd0ac4457b502f28b70eade4b5465d0d3bd56bee601b"
+        }
+        key="AAAAB3NzaC1kc3MAAACBAOTcKhUY1I22IjEGyEdPEKEy254GLcnvTRdTOjsgYGwao+LzQR+tl5QiZZ9kWnkRSCAM1hckXa6HmBW+Mxa5ZwnxacP+6bqA6jeF0VpahTtc3MoM8ApYNhl7mEqbWXgvU9qo4mOYt3z9BhdOBUv38O77ncdlUr7BNnnp3LwhFZ/lAAAAFQDU/IMvwEgzzNAnWYUjQugRsYpggwAAAIAxijHz6JgvpmueskIzXSTX0N2H8EhUqJcDcdBE3Piqgm2u7rsL/AKBhKWLC+zkwOax4sUP/4KaY1/rJRMifd9WkjVNrXJKXfXYreF46RZjfP7TAu4Ojv4Wx5g6E2AyX108h6qFMlUnPOotqeupFs3U74IvnwmO1tUht5VPDxqjvQAAAIEAwZ6/0rsXY5CaxLXKJFsZ49RXPPELmrjSyf7sc2GS4fHdjFLJ+sb/CtLz1kQ6L64buEzjN0hme90Topjfyls60gBzjjAni5fk7aqhS+p9JukIKn000BBVGgd/JHFgW62bu2CMluqlA/D+MPfTgAaZJ0cwrDSev/QMkvqiU0UHyeo="
+        type=ssh-dss
+    }
+    ecdsa={
+        fingerprints={
+            sha1="SSHFP 3 1 3a16c2cd7b10519c25a44332bce36f8324bbe6b9"
+            sha256="SSHFP 3 2 0f63ef355057975a0aa57120cba422db0a74a7306b1d0e7ea12c308aaf4d3f2f"
+        }
+        key="AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGQkX6SFngxYAW/klbcQ/odYvWFNsFkfOhTDW/zNZCbRTfvGZ1fZd/rZGZZHLtQS/8XVY/lVDMi1OdB1pR6kLts="
+        type=ecdsa-sha2-nistp256
+    }
+    ed25519={
+        fingerprints={
+            sha1="SSHFP 4 1 fe574174228e9d5833d4f86a4e3de8d3c7a2f35b"
+            sha256="SSHFP 4 2 2d4942f01dfb80bc74753fbbc06bca3334441a3f3ae58f93ef0ceea4d03063af"
+        }
+        key="AAAAC3NzaC1lZDI1NTE5AAAAICglxiMt8e/alJX4a+WyA9r8/zGMNH0qUU4sxDoFhgD1"
+        type=ssh-ed25519
+    }
+    rsa={
+        fingerprints={
+            sha1="SSHFP 1 1 b1c56be40047d190d541c2f331d39481a5460746"
+            sha256="SSHFP 1 2 e541a132114b3b7ecd6874f58d1b999f04886074770d136ef74dfa5704da7f53"
+        }
+        key="AAAAB3NzaC1yc2EAAAADAQABAAABgQCwPdX5HcxNd4osmtGIi3dO6OFe63PDg2PBAz1Qj0qPYOqwPVPlr4VXc+l/hex6GcQ1I8MimrKmVR97pKKTPY4mTZ9czDbWlBepsUD470TfWOeH+J5GN1HmJCKgQXLDK0Q4FuGCmBriGn7i1Gb/DOW9sSCYy/hZKafk/FiS78buN5Q44Tudx/jmgXWUlgHP2yiCyLqr0JeQV95sRdkEC2ZRkUNN0Q1X42v8sNXKije0/V3iRB/ZxjlJpTk97ba/rR1/j+85la/XU065QhJ22JfzOn+axis9+PkApojOK09AT5oS2RRszSh2vczwhUP7puS3LrGTiiPB1I8guDUC53mn6FHWDads5fz3F9eODVVS03YZU7yeUP6DdwHpGbmK0m/6+u1eveg/SXqVmGaySAV1iRcopFAKNnxli/52/wH4twpBZDjuIBVNFKXToSNGh0BSQNszPqZZeodwhKxxFCMjw6ilQNXwL5jzhH28UHIFdT66mYCIj7lCqJninLvYSe8="
+        type=ssh-rsa
+    }
+}
+"system_profiler"={
+    "boot_mode"=Normal
+    "boot_volume"="Macintosh HD"
+    "computer_name"="Mac-1714039564684.local"
+    cores="3"
+    "hardware_uuid"="7BD53EFB-64A3-5876-BD9F-DE6E3729B6D1"
+    "kernel_version"="Darwin 23.4.0"
+    memory="7 GB"
+    "model_identifier"="VirtualMac2,1"
+    "model_name"="Apple Virtual Machine 1"
+    "secure_virtual_memory"=Enabled
+    "serial_number"=Z3PDY0WLLW
+    "system_version"="macOS 14.4.1 (23E224)"
+    uptime="18 minutes, 4 seconds"
+    username="Anka (runner)"
+}
+"system_uptime"={
+    days=0
+    hours=0
+    seconds=1054
+    uptime="0:17 hours"
+}
+timezone=UTC
+virtual=physical
