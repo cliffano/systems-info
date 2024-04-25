@@ -92,6 +92,11 @@ jobs:
   consolidate:
     needs:
       - ruby-latest
+      - ruby-3
+      - ruby-3_2
+      - ruby-2
+      - ruby-2_7
+      - ruby-2_5
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
