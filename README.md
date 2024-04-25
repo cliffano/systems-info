@@ -7,6 +7,8 @@ This repo collects information about various systems using the following tools:
 
 | System Type | System Profile | Facter Info |
 |-------------|----------------|-------------|
+| AWS Lambda Runtimes |
+| GitHub Actions |
 
 Catalogues
 ----------
