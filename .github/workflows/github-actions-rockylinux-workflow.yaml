@@ -2,7 +2,6 @@
 name: Rocky Linux system info via GitHub Actions
 on: [workflow_dispatch]
 env:
-  RUBY_VERSION: 3.1.1
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
 jobs:
@@ -11,9 +10,6 @@ jobs:
     container:
       image: rockylinux:8
     steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install facter
       - run: mkdir -p data
       - run: facter --hocon > data/facter.hocon
@@ -28,9 +24,6 @@ jobs:
     container:
       image: rockylinux:9
     steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install facter
       - run: mkdir -p data
       - run: facter --hocon > data/facter.hocon
