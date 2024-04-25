@@ -34,7 +34,7 @@ jobs:
       - run: facter --yaml > data/facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: rockylinux-8-facter
+          name: rockylinux-9-facter
           path: data/
 
   consolidate:
