@@ -1,0 +1,270 @@
+dmi={
+    product={
+        name="Macmini6,2"
+    }
+}
+facterversion="4.7.0"
+filesystems="apfs,autofs,devfs"
+identity={
+    gid=20
+    group=staff
+    privileged=false
+    uid=501
+    user=runner
+}
+"is_virtual"=false
+kernel=Darwin
+kernelmajversion="22.6"
+kernelrelease="22.6.0"
+kernelversion="22.6.0"
+"load_averages"={
+    "15m"=1.5
+    "1m"=2.46
+    "5m"=1.18
+}
+memory={
+    system={
+        available="5.92 GiB"
+        "available_bytes"=6353022976
+        capacity="57.74%"
+        total="14.00 GiB"
+        "total_bytes"=15032385536
+        used="8.08 GiB"
+        "used_bytes"=8679362560
+    }
+}
+mountpoints={}
+networking={
+    dhcp="192.168.64.1"
+    domain=local
+    fqdn="Mac-1714038480695.local"
+    hostname=Mac-1714038480695
+    interfaces={
+        XHC7={
+            mtu=0
+        }
+        en0={
+            bindings=[
+                {
+                    address="192.168.64.23"
+                    netmask="255.255.255.0"
+                    network="192.168.64.0"
+                }
+            ]
+            bindings6=[
+                {
+                    address="fe80::1893:16d5:6d6b:fb82"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            dhcp="192.168.64.1"
+            ip="192.168.64.23"
+            ip6="fe80::1893:16d5:6d6b:fb82"
+            mac="f6:c5:7a:ee:07:15"
+            mtu=1500
+            netmask="255.255.255.0"
+            netmask6="ffff:ffff:ffff:ffff::"
+            network="192.168.64.0"
+            network6="fe80::"
+            scope6=link
+        }
+        gif0={
+            mtu=1280
+        }
+        lo0={
+            bindings=[
+                {
+                    address="127.0.0.1"
+                    netmask="255.0.0.0"
+                    network="127.0.0.0"
+                }
+            ]
+            bindings6=[
+                {
+                    address="::1"
+                    netmask="ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+                    network="::1"
+                    scope6=host
+                },
+                {
+                    address="fe80::1"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip="127.0.0.1"
+            ip6="::1"
+            mtu=16384
+            netmask="255.0.0.0"
+            netmask6="ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+            network="127.0.0.0"
+            network6="::1"
+            scope6=host
+        }
+        stf0={
+            mtu=1280
+        }
+        utun0={
+            bindings6=[
+                {
+                    address="fe80::c740:924:631c:5002"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::c740:924:631c:5002"
+            mtu=1380
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
+        utun1={
+            bindings6=[
+                {
+                    address="fe80::e11a:e20f:c6a5:9934"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::e11a:e20f:c6a5:9934"
+            mtu=2000
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
+        utun2={
+            bindings6=[
+                {
+                    address="fe80::ce81:b1c:bd2c:69e"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::ce81:b1c:bd2c:69e"
+            mtu=1000
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
+    }
+    ip="192.168.64.23"
+    ip6="fe80::1893:16d5:6d6b:fb82"
+    mac="f6:c5:7a:ee:07:15"
+    mtu=1500
+    netmask="255.255.255.0"
+    netmask6="ffff:ffff:ffff:ffff::"
+    network="192.168.64.0"
+    network6="fe80::"
+    primary=en0
+    scope6=link
+}
+os={
+    architecture="x86_64"
+    family=Darwin
+    hardware="x86_64"
+    macosx={
+        build="22G630"
+        product=macOS
+        version={
+            full="13.6.6"
+            major="13"
+            minor="6"
+            patch="6"
+        }
+    }
+    name=Darwin
+    release={
+        full="22.6.0"
+        major="22"
+        minor="6"
+    }
+}
+path="/Users/runner/hostedtoolcache/Ruby/3.1.1/x64/bin:/usr/local/opt/pipx_bin:/Users/runner/.cargo/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/sbin:/Users/runner/bin:/Users/runner/.yarn/bin:/Users/runner/Library/Android/sdk/tools:/Users/runner/Library/Android/sdk/platform-tools:/Library/Frameworks/Python.framework/Versions/Current/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/bin:/bin:/usr/sbin:/sbin:/Users/runner/.dotnet/tools"
+processors={
+    cores=4
+    count=4
+    isa=i386
+    models=[
+        "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz",
+        "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz",
+        "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz",
+        "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz"
+    ]
+    physicalcount=4
+    speed="3.19 GHz"
+    threads=1
+}
+ruby={
+    platform="x86_64-darwin19"
+    sitedir="/Users/runner/hostedtoolcache/Ruby/3.1.1/x64/lib/ruby/site_ruby/3.1.0"
+    version="3.1.1"
+}
+ssh={
+    dsa={
+        fingerprints={
+            sha1="SSHFP 2 1 3a2a1426fea4d7a2b2058a6cc961b7778d71db0e"
+            sha256="SSHFP 2 2 09fd79d106d45133b95d8e6b432855edb9e40d62ea7ef0bf0db31e3ac552ded5"
+        }
+        key="AAAAB3NzaC1kc3MAAACBALZwGXJZcFUZ1AxG9/LNKXDXBrwex7Nwdshzq7jWQ3rS28xzxYvd1IaANQApVuIjNXJ0pkmW+1DrypPtXNuzQBOgqxbhyD91kc9PGUutq+NjT3ST2dp06IuJ8kKwi22BQqHKJMcCfsWNP8xcqupTuNft97LzpkegtKbzbF4ZKisjAAAAFQC23wMSw5ZnHV8FW8n25xyN8OBOswAAAIBU4h7h3oPD9NJUDorDY+K4xCQ6K+zYniYpOZ95BvymPoZLqzFj20lD+fHKq9zvOvuPp9BVILWk2RlQCJd69tkoQPJeKwUG2Fn15FI3RJeclWV5yQhf7dMQd6hFQRXlmz1bDxQYKUqjoELV4LvBq/zN8Zd/OMP8XZRQnXMopcZIRQAAAIBdJjEviex0+QKbl1qi3rA+173jkRrRUFLZSrKI7ugafyHcz755r9uwAzrIE8wJgM6diQKPb/AVgwqt9wDxqQa32frEsipr3Fz8NlKcav9Xbm+C0HMzrImhcOj6mGZTinYf9xzOpPyK0fvyi6BMQBdoyG3u8vOC4nDKqy7oBtRQUQ=="
+        type=ssh-dss
+    }
+    ecdsa={
+        fingerprints={
+            sha1="SSHFP 3 1 82d9a01ccfaf0e72f3803bb43a503e7f36c60817"
+            sha256="SSHFP 3 2 166ac5db1ff6ea4b55a078de3a95899b555c8835898c86a127b1ff7e86046d29"
+        }
+        key="AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJd2/ghhkmiHfwN/lglg5HnF2myF3x74NNqFi7Tl9z+kfeR6SR3ljSgjpw2UgEVmVWK9EvazhbRepLAQvP2ogow="
+        type=ecdsa-sha2-nistp256
+    }
+    ed25519={
+        fingerprints={
+            sha1="SSHFP 4 1 440fd3fd3ce013545986239d8495ab64661506f1"
+            sha256="SSHFP 4 2 ecaa04422de72b4f2ccf8dbb050104ca36e4711fa852a3f40f8447f302866673"
+        }
+        key=AAAAC3NzaC1lZDI1NTE5AAAAIMYOG27b5FJTkqj3wQv9GaqKXe2Eg9Bu8epgnqQhyAuk
+        type=ssh-ed25519
+    }
+    rsa={
+        fingerprints={
+            sha1="SSHFP 1 1 db0e261c535c39ecef68cbdfcaf8903fd6ad4b51"
+            sha256="SSHFP 1 2 0027f3ca9b82d5bd531e7b166327cad064a0ec4ebc2b855971ab45466f6ae6c6"
+        }
+        key="AAAAB3NzaC1yc2EAAAADAQABAAABgQDalXjIwCCVICIdfhUz6m/fEFdd1PwUHs44k25bZFEUoXQkMmvkQ9eii7fEZMYUVG1hM1ZGzuKkuF3y5bw3/NPT2q75stcTqp0uA/iZXX9uqb+MNSSPeK/CW55A0V9iplF7j7aVbK8alGF+ekwPgdQ5sz2nBqMYucaDMa48UISJ1DFZzLlTw9FBUvaHId5i78845wvzPUMM1j/cmGHHnAo/W9nlnMD9+uqvmrrc47Q8pXdGpq3uOkK+qmnRGWNvNYQ9NtKtk0BWjJ/LAJ4rusjup+OBDdaEQ2RDgDLadUDVG4eJwocciZ/u0tvb29Q8oSB1YOwBblRWtGgr/spzmFuZMahA1Xvpx6iWraN4NK0yyvO+6xbskEWv23eJ1XS8Aw4HvkmPMQKQRg5HiYYBgjtKgIXvsIKhBTHT1L+8r8IIL6T7rgfxtpxKJUDlFotqVjmnhopM1/dhtRRncBL8TrtWGfH7BJ8Ryk6dvbVRFOZA/rx9WbxwdCRC0+OoZ6ffH+c="
+        type=ssh-rsa
+    }
+}
+"system_profiler"={
+    "boot_mode"=Normal
+    "boot_volume"="Macintosh HD"
+    "computer_name"="Mac-1714038480695.local"
+    cores="4"
+    "hardware_uuid"="4203018E-580F-C1B5-9525-B745CECA79EB"
+    "kernel_version"="Darwin 22.6.0"
+    "l2_cache_per_core"="256 KB"
+    "l3_cache"="12 MB"
+    memory="14 GB"
+    "model_identifier"="Macmini6,2"
+    "model_name"="Mac mini"
+    "processor_name"=Unknown
+    "processor_speed"="3.19 GHz"
+    processors="1"
+    "secure_virtual_memory"=Enabled
+    "serial_number"=C02J3F26G1HW
+    "system_version"="macOS 13.6.6 (22G630)"
+    uptime="36 minutes, 18 seconds"
+    username="runner (runner)"
+}
+"system_uptime"={
+    days=0
+    hours=0
+    seconds=2148
+    uptime="0:35 hours"
+}
+timezone=UTC
+virtual=physical
