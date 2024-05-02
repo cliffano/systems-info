@@ -4,8 +4,8 @@ az_metadata:
     customData: ""
     isHostCompatibilityLayerVm: 'false'
     licenseType: ""
-    location: eastus
-    name: EUS-GEUS23U22O91O22-0118
+    location: westus
+    name: WUS-GCUS1U22G108G36-0054
     offer: ""
     osProfile:
       adminUsername: ""
@@ -21,8 +21,8 @@ az_metadata:
     provider: Microsoft.Compute
     publicKeys: []
     publisher: ""
-    resourceGroupName: geus23u22o91o22
-    resourceId: "/subscriptions/e5e984ae-7305-4c9f-8bac-1833271a8c9f/resourceGroups/geus23u22o91o22/providers/Microsoft.Compute/virtualMachines/EUS-GEUS23U22O91O22-0118"
+    resourceGroupName: gcus1u22g108g36
+    resourceId: "/subscriptions/43fed078-e342-4c90-8068-869a3898b20d/resourceGroups/gcus1u22g108g36/providers/Microsoft.Compute/virtualMachines/WUS-GCUS1U22G108G36-0054"
     securityProfile:
       secureBootEnabled: 'false'
       virtualTpmEnabled: 'false'
@@ -30,7 +30,7 @@ az_metadata:
     storageProfile:
       dataDisks: []
       imageReference:
-        id: "/subscriptions/e5e984ae-7305-4c9f-8bac-1833271a8c9f/resourceGroups/geus23u22o91o22/providers/Microsoft.Compute/galleries/geus23u22o91o22/images/factory/versions/0.0.47525337"
+        id: "/subscriptions/43fed078-e342-4c90-8068-869a3898b20d/resourceGroups/gcus1u22g108g36/providers/Microsoft.Compute/galleries/gcus1u22g108g36/images/factory/versions/0.0.61367771"
         offer: ""
         publisher: ""
         sku: ""
@@ -46,14 +46,14 @@ az_metadata:
         image:
           uri: ""
         managedDisk:
-          id: "/subscriptions/e5e984ae-7305-4c9f-8bac-1833271a8c9f/resourceGroups/geus23u22o91o22/providers/Microsoft.Compute/disks/EUS-GEUS23U22O91O22-0118-2ab02fd0"
+          id: "/subscriptions/43fed078-e342-4c90-8068-869a3898b20d/resourceGroups/gcus1u22g108g36/providers/Microsoft.Compute/disks/WUS-GCUS1U22G108G36-0054-b0484756"
           storageAccountType: "Standard_LRS"
-        name: EUS-GEUS23U22O91O22-0118-2ab02fd0
+        name: WUS-GCUS1U22G108G36-0054-b0484756
         osType: "Linux"
         vhd:
           uri: ""
         writeAcceleratorEnabled: 'false'
-    subscriptionId: e5e984ae-7305-4c9f-8bac-1833271a8c9f
+    subscriptionId: 43fed078-e342-4c90-8068-869a3898b20d
     tags: OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
     tagsList:
     - name: "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves"
@@ -70,8 +70,8 @@ az_metadata:
       value: 'true'
     - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
       value: 'true'
-    version: 0.0.47525337
-    vmId: 0d862861-8b82-4335-8bb0-187ddfefcb57
+    version: 0.0.61367771
+    vmId: 73a0a77e-bc45-4511-8655-2f4605d21c3a
     vmScaleSetName: ""
     vmSize: "Standard_D4ads_v5"
     zone: ""
@@ -79,14 +79,14 @@ az_metadata:
     interface:
     - ipv4:
         ipAddress:
-        - privateIpAddress: 10.1.0.110
+        - privateIpAddress: 10.1.0.54
           publicIpAddress: ""
         subnet:
         - address: 10.1.0.0
           prefix: '16'
       ipv6:
         ipAddress: []
-      macAddress: 6045BDEFE9BE
+      macAddress: '00224809D32D'
 cloud:
   provider: azure
 disks:
@@ -110,15 +110,15 @@ dmi:
   board:
     manufacturer: "Microsoft Corporation"
     product: "Virtual Machine"
-    serial_number: "0000-0010-0655-7209-6080-0715-11"
+    serial_number: "0000-0009-6796-9495-1894-6212-42"
   chassis:
     asset_tag: "7783-7084-3265-9085-8269-3286-77"
     type: Desktop
   manufacturer: "Microsoft Corporation"
   product:
     name: "Virtual Machine"
-    serial_number: "0000-0000-9745-1076-8789-7997-33"
-    uuid: 6128860d-828b-3543-8bb0-187ddfefcb57
+    serial_number: "0000-0008-3318-4347-3401-7917-61"
+    uuid: 7ea7a073-45bc-1145-8655-2f4605d21c3a
     version: '7.0'
 facterversion: 4.7.0
 filesystems: ext2,ext3,ext4,squashfs,vfat
@@ -137,9 +137,9 @@ kernelmajversion: '6.5'
 kernelrelease: 6.5.0-1018-azure
 kernelversion: 6.5.0
 load_averages:
-  15m: 0.07
-  1m: 0.39
-  5m: 0.17
+  15m: 0.09
+  1m: 0.74
+  5m: 0.24
 memory:
   swap:
     available: 4.00 GiB
@@ -151,17 +151,17 @@ memory:
     used_bytes: 0
   system:
     available: 14.56 GiB
-    available_bytes: 15630565376
-    capacity: 6.72%
+    available_bytes: 15633403904
+    capacity: 6.71%
     total: 15.61 GiB
     total_bytes: 16757346304
     used: 1.05 GiB
-    used_bytes: 1126780928
+    used_bytes: 1123942400
 mountpoints: {}
 networking:
-  domain: "3qows1xflhlezoxdqozyuy3a1h.bx.internal.cloudapp.net"
-  fqdn: "cda691033108.3qows1xflhlezoxdqozyuy3a1h.bx.internal.cloudapp.net"
-  hostname: cda691033108
+  domain: "web1hnpulnrebejjggulhupmdh.dx.internal.cloudapp.net"
+  fqdn: "c9e32d808078.web1hnpulnrebejjggulhupmdh.dx.internal.cloudapp.net"
+  hostname: c9e32d808078
   interfaces:
     eth0:
       bindings:
@@ -214,26 +214,26 @@ partitions:
     size: 63.91 MiB
     size_bytes: 67010560
   /dev/loop1:
-    backing_file: "/var/lib/snapd/snaps/snapd_21184.snap"
-    size: 39.10 MiB
-    size_bytes: 40996864
-  /dev/loop2:
     backing_file: "/var/lib/snapd/snaps/lxd_27948.snap"
     size: 87.02 MiB
     size_bytes: 91246592
+  /dev/loop2:
+    backing_file: "/var/lib/snapd/snaps/snapd_21184.snap"
+    size: 39.10 MiB
+    size_bytes: 40996864
   /dev/sda1:
+    size: 75.00 GiB
+    size_bytes: 80528539648
+  /dev/sdb1:
     filesystem: "/etc/hosts"
     size: 74.89 GiB
     size_bytes: 80414227968
-  /dev/sda14:
+  /dev/sdb14:
     size: 4.00 MiB
     size_bytes: 4194304
-  /dev/sda15:
+  /dev/sdb15:
     size: 106.00 MiB
     size_bytes: 111149056
-  /dev/sdb1:
-    size: 75.00 GiB
-    size_bytes: 80528539648
 path: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 processors:
   cores: 2
@@ -245,7 +245,7 @@ processors:
   - "AMD EPYC 7763 64-Core Processor"
   - "AMD EPYC 7763 64-Core Processor"
   physicalcount: 1
-  speed: 3.24 GHz
+  speed: 2.95 GHz
   threads: 2
 ruby:
   platform: "x86_64-linux"
@@ -254,7 +254,7 @@ ruby:
 system_uptime:
   days: 0
   hours: 0
-  seconds: 200
-  uptime: "0:03 hours"
+  seconds: 91
+  uptime: "0:01 hours"
 timezone: UTC
 virtual: "hyperv"
