@@ -1,5 +1,5 @@
 ---
-key: rocky Linux system info via GitHub Actions
+name: rocky Linux system info via GitHub Actions
 on: [workflow_dispatch]
 env:
   RUBY_VERSION: 3.1
