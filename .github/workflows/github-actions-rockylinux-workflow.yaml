@@ -22,7 +22,7 @@ jobs:
       - run: facter --yaml > data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/facter.yaml
       - uses: actions/cache/save@v4
         with:
-          key: rockylinux-${{ matrix.version }}-cache
+          key: rockylinux-${{ matrix.version }}-cache-${{ hashFiles('**/*') }}
           path: data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/
   consolidate-data:
     needs:
