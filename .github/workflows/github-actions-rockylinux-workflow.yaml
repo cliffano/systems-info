@@ -16,7 +16,7 @@ jobs:
     steps:
       - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
       - run: gem install facter
-      - run: mkdir -p data
+      - run: mkdir -p data/github-actions-rockylinux/rockylinux-${{ matrix.version }}
       - run: facter --hocon > data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/facter.hocon
       - run: facter --json > data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/facter.json
       - run: facter --yaml > data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/facter.yaml
