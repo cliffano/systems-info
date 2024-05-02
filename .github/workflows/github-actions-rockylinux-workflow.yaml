@@ -83,6 +83,8 @@ jobs:
         with:
           key: rockylinux-8.5-cache
           path: data/github-actions-rockylinux/rockylinux-8.5/
+      - run: pwd
+      - run: find .
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
       - run: git add -A
