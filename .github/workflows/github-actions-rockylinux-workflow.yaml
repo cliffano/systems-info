@@ -83,6 +83,11 @@ jobs:
         with:
           name: rockylinux-8.5-artifacts
           path: data/github-actions-rockylinux/rockylinux-8.5/
+      - uses: cliffano/matrix-shell-action@master
+        with:
+          matrix:
+            name: ['app', 'boo', 'cap']
+          command: 'hello $${{ matrix.name }}'
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
       - run: git add -A
