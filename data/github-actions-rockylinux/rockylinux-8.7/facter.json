@@ -6,7 +6,7 @@
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
       "location": "eastus2",
-      "name": "EUS2-GEUS1U22Z142Z3-0091",
+      "name": "EUS2-GEUS1U22T138T23-0011",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -26,8 +26,8 @@
 
       ],
       "publisher": "",
-      "resourceGroupName": "geus1u22z142z3",
-      "resourceId": "/subscriptions/b9869b12-0fe1-4293-aca9-e7cec6cf9d4b/resourceGroups/geus1u22z142z3/providers/Microsoft.Compute/virtualMachines/EUS2-GEUS1U22Z142Z3-0091",
+      "resourceGroupName": "geus1u22t138t23",
+      "resourceId": "/subscriptions/c4efecb4-1907-433e-b4bc-9b4f2763f699/resourceGroups/geus1u22t138t23/providers/Microsoft.Compute/virtualMachines/EUS2-GEUS1U22T138T23-0011",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -38,7 +38,7 @@
 
         ],
         "imageReference": {
-          "id": "/subscriptions/b9869b12-0fe1-4293-aca9-e7cec6cf9d4b/resourceGroups/geus1u22z142z3/providers/Microsoft.Compute/galleries/geus1u22z142z3/images/factory/versions/0.0.74394731",
+          "id": "/subscriptions/c4efecb4-1907-433e-b4bc-9b4f2763f699/resourceGroups/geus1u22t138t23/providers/Microsoft.Compute/galleries/geus1u22t138t23/images/factory/versions/0.0.74394844",
           "offer": "",
           "publisher": "",
           "sku": "",
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/b9869b12-0fe1-4293-aca9-e7cec6cf9d4b/resourceGroups/geus1u22z142z3/providers/Microsoft.Compute/disks/EUS2-GEUS1U22Z142Z3-0091-3cde9ed6",
+            "id": "/subscriptions/c4efecb4-1907-433e-b4bc-9b4f2763f699/resourceGroups/geus1u22t138t23/providers/Microsoft.Compute/disks/EUS2-GEUS1U22T138T23-0011-107914fc",
             "storageAccountType": "Standard_LRS"
           },
-          "name": "EUS2-GEUS1U22Z142Z3-0091-3cde9ed6",
+          "name": "EUS2-GEUS1U22T138T23-0011-107914fc",
           "osType": "Linux",
           "vhd": {
             "uri": ""
@@ -69,7 +69,7 @@
           "writeAcceleratorEnabled": "false"
         }
       },
-      "subscriptionId": "b9869b12-0fe1-4293-aca9-e7cec6cf9d4b",
+      "subscriptionId": "c4efecb4-1907-433e-b4bc-9b4f2763f699",
       "tags": "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
       "tagsList": [
         {
@@ -101,8 +101,8 @@
           "value": "true"
         }
       ],
-      "version": "0.0.74394731",
-      "vmId": "5b4427a3-f836-4e00-b22f-3b442ac119d7",
+      "version": "0.0.74394844",
+      "vmId": "9551bbdc-f300-45c7-a91b-7b6648affa08",
       "vmScaleSetName": "",
       "vmSize": "Standard_D4ads_v5",
       "zone": ""
@@ -113,7 +113,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.81",
+                "privateIpAddress": "10.1.0.17",
                 "publicIpAddress": ""
               }
             ],
@@ -129,7 +129,7 @@
 
             ]
           },
-          "macAddress": "6045BD7BF53D"
+          "macAddress": "000D3A7C048C"
         }
       ]
     }
@@ -162,7 +162,7 @@
     "board": {
       "manufacturer": "Microsoft Corporation",
       "product": "Virtual Machine",
-      "serial_number": "0000-0012-8395-4622-6617-6864-87"
+      "serial_number": "0000-0012-1854-6889-6017-3818-96"
     },
     "chassis": {
       "asset_tag": "7783-7084-3265-9085-8269-3286-77",
@@ -171,8 +171,8 @@
     "manufacturer": "Microsoft Corporation",
     "product": {
       "name": "Virtual Machine",
-      "serial_number": "0000-0006-5764-2494-1065-2277-76",
-      "uuid": "a327445b-36f8-004e-b22f-3b442ac119d7",
+      "serial_number": "0000-0010-7595-8754-2408-9061-83",
+      "uuid": "dcbb5195-00f3-c745-a91b-7b6648affa08",
       "version": "7.0"
     }
   },
@@ -196,9 +196,9 @@
   "kernelrelease": "6.5.0-1018-azure",
   "kernelversion": "6.5.0",
   "load_averages": {
-    "15m": 0.05,
-    "1m": 0.3,
-    "5m": 0.13
+    "15m": 0.03,
+    "1m": 0.25,
+    "5m": 0.09
   },
   "memory": {
     "swap": {
@@ -211,21 +211,21 @@
       "used_bytes": 0
     },
     "system": {
-      "available": "14.54 GiB",
-      "available_bytes": 15617048576,
-      "capacity": "6.80%",
+      "available": "14.56 GiB",
+      "available_bytes": 15628906496,
+      "capacity": "6.73%",
       "total": "15.61 GiB",
-      "total_bytes": 16757346304,
-      "used": "1.06 GiB",
-      "used_bytes": 1140297728
+      "total_bytes": 16757342208,
+      "used": "1.05 GiB",
+      "used_bytes": 1128435712
     }
   },
   "mountpoints": {
   },
   "networking": {
-    "domain": "nfhami3213qelic5zgc4gn5ygc.cx.internal.cloudapp.net",
-    "fqdn": "ef1b3aca662f.nfhami3213qelic5zgc4gn5ygc.cx.internal.cloudapp.net",
-    "hostname": "ef1b3aca662f",
+    "domain": "upsp13a5k4ou3ds4kr34xzh2lh.cx.internal.cloudapp.net",
+    "fqdn": "5a753c29def0.upsp13a5k4ou3ds4kr34xzh2lh.cx.internal.cloudapp.net",
+    "hostname": "5a753c29def0",
     "interfaces": {
       "eth0": {
         "bindings": [
@@ -304,21 +304,21 @@
       "size_bytes": 40996864
     },
     "/dev/sda1": {
+      "size": "75.00 GiB",
+      "size_bytes": 80528539648
+    },
+    "/dev/sdb1": {
       "filesystem": "/etc/hosts",
       "size": "74.89 GiB",
       "size_bytes": 80414227968
     },
-    "/dev/sda14": {
+    "/dev/sdb14": {
       "size": "4.00 MiB",
       "size_bytes": 4194304
     },
-    "/dev/sda15": {
+    "/dev/sdb15": {
       "size": "106.00 MiB",
       "size_bytes": 111149056
-    },
-    "/dev/sdb1": {
-      "size": "75.00 GiB",
-      "size_bytes": 80528539648
     }
   },
   "path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
@@ -333,7 +333,7 @@
       "AMD EPYC 7763 64-Core Processor"
     ],
     "physicalcount": 1,
-    "speed": "3.24 GHz",
+    "speed": "3.21 GHz",
     "threads": 2
   },
   "ruby": {
@@ -344,7 +344,7 @@
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 194,
+    "seconds": 197,
     "uptime": "0:03 hours"
   },
   "timezone": "UTC",
