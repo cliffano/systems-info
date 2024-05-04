@@ -45,6 +45,8 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           path: data/
+      - run: pwd
+      - run: find data/
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
       - run: git add -A
