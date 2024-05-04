@@ -31,16 +31,10 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-9/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-9.3/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-9.2/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-9.1/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-8/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.9/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.8/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.7/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.6/*
-      - run: rm -rf data/github-actions-rockylinux/rockylinux-8.5/*
+      - uses: cliffano/command-loop-action@main
+        with:
+          items: '9 9.3 9.2 9.1 8 8.9 8.8 8.7 8.6 8.5'
+          command: 'rm -rf data/github-actions-rockylinux/rockylinux-$ITEM/*'
       - run: mkdir -p data/github-actions-rockylinux
       - uses: actions/download-artifact@master
         with:
