@@ -5,8 +5,8 @@
       "customData": "",
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
-      "location": "eastus2",
-      "name": "EUS2-GEUS22U22N109N75-0024",
+      "location": "northcentralus",
+      "name": "NCUS-GEUS2U22R53R69-0056",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -26,8 +26,8 @@
 
       ],
       "publisher": "",
-      "resourceGroupName": "geus22u22n109n75",
-      "resourceId": "/subscriptions/747ef58d-a133-434e-9334-f998ca674be9/resourceGroups/geus22u22n109n75/providers/Microsoft.Compute/virtualMachines/EUS2-GEUS22U22N109N75-0024",
+      "resourceGroupName": "geus2u22r53r69",
+      "resourceId": "/subscriptions/dc6e9681-7fd6-426d-9250-6ecae6d67fc6/resourceGroups/geus2u22r53r69/providers/Microsoft.Compute/virtualMachines/NCUS-GEUS2U22R53R69-0056",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -38,7 +38,7 @@
 
         ],
         "imageReference": {
-          "id": "/subscriptions/747ef58d-a133-434e-9334-f998ca674be9/resourceGroups/geus22u22n109n75/providers/Microsoft.Compute/galleries/geus22u22n109n75/images/factory/versions/0.0.92922930",
+          "id": "/subscriptions/dc6e9681-7fd6-426d-9250-6ecae6d67fc6/resourceGroups/geus2u22r53r69/providers/Microsoft.Compute/galleries/geus2u22r53r69/images/factory/versions/0.0.67567567",
           "offer": "",
           "publisher": "",
           "sku": "",
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/747ef58d-a133-434e-9334-f998ca674be9/resourceGroups/geus22u22n109n75/providers/Microsoft.Compute/disks/EUS2-GEUS22U22N109N75-0024-2085bdb3",
+            "id": "/subscriptions/dc6e9681-7fd6-426d-9250-6ecae6d67fc6/resourceGroups/geus2u22r53r69/providers/Microsoft.Compute/disks/NCUS-GEUS2U22R53R69-0056-a6b9e78b",
             "storageAccountType": "Standard_LRS"
           },
-          "name": "EUS2-GEUS22U22N109N75-0024-2085bdb3",
+          "name": "NCUS-GEUS2U22R53R69-0056-a6b9e78b",
           "osType": "Linux",
           "vhd": {
             "uri": ""
@@ -69,7 +69,7 @@
           "writeAcceleratorEnabled": "false"
         }
       },
-      "subscriptionId": "747ef58d-a133-434e-9334-f998ca674be9",
+      "subscriptionId": "dc6e9681-7fd6-426d-9250-6ecae6d67fc6",
       "tags": "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
       "tagsList": [
         {
@@ -101,8 +101,8 @@
           "value": "true"
         }
       ],
-      "version": "0.0.92922930",
-      "vmId": "5c97a5bf-2efa-47d0-bc80-8d99a71daade",
+      "version": "0.0.67567567",
+      "vmId": "34c62c6a-39c8-44d8-b4f8-7ba75bbe698f",
       "vmScaleSetName": "",
       "vmSize": "Standard_D4ads_v5",
       "zone": ""
@@ -113,7 +113,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.22",
+                "privateIpAddress": "10.1.1.182",
                 "publicIpAddress": ""
               }
             ],
@@ -129,7 +129,7 @@
 
             ]
           },
-          "macAddress": "6045BDBDFCB5"
+          "macAddress": "6045BD49A84E"
         }
       ]
     }
@@ -162,7 +162,7 @@
     "board": {
       "manufacturer": "Microsoft Corporation",
       "product": "Virtual Machine",
-      "serial_number": "0000-0013-5830-1216-7222-6679-98"
+      "serial_number": "0000-0013-0403-0867-9780-2315-67"
     },
     "chassis": {
       "asset_tag": "7783-7084-3265-9085-8269-3286-77",
@@ -171,8 +171,8 @@
     "manufacturer": "Microsoft Corporation",
     "product": {
       "name": "Virtual Machine",
-      "serial_number": "0000-0006-6719-8361-3518-1700-64",
-      "uuid": "bfa5975c-fa2e-d047-bc80-8d99a71daade",
+      "serial_number": "0000-0003-8027-7577-0108-5442-16",
+      "uuid": "6a2cc634-c839-d844-b4f8-7ba75bbe698f",
       "version": "7.0"
     }
   },
@@ -196,9 +196,9 @@
   "kernelrelease": "6.5.0-1018-azure",
   "kernelversion": "6.5.0",
   "load_averages": {
-    "15m": 0.04,
-    "1m": 0.27,
-    "5m": 0.12
+    "15m": 0.07,
+    "1m": 0.4,
+    "5m": 0.19
   },
   "memory": {
     "swap": {
@@ -211,21 +211,21 @@
       "used_bytes": 0
     },
     "system": {
-      "available": "14.55 GiB",
-      "available_bytes": 15626104832,
-      "capacity": "6.75%",
+      "available": "14.57 GiB",
+      "available_bytes": 15639302144,
+      "capacity": "6.67%",
       "total": "15.61 GiB",
-      "total_bytes": 16757346304,
-      "used": "1.05 GiB",
-      "used_bytes": 1131241472
+      "total_bytes": 16757342208,
+      "used": "1.04 GiB",
+      "used_bytes": 1118040064
     }
   },
   "mountpoints": {
   },
   "networking": {
-    "domain": "r1dl3knd25iuznqlwxibdlge2f.cx.internal.cloudapp.net",
-    "fqdn": "1c0a55ca7da8.r1dl3knd25iuznqlwxibdlge2f.cx.internal.cloudapp.net",
-    "hostname": "1c0a55ca7da8",
+    "domain": "cojkzlubzc5uflwk3y5o55zwvg.ex.internal.cloudapp.net",
+    "fqdn": "272ab5434ae2.cojkzlubzc5uflwk3y5o55zwvg.ex.internal.cloudapp.net",
+    "hostname": "272ab5434ae2",
     "interfaces": {
       "eth0": {
         "bindings": [
@@ -334,7 +334,7 @@
       "AMD EPYC 7763 64-Core Processor"
     ],
     "physicalcount": 1,
-    "speed": "3.24 GHz",
+    "speed": "2.71 GHz",
     "threads": 2
   },
   "ruby": {
@@ -345,7 +345,7 @@
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 175,
+    "seconds": 132,
     "uptime": "0:02 hours"
   },
   "timezone": "UTC",
