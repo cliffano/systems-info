@@ -16,14 +16,13 @@ jobs:
     steps:
       - run: yum install -y @ruby:${{ env.RUBY_VERSION }}
       - run: gem install facter
-      - run: mkdir -p data/github-actions-rockylinux/rockylinux-${{ matrix.version }}
-      - run: facter --hocon > data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/facter.hocon
-      - run: facter --json > data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/facter.json
-      - run: facter --yaml > data/github-actions-rockylinux/rockylinux-${{ matrix.version }}/facter.yaml
+      - run: facter --hocon > facter.hocon
+      - run: facter --json > facter.json
+      - run: facter --yaml > facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: rockylinux-${{ matrix.version }}-artifacts
-          path: data/
+          name: rockylinux-${{ matrix.version }}
+          path: ./
   consolidate-data:
     needs:
       - collect-data
@@ -42,9 +41,10 @@ jobs:
       - run: rm -rf data/github-actions-rockylinux/rockylinux-8.7/*
       - run: rm -rf data/github-actions-rockylinux/rockylinux-8.6/*
       - run: rm -rf data/github-actions-rockylinux/rockylinux-8.5/*
+      - run: mkdir -p data/github-actions-rockylinux
       - uses: actions/download-artifact@master
         with:
-          path: data/
+          path: data/github-actions-rockylinux
       - run: pwd
       - run: find data/
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
