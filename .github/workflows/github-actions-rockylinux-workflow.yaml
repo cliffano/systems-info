@@ -60,7 +60,9 @@ jobs:
       - run: git commit data/github-actions-rockylinux/rockylinux-8.7/* -m "Update data for Rocky Linux 8.7 via GitHub Actions."
       - run: git commit data/github-actions-rockylinux/rockylinux-8.6/* -m "Update data for Rocky Linux 8.6 via GitHub Actions."
       - run: git commit data/github-actions-rockylinux/rockylinux-8.5/* -m "Update data for Rocky Linux 8.5 via GitHub Actions."
+      - run: git status
       - run: git pull --rebase
+      - run: git status
       - uses: ad-m/github-push-action@master
         with:
           tags: true
