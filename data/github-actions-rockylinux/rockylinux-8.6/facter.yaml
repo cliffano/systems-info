@@ -4,8 +4,8 @@ az_metadata:
     customData: ""
     isHostCompatibilityLayerVm: 'false'
     licenseType: ""
-    location: eastus2
-    name: EUS2-GCUS2U22E114E2-0070
+    location: WestUS3
+    name: WUS3-GCUS1U22I117I26-0055
     offer: ""
     osProfile:
       adminUsername: ""
@@ -21,8 +21,8 @@ az_metadata:
     provider: Microsoft.Compute
     publicKeys: []
     publisher: ""
-    resourceGroupName: gcus2u22e114e2
-    resourceId: "/subscriptions/e478e278-fb2a-43f7-8f87-78eb828a2c23/resourceGroups/gcus2u22e114e2/providers/Microsoft.Compute/virtualMachines/EUS2-GCUS2U22E114E2-0070"
+    resourceGroupName: gcus1u22i117i26
+    resourceId: "/subscriptions/df6a20b0-48aa-4247-883a-706218f79859/resourceGroups/gcus1u22i117i26/providers/Microsoft.Compute/virtualMachines/WUS3-GCUS1U22I117I26-0055"
     securityProfile:
       secureBootEnabled: 'false'
       virtualTpmEnabled: 'false'
@@ -30,7 +30,7 @@ az_metadata:
     storageProfile:
       dataDisks: []
       imageReference:
-        id: "/subscriptions/e478e278-fb2a-43f7-8f87-78eb828a2c23/resourceGroups/gcus2u22e114e2/providers/Microsoft.Compute/galleries/gcus2u22e114e2/images/factory/versions/0.0.58687485"
+        id: "/subscriptions/df6a20b0-48aa-4247-883a-706218f79859/resourceGroups/gcus1u22i117i26/providers/Microsoft.Compute/galleries/gcus1u22i117i26/images/factory/versions/0.0.61933770"
         offer: ""
         publisher: ""
         sku: ""
@@ -46,14 +46,14 @@ az_metadata:
         image:
           uri: ""
         managedDisk:
-          id: "/subscriptions/e478e278-fb2a-43f7-8f87-78eb828a2c23/resourceGroups/gcus2u22e114e2/providers/Microsoft.Compute/disks/EUS2-GCUS2U22E114E2-0070-4a9dc95c"
+          id: "/subscriptions/df6a20b0-48aa-4247-883a-706218f79859/resourceGroups/gcus1u22i117i26/providers/Microsoft.Compute/disks/WUS3-GCUS1U22I117I26-0055-6f035948"
           storageAccountType: "Standard_LRS"
-        name: EUS2-GCUS2U22E114E2-0070-4a9dc95c
+        name: WUS3-GCUS1U22I117I26-0055-6f035948
         osType: "Linux"
         vhd:
           uri: ""
         writeAcceleratorEnabled: 'false'
-    subscriptionId: e478e278-fb2a-43f7-8f87-78eb828a2c23
+    subscriptionId: df6a20b0-48aa-4247-883a-706218f79859
     tags: OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
     tagsList:
     - name: "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves"
@@ -70,8 +70,8 @@ az_metadata:
       value: 'true'
     - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
       value: 'true'
-    version: 0.0.58687485
-    vmId: 326c1e09-529c-4dce-abf4-7a9d92237dc4
+    version: 0.0.61933770
+    vmId: c4bd937f-b094-435e-afe4-1a6966ebd42b
     vmScaleSetName: ""
     vmSize: "Standard_D4ads_v5"
     zone: ""
@@ -79,14 +79,14 @@ az_metadata:
     interface:
     - ipv4:
         ipAddress:
-        - privateIpAddress: 10.1.0.78
+        - privateIpAddress: 10.1.0.66
           publicIpAddress: ""
         subnet:
         - address: 10.1.0.0
           prefix: '16'
       ipv6:
         ipAddress: []
-      macAddress: 6045BD84C6BC
+      macAddress: 7C1E5225739F
 cloud:
   provider: azure
 disks:
@@ -110,15 +110,15 @@ dmi:
   board:
     manufacturer: "Microsoft Corporation"
     product: "Virtual Machine"
-    serial_number: "0000-0012-3906-6329-1983-3307-56"
+    serial_number: "0000-0012-6742-8429-1328-0379-31"
   chassis:
     asset_tag: "7783-7084-3265-9085-8269-3286-77"
     type: Desktop
   manufacturer: "Microsoft Corporation"
   product:
     name: "Virtual Machine"
-    serial_number: "0000-0003-6333-1202-4770-6618-38"
-    uuid: '091e6c32-9c52-ce4d-abf4-7a9d92237dc4'
+    serial_number: "0000-0014-1766-4937-8664-8256-94"
+    uuid: 7f93bdc4-94b0-5e43-afe4-1a6966ebd42b
     version: '7.0'
 facterversion: 4.7.0
 filesystems: ext2,ext3,ext4,squashfs,vfat
@@ -137,9 +137,9 @@ kernelmajversion: '6.5'
 kernelrelease: 6.5.0-1018-azure
 kernelversion: 6.5.0
 load_averages:
-  15m: 0.08
-  1m: 0.31
-  5m: 0.17
+  15m: 0.05
+  1m: 0.34
+  5m: 0.15
 memory:
   swap:
     available: 4.00 GiB
@@ -150,18 +150,18 @@ memory:
     used: "0 bytes"
     used_bytes: 0
   system:
-    available: 14.56 GiB
-    available_bytes: 15634079744
-    capacity: 6.70%
+    available: 14.55 GiB
+    available_bytes: 15623933952
+    capacity: 6.76%
     total: 15.61 GiB
     total_bytes: 16757346304
-    used: 1.05 GiB
-    used_bytes: 1123266560
+    used: 1.06 GiB
+    used_bytes: 1133412352
 mountpoints: {}
 networking:
-  domain: "2onsmhel0beebdhu3wzfcxcjxc.cx.internal.cloudapp.net"
-  fqdn: "e64d3d1c5117.2onsmhel0beebdhu3wzfcxcjxc.cx.internal.cloudapp.net"
-  hostname: e64d3d1c5117
+  domain: "4q20ldi01ete5bfy3exxb21nef.phxx.internal.cloudapp.net"
+  fqdn: "df4034a42470.4q20ldi01ete5bfy3exxb21nef.phxx.internal.cloudapp.net"
+  hostname: df4034a42470
   interfaces:
     eth0:
       bindings:
@@ -210,17 +210,17 @@ os:
     enabled: false
 partitions:
   /dev/loop0:
-    backing_file: "/var/lib/snapd/snaps/core20_2182.snap"
-    size: 63.91 MiB
-    size_bytes: 67010560
-  /dev/loop1:
-    backing_file: "/var/lib/snapd/snaps/snapd_21184.snap"
-    size: 39.10 MiB
-    size_bytes: 40996864
-  /dev/loop2:
     backing_file: "/var/lib/snapd/snaps/lxd_27948.snap"
     size: 87.02 MiB
     size_bytes: 91246592
+  /dev/loop1:
+    backing_file: "/var/lib/snapd/snaps/core20_2182.snap"
+    size: 63.91 MiB
+    size_bytes: 67010560
+  /dev/loop2:
+    backing_file: "/var/lib/snapd/snaps/snapd_21184.snap"
+    size: 39.10 MiB
+    size_bytes: 40996864
   /dev/sda1:
     size: 75.00 GiB
     size_bytes: 80528539648
@@ -245,7 +245,7 @@ processors:
   - "AMD EPYC 7763 64-Core Processor"
   - "AMD EPYC 7763 64-Core Processor"
   physicalcount: 1
-  speed: 3.21 GHz
+  speed: 2.89 GHz
   threads: 2
 ruby:
   platform: "x86_64-linux"
@@ -254,7 +254,7 @@ ruby:
 system_uptime:
   days: 0
   hours: 0
-  seconds: 255
-  uptime: "0:04 hours"
+  seconds: 148
+  uptime: "0:02 hours"
 timezone: UTC
 virtual: "hyperv"
