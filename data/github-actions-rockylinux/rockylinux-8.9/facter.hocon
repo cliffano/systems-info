@@ -4,8 +4,8 @@
         customData=""
         isHostCompatibilityLayerVm=false
         licenseType=""
-        location=northcentralus
-        name=NCUS-GEUS21U22O129O56-0115
+        location=eastus2
+        name=EUS2-GEUS21U22R127R47-0026
         offer=""
         osProfile={
             adminUsername=""
@@ -23,8 +23,8 @@
         provider="Microsoft.Compute"
         publicKeys=[]
         publisher=""
-        resourceGroupName=geus21u22o129o56
-        resourceId="/subscriptions/45450492-304b-471d-aa47-33515ba7633f/resourceGroups/geus21u22o129o56/providers/Microsoft.Compute/virtualMachines/NCUS-GEUS21U22O129O56-0115"
+        resourceGroupName=geus21u22r127r47
+        resourceId="/subscriptions/45450492-304b-471d-aa47-33515ba7633f/resourceGroups/geus21u22r127r47/providers/Microsoft.Compute/virtualMachines/EUS2-GEUS21U22R127R47-0026"
         securityProfile={
             secureBootEnabled=false
             virtualTpmEnabled=false
@@ -33,7 +33,7 @@
         storageProfile={
             dataDisks=[]
             imageReference={
-                id="/subscriptions/45450492-304b-471d-aa47-33515ba7633f/resourceGroups/geus21u22o129o56/providers/Microsoft.Compute/galleries/geus21u22o129o56/images/factory/versions/0.0.99461999"
+                id="/subscriptions/45450492-304b-471d-aa47-33515ba7633f/resourceGroups/geus21u22r127r47/providers/Microsoft.Compute/galleries/geus21u22r127r47/images/factory/versions/0.0.99462057"
                 offer=""
                 publisher=""
                 sku=""
@@ -53,10 +53,10 @@
                     uri=""
                 }
                 managedDisk={
-                    id="/subscriptions/45450492-304b-471d-aa47-33515ba7633f/resourceGroups/geus21u22o129o56/providers/Microsoft.Compute/disks/NCUS-GEUS21U22O129O56-0115-0a1d4e8f"
+                    id="/subscriptions/45450492-304b-471d-aa47-33515ba7633f/resourceGroups/geus21u22r127r47/providers/Microsoft.Compute/disks/EUS2-GEUS21U22R127R47-0026-d98071fc"
                     storageAccountType="Standard_LRS"
                 }
-                name=NCUS-GEUS21U22O129O56-0115-0a1d4e8f
+                name=EUS2-GEUS21U22R127R47-0026-d98071fc
                 osType=Linux
                 vhd={
                     uri=""
@@ -96,8 +96,8 @@
                 value=true
             }
         ]
-        version="0.0.99461999"
-        vmId=ff6e4f8e-45e7-4b08-9f6b-b4d0bfcf7494
+        version="0.0.99462057"
+        vmId="19dd1ade-3976-4c76-b53c-81a5ce4b4fed"
         vmScaleSetName=""
         vmSize="Standard_D4ads_v5"
         zone=""
@@ -108,7 +108,7 @@
                 ipv4={
                     ipAddress=[
                         {
-                            privateIpAddress="10.1.0.142"
+                            privateIpAddress="10.1.0.48"
                             publicIpAddress=""
                         }
                     ]
@@ -122,7 +122,7 @@
                 ipv6={
                     ipAddress=[]
                 }
-                macAddress="000D3A623215"
+                macAddress="6045BD817B13"
             }
         ]
     }
@@ -155,7 +155,7 @@ dmi={
     board={
         manufacturer="Microsoft Corporation"
         product="Virtual Machine"
-        "serial_number"="0000-0011-4874-7408-3202-8233-16"
+        "serial_number"="0000-0013-0594-5556-8598-2248-77"
     }
     chassis={
         "asset_tag"="7783-7084-3265-9085-8269-3286-77"
@@ -164,8 +164,8 @@ dmi={
     manufacturer="Microsoft Corporation"
     product={
         name="Virtual Machine"
-        "serial_number"="0000-0018-4057-3619-9586-5321-04"
-        uuid="8e4f6eff-e745-084b-9f6b-b4d0bfcf7494"
+        "serial_number"="0000-0001-8636-7536-2550-3693-98"
+        uuid=de1add19-7639-764c-b53c-81a5ce4b4fed
         version="7.0"
     }
 }
@@ -188,8 +188,8 @@ kernelmajversion="6.5"
 kernelrelease="6.5.0-1018-azure"
 kernelversion="6.5.0"
 "load_averages"={
-    "15m"=0.07
-    "1m"=0.57
+    "15m"=0.08
+    "1m"=0.59
     "5m"=0.21
 }
 memory={
@@ -203,20 +203,20 @@ memory={
         "used_bytes"=0
     }
     system={
-        available="14.53 GiB"
-        "available_bytes"=15599456256
-        capacity="6.91%"
+        available="14.55 GiB"
+        "available_bytes"=15617826816
+        capacity="6.80%"
         total="15.61 GiB"
-        "total_bytes"=16757346304
-        used="1.08 GiB"
-        "used_bytes"=1157890048
+        "total_bytes"=16757342208
+        used="1.06 GiB"
+        "used_bytes"=1139515392
     }
 }
 mountpoints={}
 networking={
-    domain="zdluquzpesfebp2ow20ehxdj5c.ex.internal.cloudapp.net"
-    fqdn="110edc6c4e8e.zdluquzpesfebp2ow20ehxdj5c.ex.internal.cloudapp.net"
-    hostname="110edc6c4e8e"
+    domain="u01o3k0fnecuzb3k2fx4wwelcf.cx.internal.cloudapp.net"
+    fqdn="c68f367f60c0.u01o3k0fnecuzb3k2fx4wwelcf.cx.internal.cloudapp.net"
+    hostname=c68f367f60c0
     interfaces={
         eth0={
             bindings=[
@@ -295,21 +295,21 @@ partitions={
         "size_bytes"=40996864
     }
     "/dev/sda1"={
+        size="75.00 GiB"
+        "size_bytes"=80528539648
+    }
+    "/dev/sdb1"={
         filesystem="/etc/hosts"
         size="74.89 GiB"
         "size_bytes"=80414227968
     }
-    "/dev/sda14"={
+    "/dev/sdb14"={
         size="4.00 MiB"
         "size_bytes"=4194304
     }
-    "/dev/sda15"={
+    "/dev/sdb15"={
         size="106.00 MiB"
         "size_bytes"=111149056
-    }
-    "/dev/sdb1"={
-        size="75.00 GiB"
-        "size_bytes"=80528539648
     }
 }
 path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
@@ -324,7 +324,7 @@ processors={
         "AMD EPYC 7763 64-Core Processor"
     ]
     physicalcount=1
-    speed="3.11 GHz"
+    speed="2.84 GHz"
     threads=2
 }
 ruby={
@@ -335,8 +335,8 @@ ruby={
 "system_uptime"={
     days=0
     hours=0
-    seconds=155
-    uptime="0:02 hours"
+    seconds=219
+    uptime="0:03 hours"
 }
 timezone=UTC
 virtual=hyperv
