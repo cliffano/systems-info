@@ -46,7 +46,7 @@ jobs:
       - uses: cliffano/command-loop-action@main
         with:
           items: ${{ env.VERSIONS }}
-          command: 'git commit data/github-actions-rockylinux/rockylinux-$ITEM/* -m "Update data for Rocky Linux $ITEM via GitHub Actions.'
+          command: 'git commit data/github-actions-rockylinux/rockylinux-$ITEM/* -m "Update data for Rocky Linux $ITEM via GitHub Actions."'
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
