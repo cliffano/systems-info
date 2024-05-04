@@ -24,6 +24,8 @@ jobs:
         with:
           name: rockylinux-${{ matrix.version }}
           path: ./
+          retention-days: 1
+          compression-level: 0
   consolidate-data:
     needs:
       - collect-data
