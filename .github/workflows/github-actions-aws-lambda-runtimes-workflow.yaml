@@ -4,52 +4,147 @@ on: [workflow_dispatch]
 env:
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
-  VERSIONS: 'latest, 3, 3.2, 2, 2.7, 2.5'
 jobs:
-  collect-data:
-    strategy:
-      matrix:
-        version: [latest, 3, 3.2, 2, 2.7, 2.5]
+  ruby-latest:
     runs-on: ubuntu-latest
     container:
-      image: public.ecr.aws/lambda/ruby:${{ matrix.version }}
+      image: public.ecr.aws/lambda/ruby:latest
     steps:
       - run: gem install facter
-      - run: facter --hocon > facter.hocon
-      - run: facter --json > facter.json
-      - run: facter --yaml > facter.yaml
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: ruby-${{ matrix.version }}
-          path: ./
-          retention-days: 1
-          compression-level: 0
-  consolidate-data:
+          name: ruby-latest-facter
+          path: data/
+  ruby-3:
+    runs-on: ubuntu-latest
+    container:
+      image: public.ecr.aws/lambda/ruby:3
+    steps:
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ruby-3-facter
+          path: data/
+  ruby-3_2:
+    runs-on: ubuntu-latest
+    container:
+      image: public.ecr.aws/lambda/ruby:3.2
+    steps:
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ruby-3.2-facter
+          path: data/
+  ruby-2:
+    runs-on: ubuntu-latest
+    container:
+      image: public.ecr.aws/lambda/ruby:2
+    steps:
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ruby-2-facter
+          path: data/
+  ruby-2_7:
+    runs-on: ubuntu-latest
+    container:
+      image: public.ecr.aws/lambda/ruby:2.7
+    steps:
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ruby-2.7-facter
+          path: data/
+  ruby-2_5:
+    runs-on: ubuntu-latest
+    container:
+      image: public.ecr.aws/lambda/ruby:2.5
+    steps:
+      - run: gem install facter
+      - run: mkdir -p data
+      - run: facter --hocon > data/facter.hocon
+      - run: facter --json > data/facter.json
+      - run: facter --yaml > data/facter.yaml
+      - uses: actions/upload-artifact@master
+        with:
+          name: ruby-2.5-facter
+          path: data/
+  consolidate:
     needs:
-      - collect-data
+      - ruby-latest
+      - ruby-3
+      - ruby-3_2
+      - ruby-2
+      - ruby-2_7
+      - ruby-2_5
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
-      - uses: cliffano/command-loop-action@main
-        with:
-          items: ${{ env.VERSIONS }}
-          command: 'rm -rf data/github-actions-aws-lambda-runtimes/ruby-$ITEM/*'
-      - run: mkdir -p data/github-actions-aws-lambda-runtimes
-      - uses: actions/download-artifact@master
-        with:
-          path: data/github-actions-aws-lambda-runtimes
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
-      - run: git add -A
-      - uses: cliffano/command-loop-action@main
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-latest/*
+      - uses: actions/download-artifact@master
         with:
-          items: ${{ env.VERSIONS }}
-          command: 'git commit data/github-actions-aws-lambda-runtimes/ruby-$ITEM/* -m "Update data for AWS Lambda Runtime Ruby $ITEM via GitHub Actions."'
+          name: ruby-latest-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-latest/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-3/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ruby-3-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-3/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-3.2/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ruby-3.2-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-3.2/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-2/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ruby-2-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-2/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-2.7/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ruby-2.7-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-2.7/
+      - run: rm -rf data/github-actions-aws-lambda-runtimes/ruby-2.5/*
+      - uses: actions/download-artifact@master
+        with:
+          name: ruby-2.5-facter
+          path: data/github-actions-aws-lambda-runtimes/ruby-2.5/
+      - run: git add -A
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-latest/* -m "Update data for AWS Lambda Runtime Ruby latest via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-3/* -m "Update data for AWS Lambda Runtime Ruby 3 via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-3.2/* -m "Update data for AWS Lambda Runtime Ruby 3.2 via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-2/* -m "Update data for AWS Lambda Runtime Ruby 2 via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-2.7/* -m "Update data for AWS Lambda Runtime Ruby 2.7 via GitHub Actions."
+      - run: git commit data/github-actions-aws-lambda-runtimes/ruby-2.5/* -m "Update data for AWS Lambda Runtime Ruby 2.5 via GitHub Actions."
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
           tags: true
           github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+
