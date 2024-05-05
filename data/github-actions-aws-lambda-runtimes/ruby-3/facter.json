@@ -1,0 +1,342 @@
+{
+  "az_metadata": {
+    "compute": {
+      "azEnvironment": "AzurePublicCloud",
+      "customData": "",
+      "isHostCompatibilityLayerVm": "false",
+      "licenseType": "",
+      "location": "eastus",
+      "name": "EUS-GEUS2U22Q52Q44-0012",
+      "offer": "",
+      "osProfile": {
+        "adminUsername": "",
+        "computerName": ""
+      },
+      "osType": "Linux",
+      "placementGroupId": "",
+      "plan": {
+        "name": "",
+        "product": "",
+        "publisher": ""
+      },
+      "platformFaultDomain": "0",
+      "platformUpdateDomain": "0",
+      "provider": "Microsoft.Compute",
+      "publicKeys": [
+
+      ],
+      "publisher": "",
+      "resourceGroupName": "geus2u22q52q44",
+      "resourceId": "/subscriptions/dc6e9681-7fd6-426d-9250-6ecae6d67fc6/resourceGroups/geus2u22q52q44/providers/Microsoft.Compute/virtualMachines/EUS-GEUS2U22Q52Q44-0012",
+      "securityProfile": {
+        "secureBootEnabled": "false",
+        "virtualTpmEnabled": "false"
+      },
+      "sku": "",
+      "storageProfile": {
+        "dataDisks": [
+
+        ],
+        "imageReference": {
+          "id": "/subscriptions/dc6e9681-7fd6-426d-9250-6ecae6d67fc6/resourceGroups/geus2u22q52q44/providers/Microsoft.Compute/galleries/geus2u22q52q44/images/factory/versions/0.0.67567486",
+          "offer": "",
+          "publisher": "",
+          "sku": "",
+          "version": ""
+        },
+        "osDisk": {
+          "caching": "ReadOnly",
+          "createOption": "FromImage",
+          "diffDiskSettings": {
+            "option": "Local"
+          },
+          "diskSizeGB": "75",
+          "encryptionSettings": {
+            "enabled": "false"
+          },
+          "image": {
+            "uri": ""
+          },
+          "managedDisk": {
+            "id": "/subscriptions/dc6e9681-7fd6-426d-9250-6ecae6d67fc6/resourceGroups/geus2u22q52q44/providers/Microsoft.Compute/disks/EUS-GEUS2U22Q52Q44-0012-9e374f6e",
+            "storageAccountType": "Standard_LRS"
+          },
+          "name": "EUS-GEUS2U22Q52Q44-0012-9e374f6e",
+          "osType": "Linux",
+          "vhd": {
+            "uri": ""
+          },
+          "writeAcceleratorEnabled": "false"
+        }
+      },
+      "subscriptionId": "dc6e9681-7fd6-426d-9250-6ecae6d67fc6",
+      "tags": "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
+      "tagsList": [
+        {
+          "name": "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves",
+          "value": "True"
+        },
+        {
+          "name": "SkipASMAV",
+          "value": "true"
+        },
+        {
+          "name": "SkipASMAzSecPack",
+          "value": "true"
+        },
+        {
+          "name": "SkipASMAzSecPackAutoConfig",
+          "value": "true"
+        },
+        {
+          "name": "SkipLinuxAzSecPack",
+          "value": "true"
+        },
+        {
+          "name": "SkipWindowsAzSecPack",
+          "value": "true"
+        },
+        {
+          "name": "platformsettings.host_environment.service.platform_optedin_for_rootcerts",
+          "value": "true"
+        }
+      ],
+      "version": "0.0.67567486",
+      "vmId": "eb5f2d68-6ffd-4e42-bddb-28b9167b67db",
+      "vmScaleSetName": "",
+      "vmSize": "Standard_D4ads_v5",
+      "zone": ""
+    },
+    "network": {
+      "interface": [
+        {
+          "ipv4": {
+            "ipAddress": [
+              {
+                "privateIpAddress": "10.1.0.4",
+                "publicIpAddress": ""
+              }
+            ],
+            "subnet": [
+              {
+                "address": "10.1.0.0",
+                "prefix": "16"
+              }
+            ]
+          },
+          "ipv6": {
+            "ipAddress": [
+
+            ]
+          },
+          "macAddress": "000D3A52F4E4"
+        }
+      ]
+    }
+  },
+  "cloud": {
+    "provider": "azure"
+  },
+  "disks": {
+    "sda": {
+      "model": "Virtual Disk",
+      "size": "75.00 GiB",
+      "size_bytes": 80530636800,
+      "type": "hdd",
+      "vendor": "Msft"
+    },
+    "sdb": {
+      "model": "Virtual Disk",
+      "size": "75.00 GiB",
+      "size_bytes": 80530636800,
+      "type": "hdd",
+      "vendor": "Msft"
+    }
+  },
+  "dmi": {
+    "bios": {
+      "release_date": "12/07/2018",
+      "vendor": "American Megatrends Inc.",
+      "version": "090008"
+    },
+    "board": {
+      "manufacturer": "Microsoft Corporation",
+      "product": "Virtual Machine",
+      "serial_number": "0000-0013-6805-7306-8479-2606-35"
+    },
+    "chassis": {
+      "asset_tag": "7783-7084-3265-9085-8269-3286-77",
+      "type": "Desktop"
+    },
+    "manufacturer": "Microsoft Corporation",
+    "product": {
+      "name": "Virtual Machine",
+      "serial_number": "0000-0016-9603-2464-8279-2976-02",
+      "uuid": "682d5feb-fd6f-424e-bddb-28b9167b67db"
+    }
+  },
+  "facterversion": "4.3.0",
+  "filesystems": "ext2,ext3,ext4,squashfs,vfat",
+  "fips_enabled": false,
+  "hypervisors": {
+    "hyperv": {
+    }
+  },
+  "identity": {
+    "gid": 0,
+    "group": "root",
+    "privileged": true,
+    "uid": 0,
+    "user": "root"
+  },
+  "is_virtual": true,
+  "kernel": "Linux",
+  "kernelmajversion": "6.5",
+  "kernelrelease": "6.5.0-1018-azure",
+  "kernelversion": "6.5.0",
+  "load_averages": {
+    "15m": 0.08,
+    "1m": 0.66,
+    "5m": 0.22
+  },
+  "memory": {
+    "swap": {
+      "available": "4.00 GiB",
+      "available_bytes": 4294963200,
+      "capacity": "0.00%",
+      "total": "4.00 GiB",
+      "total_bytes": 4294963200,
+      "used": "0 bytes",
+      "used_bytes": 0
+    },
+    "system": {
+      "available": "14.60 GiB",
+      "available_bytes": 15674179584,
+      "capacity": "6.46%",
+      "total": "15.61 GiB",
+      "total_bytes": 16757346304,
+      "used": "1.01 GiB",
+      "used_bytes": 1083166720
+    }
+  },
+  "networking": {
+    "domain": "v5hcyuhipjuubowh0ptkzundnd.bx.internal.cloudapp.net",
+    "fqdn": "3ee4e2158b3f.v5hcyuhipjuubowh0ptkzundnd.bx.internal.cloudapp.net",
+    "hostname": "3ee4e2158b3f",
+    "interfaces": {
+      "eth0": {
+        "bindings": [
+          {
+            "address": "172.18.0.2",
+            "netmask": "255.255.0.0",
+            "network": "172.18.0.0"
+          }
+        ],
+        "ip": "172.18.0.2",
+        "mac": "02:42:ac:12:00:02",
+        "netmask": "255.255.0.0",
+        "network": "172.18.0.0"
+      },
+      "lo": {
+        "bindings": [
+          {
+            "address": "127.0.0.1",
+            "netmask": "255.0.0.0",
+            "network": "127.0.0.0"
+          }
+        ],
+        "ip": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "network": "127.0.0.0"
+      }
+    },
+    "ip": "172.18.0.2",
+    "mac": "02:42:ac:12:00:02",
+    "netmask": "255.255.0.0",
+    "network": "172.18.0.0",
+    "primary": "eth0"
+  },
+  "os": {
+    "architecture": "x86_64",
+    "distro": {
+      "codename": "Amazon Linux",
+      "description": "Amazon Linux release 2023.4.20240401 (Amazon Linux)",
+      "id": "Amazon",
+      "release": {
+        "full": "2023.4.20240401",
+        "major": "2023",
+        "minor": "4"
+      }
+    },
+    "family": "RedHat",
+    "hardware": "x86_64",
+    "name": "Amazon",
+    "release": {
+      "full": "2023.4.20240401",
+      "major": "2023",
+      "minor": "4"
+    },
+    "selinux": {
+      "enabled": false
+    }
+  },
+  "partitions": {
+    "/dev/loop0": {
+      "backing_file": "/var/lib/snapd/snaps/core20_2182.snap",
+      "size": "63.91 MiB",
+      "size_bytes": 67010560
+    },
+    "/dev/loop1": {
+      "backing_file": "/var/lib/snapd/snaps/lxd_27948.snap",
+      "size": "87.02 MiB",
+      "size_bytes": 91246592
+    },
+    "/dev/loop2": {
+      "backing_file": "/var/lib/snapd/snaps/snapd_21184.snap",
+      "size": "39.10 MiB",
+      "size_bytes": 40996864
+    },
+    "/dev/sda1": {
+      "size": "75.00 GiB",
+      "size_bytes": 80528539648
+    },
+    "/dev/sdb1": {
+      "size": "74.89 GiB",
+      "size_bytes": 80414227968
+    },
+    "/dev/sdb14": {
+      "size": "4.00 MiB",
+      "size_bytes": 4194304
+    },
+    "/dev/sdb15": {
+      "size": "106.00 MiB",
+      "size_bytes": 111149056
+    }
+  },
+  "path": "/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin",
+  "processors": {
+    "count": 4,
+    "isa": "x86_64",
+    "models": [
+      "AMD EPYC 7763 64-Core Processor",
+      "AMD EPYC 7763 64-Core Processor",
+      "AMD EPYC 7763 64-Core Processor",
+      "AMD EPYC 7763 64-Core Processor"
+    ],
+    "physicalcount": 1,
+    "speed": "3.23 GHz"
+  },
+  "ruby": {
+    "platform": "x86_64-linux",
+    "sitedir": "/var/lang/lib/ruby/site_ruby/3.3.0",
+    "version": "3.3.0"
+  },
+  "system_uptime": {
+    "days": 0,
+    "hours": 0,
+    "seconds": 69,
+    "uptime": "0:01 hours"
+  },
+  "timezone": "UTC",
+  "virtual": "hyperv"
+}
