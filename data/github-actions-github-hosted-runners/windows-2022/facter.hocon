@@ -4,8 +4,8 @@
         customData=""
         isHostCompatibilityLayerVm=false
         licenseType=""
-        location=WestUS3
-        name=WUS3-GCUS2W22N117N17-0001
+        location=eastus
+        name=EUS-GCUS3W22W98W58-0020
         offer=""
         osProfile={
             adminUsername=""
@@ -23,8 +23,8 @@
         provider="Microsoft.Compute"
         publicKeys=[]
         publisher=""
-        resourceGroupName=gcus2w22n117n17
-        resourceId="/subscriptions/e6b69c92-0637-4674-91f8-fdba9ae8988e/resourceGroups/gcus2w22n117n17/providers/Microsoft.Compute/virtualMachines/WUS3-GCUS2W22N117N17-0001"
+        resourceGroupName=gcus3w22w98w58
+        resourceId="/subscriptions/bd1c5232-854f-4487-b341-930c8ec8497b/resourceGroups/gcus3w22w98w58/providers/Microsoft.Compute/virtualMachines/EUS-GCUS3W22W98W58-0020"
         securityProfile={
             secureBootEnabled=false
             virtualTpmEnabled=false
@@ -53,10 +53,10 @@
                     uri=""
                 }
                 managedDisk={
-                    id="/subscriptions/e6b69c92-0637-4674-91f8-fdba9ae8988e/resourceGroups/gcus2w22n117n17/providers/Microsoft.Compute/disks/WUS3-GCUS2W22N117N17-0001-67938891"
+                    id="/subscriptions/bd1c5232-854f-4487-b341-930c8ec8497b/resourceGroups/gcus3w22w98w58/providers/Microsoft.Compute/disks/EUS-GCUS3W22W98W58-0020-1791b29f"
                     storageAccountType="Premium_LRS"
                 }
-                name=WUS3-GCUS2W22N117N17-0001-67938891
+                name=EUS-GCUS3W22W98W58-0020-1791b29f
                 osType=Windows
                 vhd={
                     uri=""
@@ -64,7 +64,7 @@
                 writeAcceleratorEnabled=false
             }
         }
-        subscriptionId=e6b69c92-0637-4674-91f8-fdba9ae8988e
+        subscriptionId=bd1c5232-854f-4487-b341-930c8ec8497b
         tags="OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true"
         tagsList=[
             {
@@ -97,7 +97,7 @@
             }
         ]
         version=""
-        vmId="0daf10e6-e0e1-4fbb-aac6-f75df2f61817"
+        vmId="8e3b0947-8cba-43d3-85d8-03062c5cfea8"
         vmScaleSetName=""
         vmSize="Standard_D4ads_v5"
         zone=""
@@ -108,7 +108,7 @@
                 ipv4={
                     ipAddress=[
                         {
-                            privateIpAddress="10.1.0.179"
+                            privateIpAddress="10.1.0.51"
                             publicIpAddress=""
                         }
                     ]
@@ -122,7 +122,7 @@
                 ipv6={
                     ipAddress=[]
                 }
-                macAddress="7C1E520FFBCE"
+                macAddress="6045BDFE119F"
             }
         ]
     }
@@ -134,8 +134,8 @@ dmi={
     manufacturer="American Megatrends Inc."
     product={
         name="Virtual Machine"
-        "serial_number"="0000-0000-9860-2542-7218-8128-59"
-        uuid="0DAF10E6-E0E1-4FBB-AAC6-F75DF2F61817"
+        "serial_number"="0000-0010-2487-9557-9920-0409-15"
+        uuid="8E3B0947-8CBA-43D3-85D8-03062C5CFEA8"
     }
 }
 facterversion="4.7.0"
@@ -145,7 +145,7 @@ hypervisors={
 }
 identity={
     privileged=true
-    user="fv-az1455-788\\runneradmin"
+    user="fv-az742-213\\runneradmin"
 }
 "is_virtual"=true
 kernel=windows
@@ -154,41 +154,41 @@ kernelrelease="10.0.20348"
 kernelversion="10.0.20348"
 memory={
     system={
-        available="13.45 GiB"
-        "available_bytes"=14446444544
-        capacity="15.91%"
+        available="13.47 GiB"
+        "available_bytes"=14465884160
+        capacity="15.80%"
         total="16.00 GiB"
         "total_bytes"=17179398144
-        used="2.55 GiB"
-        "used_bytes"=2732953600
+        used="2.53 GiB"
+        "used_bytes"=2713513984
     }
 }
 networking={
     dhcp="168.63.129.16"
-    domain="efvtd1xjho0uriy3ply4ae1acg.phxx.internal.cloudapp.net"
-    fqdn="fv-az1455-788.efvtd1xjho0uriy3ply4ae1acg.phxx.internal.cloudapp.net"
-    hostname=fv-az1455-788
+    domain="vsp2k3d1twkunalwkul5syrkdd.bx.internal.cloudapp.net"
+    fqdn="fv-az742-213.vsp2k3d1twkunalwkul5syrkdd.bx.internal.cloudapp.net"
+    hostname=fv-az742-213
     interfaces={
         Ethernet={
             bindings=[
                 {
-                    address="10.1.0.179"
+                    address="10.1.0.51"
                     netmask="255.255.0.0"
                     network="10.1.0.0"
                 }
             ]
             bindings6=[
                 {
-                    address="fe80::634:22c2:5fec:365b"
+                    address="fe80::f7ce:79ac:82ca:3122"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
             dhcp="168.63.129.16"
-            ip="10.1.0.179"
-            ip6="fe80::634:22c2:5fec:365b"
-            mac="7C:1E:52:0F:FB:CE"
+            ip="10.1.0.51"
+            ip6="fe80::f7ce:79ac:82ca:3122"
+            mac="60:45:BD:FE:11:9F"
             mtu=1500
             netmask="255.255.0.0"
             netmask6="ffff:ffff:ffff:ffff::"
@@ -199,34 +199,34 @@ networking={
         "vEthernet (nat)"={
             bindings=[
                 {
-                    address="172.24.80.1"
+                    address="172.27.16.1"
                     netmask="255.255.240.0"
-                    network="172.24.80.0"
+                    network="172.27.16.0"
                 }
             ]
             bindings6=[
                 {
-                    address="fe80::5be9:2ecb:2bc8:1e96"
+                    address="fe80::a020:fb36:ac90:edb2"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
             dhcp=null
-            ip="172.24.80.1"
-            ip6="fe80::5be9:2ecb:2bc8:1e96"
-            mac="00:15:5D:F3:B6:D3"
+            ip="172.27.16.1"
+            ip6="fe80::a020:fb36:ac90:edb2"
+            mac="00:15:5D:A9:A8:0D"
             mtu=1500
             netmask="255.255.240.0"
             netmask6="ffff:ffff:ffff:ffff::"
-            network="172.24.80.0"
+            network="172.27.16.0"
             network6="fe80::"
             scope6=link
         }
     }
-    ip="10.1.0.179"
-    ip6="fe80::634:22c2:5fec:365b"
-    mac="7C:1E:52:0F:FB:CE"
+    ip="10.1.0.51"
+    ip6="fe80::f7ce:79ac:82ca:3122"
+    mac="60:45:BD:FE:11:9F"
     mtu=1500
     netmask="255.255.0.0"
     netmask6="ffff:ffff:ffff:ffff::"
@@ -272,8 +272,8 @@ ruby={
 "system_uptime"={
     days=0
     hours=0
-    seconds=834
-    uptime="0:13 hours"
+    seconds=684
+    uptime="0:11 hours"
 }
 timezone="Coordinated Universal Time"
 virtual=hyperv
