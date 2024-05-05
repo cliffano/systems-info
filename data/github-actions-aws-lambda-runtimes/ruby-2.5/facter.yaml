@@ -1,0 +1,253 @@
+az_metadata:
+  compute:
+    azEnvironment: AzurePublicCloud
+    customData: ""
+    isHostCompatibilityLayerVm: 'false'
+    licenseType: ""
+    location: eastus2
+    name: EUS2-GCUS1U22M113M42-0014
+    offer: ""
+    osProfile:
+      adminUsername: ""
+      computerName: ""
+    osType: "Linux"
+    placementGroupId: ""
+    plan:
+      name: ""
+      product: ""
+      publisher: ""
+    platformFaultDomain: '0'
+    platformUpdateDomain: '0'
+    provider: Microsoft.Compute
+    publicKeys: []
+    publisher: ""
+    resourceGroupName: gcus1u22m113m42
+    resourceId: "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22m113m42/providers/Microsoft.Compute/virtualMachines/EUS2-GCUS1U22M113M42-0014"
+    securityProfile:
+      secureBootEnabled: 'false'
+      virtualTpmEnabled: 'false'
+    sku: ""
+    storageProfile:
+      dataDisks: []
+      imageReference:
+        id: "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22m113m42/providers/Microsoft.Compute/galleries/gcus1u22m113m42/images/factory/versions/0.0.61933824"
+        offer: ""
+        publisher: ""
+        sku: ""
+        version: ""
+      osDisk:
+        caching: "ReadOnly"
+        createOption: FromImage
+        diffDiskSettings:
+          option: Local
+        diskSizeGB: '75'
+        encryptionSettings:
+          enabled: 'false'
+        image:
+          uri: ""
+        managedDisk:
+          id: "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22m113m42/providers/Microsoft.Compute/disks/EUS2-GCUS1U22M113M42-0014-8de2c7d7"
+          storageAccountType: "Standard_LRS"
+        name: EUS2-GCUS1U22M113M42-0014-8de2c7d7
+        osType: "Linux"
+        vhd:
+          uri: ""
+        writeAcceleratorEnabled: 'false'
+    subscriptionId: ddf4fb74-17fd-4808-a484-2394c8e0264e
+    tags: OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
+    tagsList:
+    - name: "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves"
+      value: "True"
+    - name: SkipASMAV
+      value: 'true'
+    - name: SkipASMAzSecPack
+      value: 'true'
+    - name: "SkipASMAzSecPackAutoConfig"
+      value: 'true'
+    - name: "SkipLinuxAzSecPack"
+      value: 'true'
+    - name: "SkipWindowsAzSecPack"
+      value: 'true'
+    - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
+      value: 'true'
+    version: 0.0.61933824
+    vmId: ce6445ce-d10e-4442-a20d-40572645eb2c
+    vmScaleSetName: ""
+    vmSize: "Standard_D4ads_v5"
+    zone: ""
+  network:
+    interface:
+    - ipv4:
+        ipAddress:
+        - privateIpAddress: 10.1.0.6
+          publicIpAddress: ""
+        subnet:
+        - address: 10.1.0.0
+          prefix: '16'
+      ipv6:
+        ipAddress: []
+      macAddress: 6045BDBC29AC
+cloud:
+  provider: azure
+disks:
+  sda:
+    model: Virtual Disk
+    size: 75.00 GiB
+    size_bytes: 80530636800
+    type: hdd
+    vendor: Msft
+  sdb:
+    model: Virtual Disk
+    size: 75.00 GiB
+    size_bytes: 80530636800
+    type: hdd
+    vendor: Msft
+dmi:
+  bios:
+    release_date: "12/07/2018"
+    vendor: "American Megatrends Inc."
+    version: '090008'
+  board:
+    manufacturer: "Microsoft Corporation"
+    product: "Virtual Machine"
+    serial_number: "0000-0011-6770-6015-1890-0129-72"
+  chassis:
+    asset_tag: "7783-7084-3265-9085-8269-3286-77"
+    type: Desktop
+  manufacturer: "Microsoft Corporation"
+  product:
+    name: "Virtual Machine"
+    serial_number: "0000-0014-8720-8862-4057-1730-58"
+    uuid: ce4564ce-0ed1-4244-a20d-40572645eb2c
+facterversion: 4.3.0
+filesystems: ext2,ext3,ext4,squashfs,vfat
+fips_enabled: false
+hypervisors:
+  hyperv: {}
+identity:
+  gid: 0
+  group: root
+  privileged: true
+  uid: 0
+  user: root
+is_virtual: true
+kernel: "Linux"
+kernelmajversion: '6.5'
+kernelrelease: 6.5.0-1018-azure
+kernelversion: 6.5.0
+load_averages:
+  15m: 0.1
+  1m: 0.76
+  5m: 0.28
+memory:
+  swap:
+    available: 4.00 GiB
+    available_bytes: 4294963200
+    capacity: 0.00%
+    total: 4.00 GiB
+    total_bytes: 4294963200
+    used: "0 bytes"
+    used_bytes: 0
+  system:
+    available: 14.60 GiB
+    available_bytes: 15674355712
+    capacity: 6.46%
+    total: 15.61 GiB
+    total_bytes: 16757342208
+    used: 1.01 GiB
+    used_bytes: 1082986496
+networking:
+  domain: "ykhc0jfl13aufdxrnlto1juhnc.cx.internal.cloudapp.net"
+  fqdn: "17edae97cc18.ykhc0jfl13aufdxrnlto1juhnc.cx.internal.cloudapp.net"
+  hostname: 17edae97cc18
+  interfaces:
+    eth0:
+      bindings:
+      - address: 172.18.0.2
+        netmask: 255.255.0.0
+        network: 172.18.0.0
+      ip: 172.18.0.2
+      mac: "02:42:ac:12:00:02"
+      netmask: 255.255.0.0
+      network: 172.18.0.0
+    lo:
+      bindings:
+      - address: 127.0.0.1
+        netmask: 255.0.0.0
+        network: 127.0.0.0
+      ip: 127.0.0.1
+      netmask: 255.0.0.0
+      network: 127.0.0.0
+  ip: 172.18.0.2
+  mac: "02:42:ac:12:00:02"
+  netmask: 255.255.0.0
+  network: 172.18.0.0
+  primary: eth0
+os:
+  architecture: x86_64
+  distro:
+    codename: "n/a"
+    description: "Amazon Linux AMI release 2018.03"
+    id: "AmazonAMI"
+    release:
+      full: '2018.03'
+      major: '2018'
+      minor: '03'
+  family: RedHat
+  hardware: x86_64
+  name: "Amazon"
+  release:
+    full: '2018.03'
+    major: '2018'
+    minor: '03'
+  selinux:
+    enabled: false
+partitions:
+  /dev/loop0:
+    backing_file: "/var/lib/snapd/snaps/core20_2182.snap"
+    size: 63.91 MiB
+    size_bytes: 67010560
+  /dev/loop1:
+    backing_file: "/var/lib/snapd/snaps/lxd_27948.snap"
+    size: 87.02 MiB
+    size_bytes: 91246592
+  /dev/loop2:
+    backing_file: "/var/lib/snapd/snaps/snapd_21184.snap"
+    size: 39.10 MiB
+    size_bytes: 40996864
+  /dev/sda1:
+    size: 75.00 GiB
+    size_bytes: 80528539648
+  /dev/sdb1:
+    size: 74.89 GiB
+    size_bytes: 80414227968
+  /dev/sdb14:
+    size: 4.00 MiB
+    size_bytes: 4194304
+  /dev/sdb15:
+    size: 106.00 MiB
+    size_bytes: 111149056
+path: "/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin"
+processors:
+  cores: 2
+  count: 4
+  isa: x86_64
+  models:
+  - "AMD EPYC 7763 64-Core Processor"
+  - "AMD EPYC 7763 64-Core Processor"
+  - "AMD EPYC 7763 64-Core Processor"
+  - "AMD EPYC 7763 64-Core Processor"
+  physicalcount: 1
+  speed: 3.21 GHz
+  threads: 2
+ruby:
+  platform: "x86_64-linux"
+  sitedir: "/var/lang/lib/ruby/site_ruby/2.5.0"
+  version: 2.5.9
+system_uptime:
+  days: 0
+  hours: 0
+  seconds: 122
+  uptime: "0:02 hours"
+timezone: UTC
+virtual: "hyperv"
