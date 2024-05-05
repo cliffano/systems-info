@@ -5,263 +5,74 @@ env:
   RUBY_VERSION: 3.1.1
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
+  VERSIONS: 'ubuntu-latest, ubuntu-22.04, ubuntu-20.04, macos-latest, macos-14, macos-13, macos-12, macos-11, windows-latest, windows-2022, windows-2019'
 jobs:
-  ubuntu-latest:
-    runs-on: ubuntu-latest
+  collect-data-ubuntu-macos:
+    strategy:
+      matrix:
+        version: [ubuntu-latest, ubuntu-22.04, ubuntu-20.04, macos-latest, macos-14, macos-13, macos-12, macos-11]
+    runs-on: ${{ matrix.version }}
     steps:
       - uses: ruby/setup-ruby@master
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
+      - run: facter --hocon > facter.hocon
+      - run: facter --json > facter.json
+      - run: facter --yaml > facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: ubuntu-latest-facter
-          path: data/
-  ubuntu-22_04:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: ubuntu-22.04-facter
-          path: data/
-  ubuntu-20_04:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: ubuntu-20.04-facter
-          path: data/
-  macos-latest:
-    runs-on: macos-latest
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: macos-latest-facter
-          path: data/
-  macos-14:
-    runs-on: macos-14
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: macos-14-facter
-          path: data/
-  macos-13:
-    runs-on: macos-13
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: macos-13-facter
-          path: data/
-  macos-12:
-    runs-on: macos-12
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: macos-12-facter
-          path: data/
-  macos-11:
-    runs-on: macos-11
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install facter
-      - run: mkdir -p data
-      - run: facter --hocon > data/facter.hocon
-      - run: facter --json > data/facter.json
-      - run: facter --yaml > data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: macos-11-facter
-          path: data/
-  windows-latest:
-    runs-on: windows-latest
+          name: ${{ matrix.version }}
+          path: ./
+          retention-days: 1
+          compression-level: 0
+  collect-data-windows:
+    strategy:
+      matrix:
+        version: [windows-latest, windows-2022, windows-2019]
+    runs-on: ${{ matrix.version }}
     steps:
       - uses: ruby/setup-ruby@master
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - run: gem install ffi facter
-      - run: md data/github-actions-github-hosted-runners/windows-latest/ -ea 0
-      - run: facter --hocon | Out-File data/facter.hocon
-      - run: facter --json | Out-File data/facter.json
-      - run: facter --yaml | Out-File data/facter.yaml
+      - run: facter --hocon | Out-File facter.hocon
+      - run: facter --json | Out-File facter.json
+      - run: facter --yaml | Out-File facter.yaml
       - uses: actions/upload-artifact@master
         with:
-          name: windows-latest-facter
-          path: data/
-  windows-2022:
-    runs-on: windows-2022
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install ffi facter
-      - run: md data/github-actions-github-hosted-runners/windows-2022/ -ea 0
-      - run: facter --hocon | Out-File data/facter.hocon
-      - run: facter --json | Out-File data/facter.json
-      - run: facter --yaml | Out-File data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: windows-2022-facter
-          path: data/
-  windows-2019:
-    runs-on: windows-2019
-    steps:
-      - uses: ruby/setup-ruby@master
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - run: gem install ffi facter
-      - run: md data/github-actions-github-hosted-runners/windows-2019/ -ea 0
-      - run: facter --hocon | Out-File data/facter.hocon
-      - run: facter --json | Out-File data/facter.json
-      - run: facter --yaml | Out-File data/facter.yaml
-      - uses: actions/upload-artifact@master
-        with:
-          name: windows-2019-facter
-          path: data/
-  consolidate:
+          name: ${{ matrix.version }}
+          path: ./
+          retention-days: 1
+          compression-level: 0
+  consolidate-data:
     needs:
-      - ubuntu-latest
-      - ubuntu-22_04
-      - ubuntu-20_04
-      - macos-latest
-      - macos-14
-      - macos-13
-      - macos-12
-      - macos-11
-      - windows-latest
-      - windows-2022
-      - windows-2019
+      - collect-data-ubuntu-macos
+      - collect-data-windows
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+      - uses: cliffano/command-loop-action@main
+        with:
+          items: ${{ env.VERSIONS }}
+          command: 'rm -rf data/github-actions-github-hosted-runners/rockylinux-$ITEM/*'
+      - run: mkdir -p data/github-actions-github-hosted-runners
+      - uses: actions/download-artifact@master
+        with:
+          path: data/github-actions-github-hosted-runners
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
-      - run: rm -rf data/github-actions-github-hosted-runners/ubuntu-latest/*
-      - uses: actions/download-artifact@master
-        with:
-          name: ubuntu-latest-facter
-          path: data/github-actions-github-hosted-runners/ubuntu-latest/
-      - run: rm -rf data/github-actions-github-hosted-runners/ubuntu-22.04/*
-      - uses: actions/download-artifact@master
-        with:
-          name: ubuntu-22.04-facter
-          path: data/github-actions-github-hosted-runners/ubuntu-22.04/
-      - run: rm -rf data/github-actions-github-hosted-runners/ubuntu-20.04/*
-      - uses: actions/download-artifact@master
-        with:
-          name: ubuntu-20.04-facter
-          path: data/github-actions-github-hosted-runners/ubuntu-20.04/
-      - run: rm -rf data/github-actions-github-hosted-runners/macos-latest/*
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-latest-facter
-          path: data/github-actions-github-hosted-runners/macos-latest/
-      - run: rm -rf data/github-actions-github-hosted-runners/macos-14/*
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-14-facter
-          path: data/github-actions-github-hosted-runners/macos-14/
-      - run: rm -rf data/github-actions-github-hosted-runners/macos-13/*
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-13-facter
-          path: data/github-actions-github-hosted-runners/macos-13/
-      - run: rm -rf data/github-actions-github-hosted-runners/macos-12/*
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-12-facter
-          path: data/github-actions-github-hosted-runners/macos-12/
-      - run: rm -rf data/github-actions-github-hosted-runners/macos-11/*
-      - uses: actions/download-artifact@master
-        with:
-          name: macos-11-facter
-          path: data/github-actions-github-hosted-runners/macos-11/
-      - run: rm -rf data/github-actions-github-hosted-runners/windows-latest/*
-      - uses: actions/download-artifact@master
-        with:
-          name: windows-latest-facter
-          path: data/github-actions-github-hosted-runners/windows-latest/
-      - run: rm -rf data/github-actions-github-hosted-runners/windows-2022/*
-      - uses: actions/download-artifact@master
-        with:
-          name: windows-2022-facter
-          path: data/github-actions-github-hosted-runners/windows-2022/
-      - run: rm -rf data/github-actions-github-hosted-runners/windows-2019/*
-      - uses: actions/download-artifact@master
-        with:
-          name: windows-2019-facter
-          path: data/github-actions-github-hosted-runners/windows-2019/
       - run: git add -A
-      - run: git commit data/github-actions-github-hosted-runners/ubuntu-latest/* -m "Update data for GitHub Actions Ubuntu latest via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/ubuntu-22.04/* -m "Update data for GitHub Actions Ubuntu 22.04 via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/ubuntu-20.04/* -m "Update data for GitHub Actions Ubuntu 20.04 via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/macos-latest/* -m "Update data for GitHub Actions macOS latest via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/macos-14/* -m "Update data for GitHub Actions macOS 14 via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/macos-13/* -m "Update data for GitHub Actions macOS 13 via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/macos-12/* -m "Update data for GitHub Actions macOS 12 via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/macos-11/* -m "Update data for GitHub Actions macOS 11 via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/windows-latest/* -m "Update data for GitHub Actions Windows latest via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/windows-2022/* -m "Update data for GitHub Actions Windows 2022 via GitHub Actions."
-      - run: git commit data/github-actions-github-hosted-runners/windows-2019/* -m "Update data for GitHub Actions Windows 2019 via GitHub Actions."
+      - run: git status
+      - uses: cliffano/command-loop-action@main
+        with:
+          items: ${{ env.VERSIONS }}
+          command: 'git commit data/github-actions-github-hosted-runners/$ITEM/* -m "Update data for GitHub Actions $ITEM via GitHub Actions."'
       - run: git pull --rebase
       - uses: ad-m/github-push-action@master
         with:
           tags: true
           github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-
