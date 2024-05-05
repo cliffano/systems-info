@@ -18,27 +18,27 @@ kernelmajversion="23.4"
 kernelrelease="23.4.0"
 kernelversion="23.4.0"
 "load_averages"={
-    "15m"=4.76
-    "1m"=0.67
-    "5m"=2.72
+    "15m"=1.98
+    "1m"=2.22
+    "5m"=1.42
 }
 memory={
     system={
-        available="198.73 MiB"
-        "available_bytes"=208388096
-        capacity="97.23%"
+        available="63.38 MiB"
+        "available_bytes"=66453504
+        capacity="99.12%"
         total="7.00 GiB"
         "total_bytes"=7516192768
-        used="6.81 GiB"
-        "used_bytes"=7307804672
+        used="6.94 GiB"
+        "used_bytes"=7449739264
     }
 }
 mountpoints={}
 networking={
     dhcp="192.168.64.1"
     domain=local
-    fqdn="Mac-1714039561323.local"
-    hostname=Mac-1714039561323
+    fqdn="Mac-1714894386929.local"
+    hostname=Mac-1714894386929
     interfaces={
         XHC8={
             mtu=0
@@ -50,23 +50,23 @@ networking={
         en0={
             bindings=[
                 {
-                    address="192.168.64.8"
+                    address="192.168.64.14"
                     netmask="255.255.255.0"
                     network="192.168.64.0"
                 }
             ]
             bindings6=[
                 {
-                    address="fe80::ca3:4243:dea6:54f2"
+                    address="fe80::1030:355:8663:958c"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
             dhcp="192.168.64.1"
-            ip="192.168.64.8"
-            ip6="fe80::ca3:4243:dea6:54f2"
-            mac="7e:96:28:57:74:c5"
+            ip="192.168.64.14"
+            ip6="fe80::1030:355:8663:958c"
+            mac="1a:4f:1e:08:37:b8"
             mtu=1500
             netmask="255.255.255.0"
             netmask6="ffff:ffff:ffff:ffff::"
@@ -118,13 +118,13 @@ networking={
         utun0={
             bindings6=[
                 {
-                    address="fe80::bfc:c35:70e2:c94d"
+                    address="fe80::4133:da1a:1527:c653"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
-            ip6="fe80::bfc:c35:70e2:c94d"
+            ip6="fe80::4133:da1a:1527:c653"
             mtu=1500
             netmask6="ffff:ffff:ffff:ffff::"
             network6="fe80::"
@@ -133,34 +133,19 @@ networking={
         utun1={
             bindings6=[
                 {
-                    address="fe80::d4a8:26da:1898:58ec"
+                    address="fe80::c32d:c3a4:c290:abaa"
                     netmask="ffff:ffff:ffff:ffff::"
                     network="fe80::"
                     scope6=link
                 }
             ]
-            ip6="fe80::d4a8:26da:1898:58ec"
-            mtu=1380
-            netmask6="ffff:ffff:ffff:ffff::"
-            network6="fe80::"
-            scope6=link
-        }
-        utun2={
-            bindings6=[
-                {
-                    address="fe80::8b08:b926:1f02:39b2"
-                    netmask="ffff:ffff:ffff:ffff::"
-                    network="fe80::"
-                    scope6=link
-                }
-            ]
-            ip6="fe80::8b08:b926:1f02:39b2"
+            ip6="fe80::c32d:c3a4:c290:abaa"
             mtu=2000
             netmask6="ffff:ffff:ffff:ffff::"
             network6="fe80::"
             scope6=link
         }
-        utun3={
+        utun2={
             bindings6=[
                 {
                     address="fe80::ce81:b1c:bd2c:69e"
@@ -175,10 +160,25 @@ networking={
             network6="fe80::"
             scope6=link
         }
+        utun3={
+            bindings6=[
+                {
+                    address="fe80::3fdb:56f3:6ba0:296b"
+                    netmask="ffff:ffff:ffff:ffff::"
+                    network="fe80::"
+                    scope6=link
+                }
+            ]
+            ip6="fe80::3fdb:56f3:6ba0:296b"
+            mtu=1380
+            netmask6="ffff:ffff:ffff:ffff::"
+            network6="fe80::"
+            scope6=link
+        }
     }
-    ip="192.168.64.8"
-    ip6="fe80::ca3:4243:dea6:54f2"
-    mac="7e:96:28:57:74:c5"
+    ip="192.168.64.14"
+    ip6="fe80::1030:355:8663:958c"
+    mac="1a:4f:1e:08:37:b8"
     mtu=1500
     netmask="255.255.255.0"
     netmask6="ffff:ffff:ffff:ffff::"
@@ -263,7 +263,7 @@ ssh={
 "system_profiler"={
     "boot_mode"=Normal
     "boot_volume"="Macintosh HD"
-    "computer_name"="Mac-1714039561323.local"
+    "computer_name"="Mac-1714894386929.local"
     cores="3"
     "hardware_uuid"="7BD53EFB-64A3-5876-BD9F-DE6E3729B6D1"
     "kernel_version"="Darwin 23.4.0"
@@ -273,14 +273,14 @@ ssh={
     "secure_virtual_memory"=Enabled
     "serial_number"=Z3PDY0WLLW
     "system_version"="macOS 14.4.1 (23E224)"
-    uptime="18 minutes, 13 seconds"
+    uptime="32 minutes, 37 seconds"
     username="Anka (runner)"
 }
 "system_uptime"={
     days=0
     hours=0
-    seconds=1063
-    uptime="0:17 hours"
+    seconds=1927
+    uptime="0:32 hours"
 }
 timezone=UTC
 virtual=physical
