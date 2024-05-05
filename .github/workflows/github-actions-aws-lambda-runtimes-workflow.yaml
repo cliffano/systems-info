@@ -14,7 +14,7 @@ jobs:
     container:
       image: public.ecr.aws/lambda/ruby:${{ matrix.version }}
     steps:
-      - run: gem install facter -v 4.4.0
+      - run: gem install facter -v 4.3.0
       - run: facter --hocon > facter.hocon
       - run: facter --json > facter.json
       - run: facter --yaml > facter.yaml
