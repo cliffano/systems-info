@@ -37,7 +37,7 @@ jobs:
           items: ${{ env.VERSIONS }}
           command: 'rm -rf data/github-actions-aws-lambda-runtimes/ruby-$ITEM/*'
       - run: mkdir -p data/github-actions-aws-lambda-runtimes
-      - uses: actions/download-artifact@master
+      - uses: actions/download-artifact@v3
         with:
           path: data/github-actions-aws-lambda-runtimes
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
