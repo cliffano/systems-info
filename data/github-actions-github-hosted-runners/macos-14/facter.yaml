@@ -15,24 +15,24 @@ kernelmajversion: '23.4'
 kernelrelease: 23.4.0
 kernelversion: 23.4.0
 load_averages:
-  15m: 2.34
-  1m: 3.18
-  5m: 1.57
+  15m: 1.94
+  1m: 1.58
+  5m: 1.26
 memory:
   system:
-    available: 131.39 MiB
-    available_bytes: 137773056
-    capacity: 98.17%
+    available: 99.47 MiB
+    available_bytes: 104300544
+    capacity: 98.61%
     total: 7.00 GiB
     total_bytes: 7516192768
-    used: 6.87 GiB
-    used_bytes: 7378419712
+    used: 6.90 GiB
+    used_bytes: 7411892224
 mountpoints: {}
 networking:
   dhcp: 192.168.64.1
   domain: local
-  fqdn: Mac-1714894372382.local
-  hostname: Mac-1714894372382
+  fqdn: Mac-1714904199007.local
+  hostname: Mac-1714904199007
   interfaces:
     XHC8:
       mtu: 0
@@ -41,18 +41,18 @@ networking:
       mtu: 1500
     en0:
       bindings:
-      - address: 192.168.64.32
+      - address: 192.168.64.16
         netmask: 255.255.255.0
         network: 192.168.64.0
       bindings6:
-      - address: "fe80::1cd6:f8b5:1bca:1df7"
+      - address: "fe80::10fe:90d5:9f75:af02"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
       dhcp: 192.168.64.1
-      ip: 192.168.64.32
-      ip6: "fe80::1cd6:f8b5:1bca:1df7"
-      mac: "32:1d:ec:71:db:73"
+      ip: 192.168.64.16
+      ip6: "fe80::10fe:90d5:9f75:af02"
+      mac: "0a:a1:04:b4:8a:69"
       mtu: 1500
       netmask: 255.255.255.0
       netmask6: "ffff:ffff:ffff:ffff::"
@@ -90,22 +90,22 @@ networking:
       mtu: 1280
     utun0:
       bindings6:
-      - address: "fe80::7e85:16c1:1500:5d0a"
+      - address: "fe80::25d8:f1ab:b4d6:1312"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
-      ip6: "fe80::7e85:16c1:1500:5d0a"
-      mtu: 1500
+      ip6: "fe80::25d8:f1ab:b4d6:1312"
+      mtu: 1380
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
       scope6: "link"
     utun1:
       bindings6:
-      - address: "fe80::8e9c:6de6:f6cb:236"
+      - address: "fe80::6e61:98c1:8f8f:eeb3"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
-      ip6: "fe80::8e9c:6de6:f6cb:236"
+      ip6: "fe80::6e61:98c1:8f8f:eeb3"
       mtu: 2000
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
@@ -123,18 +123,18 @@ networking:
       scope6: "link"
     utun3:
       bindings6:
-      - address: "fe80::d47b:a54e:14a1:2682"
+      - address: "fe80::70da:387c:fd36:19b8"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
-      ip6: "fe80::d47b:a54e:14a1:2682"
-      mtu: 1380
+      ip6: "fe80::70da:387c:fd36:19b8"
+      mtu: 1500
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
       scope6: "link"
-  ip: 192.168.64.32
-  ip6: "fe80::1cd6:f8b5:1bca:1df7"
-  mac: "32:1d:ec:71:db:73"
+  ip: 192.168.64.16
+  ip6: "fe80::10fe:90d5:9f75:af02"
+  mac: "0a:a1:04:b4:8a:69"
   mtu: 1500
   netmask: 255.255.255.0
   netmask6: "ffff:ffff:ffff:ffff::"
@@ -202,7 +202,7 @@ ssh:
 system_profiler:
   boot_mode: "Normal"
   boot_volume: "Macintosh HD"
-  computer_name: Mac-1714894372382.local
+  computer_name: Mac-1714904199007.local
   cores: '3'
   hardware_uuid: 7BD53EFB-64A3-5876-BD9F-DE6E3729B6D1
   kernel_version: "Darwin 23.4.0"
@@ -212,12 +212,12 @@ system_profiler:
   secure_virtual_memory: "Enabled"
   serial_number: "Z3PDY0WLLW"
   system_version: macOS 14.4.1 (23E224)
-  uptime: "33 minutes, 6 seconds"
+  uptime: "33 minutes, 47 seconds"
   username: "Anka (runner)"
 system_uptime:
   days: 0
   hours: 0
-  seconds: 1956
-  uptime: "0:32 hours"
+  seconds: 1997
+  uptime: "0:33 hours"
 timezone: UTC
 virtual: "physical"
