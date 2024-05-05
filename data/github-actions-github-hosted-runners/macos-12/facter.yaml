@@ -1,50 +1,61 @@
 dmi:
   product:
-    name: VMware7,1
+    name: "Macmini6,2"
 facterversion: 4.7.0
-filesystems: apfs,autofs,devfs,vmhgfs
+filesystems: apfs,autofs,devfs
 identity:
   gid: 20
   group: staff
   privileged: false
   uid: 501
   user: "runner"
-is_virtual: true
+is_virtual: false
 kernel: "Darwin"
 kernelmajversion: '21.6'
 kernelrelease: 21.6.0
 kernelversion: 21.6.0
 load_averages:
-  15m: 3.81
-  1m: 20.84
-  5m: 9.45
+  15m: 0.63
+  1m: 3.18
+  5m: 1.05
 memory:
   system:
-    available: 7.87 GiB
-    available_bytes: 8453582848
-    capacity: 43.76%
+    available: 5.21 GiB
+    available_bytes: 5591461888
+    capacity: 62.80%
     total: 14.00 GiB
     total_bytes: 15032385536
-    used: 6.13 GiB
-    used_bytes: 6578802688
+    used: 8.79 GiB
+    used_bytes: 9440923648
 mountpoints: {}
 networking:
-  dhcp: 10.213.0.132
+  dhcp: 192.168.64.1
   domain: local
-  fqdn: Mac-1714040533637.local
-  hostname: Mac-1714040533637
+  fqdn: Mac-1714880975376.local
+  hostname: Mac-1714880975376
   interfaces:
+    XHC7:
+      mtu: 0
     en0:
       bindings:
-      - address: 10.213.0.158
-        netmask: 255.255.255.128
-        network: 10.213.0.128
-      dhcp: 10.213.0.132
-      ip: 10.213.0.158
-      mac: "00:50:56:94:99:d4"
+      - address: 192.168.64.23
+        netmask: 255.255.255.0
+        network: 192.168.64.0
+      bindings6:
+      - address: "fe80::1cac:b181:5067:7054"
+        netmask: "ffff:ffff:ffff:ffff::"
+        network: "fe80::"
+        scope6: "link"
+      dhcp: 192.168.64.1
+      ip: 192.168.64.23
+      ip6: "fe80::1cac:b181:5067:7054"
+      mac: "5e:12:46:16:7c:25"
       mtu: 1500
-      netmask: 255.255.255.128
-      network: 10.213.0.128
+      netmask: 255.255.255.0
+      netmask6: "ffff:ffff:ffff:ffff::"
+      network: 192.168.64.0
+      network6: "fe80::"
+      scope6: "link"
     gif0:
       mtu: 1280
     lo0:
@@ -73,22 +84,22 @@ networking:
       mtu: 1280
     utun0:
       bindings6:
-      - address: "fe80::f229:25a1:f838:56d2"
+      - address: "fe80::a4b9:8083:2e0c:cb39"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
-      ip6: "fe80::f229:25a1:f838:56d2"
+      ip6: "fe80::a4b9:8083:2e0c:cb39"
       mtu: 1380
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
       scope6: "link"
     utun1:
       bindings6:
-      - address: "fe80::22de:1468:c48c:e44"
+      - address: "fe80::b833:4ed2:8220:3002"
         netmask: "ffff:ffff:ffff:ffff::"
         network: "fe80::"
         scope6: "link"
-      ip6: "fe80::22de:1468:c48c:e44"
+      ip6: "fe80::b833:4ed2:8220:3002"
       mtu: 2000
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
@@ -104,12 +115,16 @@ networking:
       netmask6: "ffff:ffff:ffff:ffff::"
       network6: "fe80::"
       scope6: "link"
-  ip: 10.213.0.158
-  mac: "00:50:56:94:99:d4"
+  ip: 192.168.64.23
+  ip6: "fe80::1cac:b181:5067:7054"
+  mac: "5e:12:46:16:7c:25"
   mtu: 1500
-  netmask: 255.255.255.128
-  network: 10.213.0.128
+  netmask: 255.255.255.0
+  netmask6: "ffff:ffff:ffff:ffff::"
+  network: 192.168.64.0
+  network6: "fe80::"
   primary: "en0"
+  scope6: "link"
 os:
   architecture: x86_64
   family: "Darwin"
@@ -129,15 +144,16 @@ os:
     minor: '6'
 path: "/Users/runner/hostedtoolcache/Ruby/3.1.1/x64/bin:/usr/local/opt/pipx_bin:/Users/runner/.cargo/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/sbin:/Users/runner/bin:/Users/runner/.yarn/bin:/Users/runner/Library/Android/sdk/tools:/Users/runner/Library/Android/sdk/platform-tools:/Library/Frameworks/Python.framework/Versions/Current/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/bin:/bin:/usr/sbin:/sbin:/Users/runner/.dotnet/tools:/Users/runner/.ghcup/bin"
 processors:
-  cores: 3
-  count: 3
+  cores: 4
+  count: 4
   isa: i386
   models:
-  - "Intel(R) Xeon(R) CPU E5-1650 v2 @ 3.50GHz"
-  - "Intel(R) Xeon(R) CPU E5-1650 v2 @ 3.50GHz"
-  - "Intel(R) Xeon(R) CPU E5-1650 v2 @ 3.50GHz"
-  physicalcount: 3
-  speed: 3.34 GHz
+  - "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz"
+  - "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz"
+  - "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz"
+  - "Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz"
+  physicalcount: 4
+  speed: 3.19 GHz
   threads: 1
 ruby:
   platform: "x86_64-darwin19"
@@ -146,53 +162,52 @@ ruby:
 ssh:
   dsa:
     fingerprints:
-      sha1: SSHFP 2 1 610ee686c5f805220b8b0a77bb1815d5df4c2d94
-      sha256: SSHFP 2 2 134f7188c786e407d217afda379041cab4834dc7a0ec71d5426786d3a8ed7382
-    key: "AAAAB3NzaC1kc3MAAACBAMI+3mrVeQJmNfPivZ6Q4issxDhCi+mVDiicXoR1b2Lb4/SV3wiGPBBQycuCCi1DGuTdtJeUN4cRQGAyKCI5iIj5Y8zJ9dTq7zZ5Bg2e8PWIfPZEELSkcHGilMlIC0JbAzsWQY6hejlHbxyHDTaKrUHC/UdcMa7/q/oKelA03nuHAAAAFQCahxt807gLCczQuV9OSNYA3BJLhwAAAIAEdIIqtn5x+s62EqSgysBfL4KTf1mmFRkRTaZgczMT9fKZojSxlOjJRLTJ3xtBakw55SxjFxNzudYIuCKYtG5SG4FlVdegZfCynMAGVdLMLLYvKx6bYzTNGEFiD7+aNMw5js1HlQ4/jlSerUus83lMi9fZhVJ2jI/oh6sXiKyl3gAAAIBDuVpyvERDnyfUDIM/zy8rXKw6fxbC1+TDb0vnewisXzVXw/rxAcSze+dwyauc6pf+3N7cOLqz554io22g7/BcoSgjlAHSdyeFFjU5jtKFKp5l1caEq7ziowX9/kAHRRO4p+GEYrX912D7/gOLJjd9ne2jJbeQn4CVcIjBIKlMwA=="
+      sha1: SSHFP 2 1 7088c7ad019a76d8c8e703b607aa4937f611355d
+      sha256: SSHFP 2 2 f898d9609638de50aeb8542d114c6b648df317171d4e3ac6c40940ab6bcafc9b
+    key: "AAAAB3NzaC1kc3MAAACBAPWbykZAcNM+SqvG7vQkrHDhu10cXxvipNVp0l2j05dTG82r4z6qzAc3nOdsujfKih4etW25LjQZWpl6s0X5QquKUZo+EZeruMo4rp4SGReFVNR0Q3QdFxS5JmpiIKMXRFmoe6ew11nWofeqBt2DrdsMXJoyhoIVoxeYVJyUyYjhAAAAFQCWuBEse5f2pfh8zXN0mF+o0NcS7QAAAIAHDavZKYA+9Wj6CEqAIKDrZJBip9opGwvKVn7QEJ4c7f5nA+X4lN0/FA5A+ZwATI/FJp+VAsZPPv253bGjW/ySRAhYZhBhp8p3tzmdoIyoprMdRGIAG0mJahtJR9KSXIJsShWk1YbvCE3uwFDlheIx2kaLY0TOQsEQPTZQZtYFbQAAAIA+rfyAHZ7k7Q/lMp03Sz6sCALdDZMbNELwHfaeEeRuYbGI3NqiRZVq3F8Ffh4UOt/nrL4Nq6Ame/4Gdx+DBbQfxhxFlUzhGpl+Y9RhZ1AkgS4WxP0Rj9G7UI3jpdQl6Dr5d999q+/vmJ/5yoJ2bEELicUHx+HS+Z53JiYORIp0yg=="
     type: ssh-dss
   ecdsa:
     fingerprints:
-      sha1: SSHFP 3 1 d429f29d218b28be228511796df292006569736b
-      sha256: SSHFP 3 2 fd9829ecdf53d8f05a8d6559212ae25971c2848c4a9bd2a25427eab166383f0b
-    key: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEL+KFQnBWClGaIU05fAK7DCcL5xUH40LxHUulBORg9YlEIRrvyYW4endJNK8bgRgBWGrwaun7vlgTJyTPuPb+c="
+      sha1: SSHFP 3 1 7d12bad2c29c0cca9b61e4ed9b5cb15c35d51abf
+      sha256: SSHFP 3 2 70ed9a51de5a27da4004f8ee1ccfa12684b4cde21d21ebe7553536ee1ffd13c0
+    key: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNyyE69QYnwOzB+3fzOKki+GXTxP7jPbm67sw/d+SWN7D12AOX+1b2CeKDN0NFOezI6nBpGKSh2ARW8Vmif0EWs="
     type: "ecdsa-sha2-nistp256"
   ed25519:
     fingerprints:
-      sha1: SSHFP 4 1 0ff23cbff5b550d16ff15802e292c6b9c89698aa
-      sha256: SSHFP 4 2 d73e6d5111ef5fde1a5c14bff6cbe15a81102f5274a434f4b5a930a598c84e81
-    key: "AAAAC3NzaC1lZDI1NTE5AAAAINvRHIHn4Al4aKjhhFZfJG2FRMqrPceo8TCaKyTNK7Jz"
+      sha1: SSHFP 4 1 b82c7e2dec45f1ceea81d7a22bfb703d799af5a5
+      sha256: SSHFP 4 2 74ed407a9eaa0f86c491b4094395b7cc3ed0cd0da4c62850034f87c6e20a3970
+    key: "AAAAC3NzaC1lZDI1NTE5AAAAIL5laE6K4dY9sGS6cV3DaQMlnaMuHJ0NK1QOEu6Ude9F"
     type: ssh-ed25519
   rsa:
     fingerprints:
-      sha1: SSHFP 1 1 e68e3f7348db3e73351d586e5604676c27fc6bc0
-      sha256: SSHFP 1 2 38a1035328a08264458e10128560c90c31bacebaab4bc8dfe0e3417fadcc75dd
-    key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQDlYp3unmp2pgW7sGDpNVIkblaFwZM83fhmazq74AfiXWn5m8o85e7bLCvCMIY7ARYHTtWG5GC9Vff9PBXUFS9p4BY5DIzKaVprxrcplde5yjwnTB10mjCidaej0dATu6KZXzz37vToXJQ4m2awZ3EJ5d3KZy4UqK9sx9genslHTeCc0FTrhGumBAHExhpzH7m/i8zWDU66RAzRVBMrdov8/J6C9db9JDuNJCf42TnWENV8dyYbK6g55VWbsYaqR/upAOLEPdKrVIQ9SpK28Ep/Yf6W3Z64pWatvBY/F3lqOVUnhbsdqAW8iI5g5antUumsiBTdzZqbBiLtLKH3RBKd"
+      sha1: SSHFP 1 1 694f26626a76d45815a9a98c76b4ace96fe1e1aa
+      sha256: SSHFP 1 2 0b922c0f57cadebae2e94128c5a45473b0191b81f3cedef634172b4f96f0ff12
+    key: "AAAAB3NzaC1yc2EAAAADAQABAAABgQCX5G8T//01V8L8eigizU+ZzTrGYsAOtyKqPPYEUfk0jlyj4h9e8HH+djoiPnWaizm8FF0hpTv4Fn7PWzHE6Fh+WZxkVYtV7u/sSUE/okFZ5y5635ikZihavZdZOUYVo4MifsqFk8iioh7Yv6E0kR58/RD+WBRCYolPCgs6QVE9LZ+t/Qtw2qOOmjKyGTxYixmdGoiGesHxmorXPEfCaTjY0zs8UJIRCS791/ugz7luYM+H7YnJxPCoJzLF858IY5aw15/+vsMcI+wQKsva2QEy7G6+8+8hjVzM9xbhbHrRDnsaYJmQqh0oncs9koBLsG9UTDler2vOkm6IxpXoD2KWhOjjSow9QHU/5ZZebLAZ7C6gRwBRrgc6UgWOI+f7m/Qcd5KJXW8eZkRCWFttmyMxNeONU0JV4pblpvzARzbJjvlFHdY4hIVqqFFzP8fxgyI0KBEbuGaHKcGxn88DUzN6S9RH30X3Y5wAVWkMOAk21jdazAxZhehCJZEb8qt4HTU="
     type: ssh-rsa
 system_profiler:
   boot_mode: "Normal"
   boot_volume: "Macintosh HD"
-  computer_name: Mac-1714040533637.local
-  cores: '3'
+  computer_name: Mac-1714880975376.local
+  cores: '4'
   hardware_uuid: 4203018E-580F-C1B5-9525-B745CECA79EB
   kernel_version: "Darwin 21.6.0"
   l2_cache_per_core: 256 KB
   l3_cache: 12 MB
   memory: 14 GB
-  model_identifier: VMware7,1
-  model_name: Mac
+  model_identifier: "Macmini6,2"
+  model_name: "Mac mini"
   processor_name: "Unknown"
-  processor_speed: 3.33 GHz
+  processor_speed: 3.19 GHz
   processors: '1'
   secure_virtual_memory: "Enabled"
-  serial_number: VM872Isz0Akt
-  smc_version: 2.8f0
+  serial_number: C02J8E35G1HW
   system_version: macOS 12.7.4 (21H1123)
-  uptime: "2 minutes"
+  uptime: "4:16"
   username: "runner (runner)"
 system_uptime:
   days: 0
-  hours: 0
-  seconds: 117
-  uptime: "0:01 hours"
+  hours: 4
+  seconds: 15356
+  uptime: "4:15 hours"
 timezone: UTC
-virtual: vmware
+virtual: "physical"
