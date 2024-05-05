@@ -4,12 +4,12 @@ on: [workflow_dispatch]
 env:
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
-  VERSIONS: 'latest, 3, 3.3, 3.2, 2, 2.7, 2.5'
+  VERSIONS: 'latest, 3, 3.2, 2, 2.7, 2.5'
 jobs:
   collect-data:
     strategy:
       matrix:
-        version: [latest, 3, 3.3, 3.2, 2, 2.7, 2.5]
+        version: [latest, 3, 3.2, 2, 2.7, 2.5]
     runs-on: ubuntu-latest
     container:
       image: public.ecr.aws/lambda/ruby:${{ matrix.version }}
