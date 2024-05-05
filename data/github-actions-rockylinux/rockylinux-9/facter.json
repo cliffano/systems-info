@@ -5,8 +5,8 @@
       "customData": "",
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
-      "location": "eastus",
-      "name": "EUS-GEUS22U22G115G86-0061",
+      "location": "eastus2",
+      "name": "EUS2-GEUS23U22M89M82-0049",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -26,8 +26,8 @@
 
       ],
       "publisher": "",
-      "resourceGroupName": "geus22u22g115g86",
-      "resourceId": "/subscriptions/fb290185-dab6-402e-b3bd-69386c9fbd4a/resourceGroups/geus22u22g115g86/providers/Microsoft.Compute/virtualMachines/EUS-GEUS22U22G115G86-0061",
+      "resourceGroupName": "geus23u22m89m82",
+      "resourceId": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22m89m82/providers/Microsoft.Compute/virtualMachines/EUS2-GEUS23U22M89M82-0049",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -38,7 +38,7 @@
 
         ],
         "imageReference": {
-          "id": "/subscriptions/fb290185-dab6-402e-b3bd-69386c9fbd4a/resourceGroups/geus22u22g115g86/providers/Microsoft.Compute/galleries/geus22u22g115g86/images/factory/versions/0.0.92922984",
+          "id": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22m89m82/providers/Microsoft.Compute/galleries/geus23u22m89m82/images/factory/versions/0.0.48066285",
           "offer": "",
           "publisher": "",
           "sku": "",
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/fb290185-dab6-402e-b3bd-69386c9fbd4a/resourceGroups/geus22u22g115g86/providers/Microsoft.Compute/disks/EUS-GEUS22U22G115G86-0061-a1965152",
+            "id": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22m89m82/providers/Microsoft.Compute/disks/EUS2-GEUS23U22M89M82-0049-6e6dfde1",
             "storageAccountType": "Standard_LRS"
           },
-          "name": "EUS-GEUS22U22G115G86-0061-a1965152",
+          "name": "EUS2-GEUS23U22M89M82-0049-6e6dfde1",
           "osType": "Linux",
           "vhd": {
             "uri": ""
@@ -69,7 +69,7 @@
           "writeAcceleratorEnabled": "false"
         }
       },
-      "subscriptionId": "fb290185-dab6-402e-b3bd-69386c9fbd4a",
+      "subscriptionId": "f75e3da5-d998-47ec-8c14-9212154d6c7b",
       "tags": "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
       "tagsList": [
         {
@@ -101,8 +101,8 @@
           "value": "true"
         }
       ],
-      "version": "0.0.92922984",
-      "vmId": "64619f3f-8b3c-49e0-871a-fcc6bc46548c",
+      "version": "0.0.48066285",
+      "vmId": "c46e28a6-fe54-4be2-9db3-d3e2d86030a3",
       "vmScaleSetName": "",
       "vmSize": "Standard_D4ads_v5",
       "zone": ""
@@ -113,7 +113,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.80",
+                "privateIpAddress": "10.1.0.49",
                 "publicIpAddress": ""
               }
             ],
@@ -129,7 +129,7 @@
 
             ]
           },
-          "macAddress": "6045BDEE19F6"
+          "macAddress": "0022484F69D2"
         }
       ]
     }
@@ -162,7 +162,7 @@
     "board": {
       "manufacturer": "Microsoft Corporation",
       "product": "Virtual Machine",
-      "serial_number": "0000-0009-7353-7147-5007-1983-48"
+      "serial_number": "0000-0011-3636-5925-6032-1455-71"
     },
     "chassis": {
       "asset_tag": "7783-7084-3265-9085-8269-3286-77",
@@ -171,8 +171,8 @@
     "manufacturer": "Microsoft Corporation",
     "product": {
       "name": "Virtual Machine",
-      "serial_number": "0000-0007-2332-3757-1801-4673-60",
-      "uuid": "3f9f6164-3c8b-e049-871a-fcc6bc46548c",
+      "serial_number": "0000-0014-1542-9537-6568-6671-06",
+      "uuid": "a6286ec4-54fe-e24b-9db3-d3e2d86030a3",
       "version": "7.0"
     }
   },
@@ -196,9 +196,9 @@
   "kernelrelease": "6.5.0-1018-azure",
   "kernelversion": "6.5.0",
   "load_averages": {
-    "15m": 0.1,
-    "1m": 0.68,
-    "5m": 0.26
+    "15m": 0.14,
+    "1m": 0.49,
+    "5m": 0.33
   },
   "memory": {
     "swap": {
@@ -211,21 +211,21 @@
       "used_bytes": 0
     },
     "system": {
-      "available": "14.57 GiB",
-      "available_bytes": 15645671424,
-      "capacity": "6.63%",
+      "available": "14.55 GiB",
+      "available_bytes": 15620902912,
+      "capacity": "6.78%",
       "total": "15.61 GiB",
       "total_bytes": 16757346304,
-      "used": "1.04 GiB",
-      "used_bytes": 1111674880
+      "used": "1.06 GiB",
+      "used_bytes": 1136443392
     }
   },
   "mountpoints": {
   },
   "networking": {
-    "domain": "iwjnporn0ryezofxapuyptwyra.bx.internal.cloudapp.net",
-    "fqdn": "37ef60defcf3.iwjnporn0ryezofxapuyptwyra.bx.internal.cloudapp.net",
-    "hostname": "37ef60defcf3",
+    "domain": "m43iyx0u3v4e1h2pvvlabjukza.cx.internal.cloudapp.net",
+    "fqdn": "ea4de008e99d.m43iyx0u3v4e1h2pvvlabjukza.cx.internal.cloudapp.net",
+    "hostname": "ea4de008e99d",
     "interfaces": {
       "eth0": {
         "bindings": [
@@ -304,22 +304,22 @@
       "size_bytes": 40996864
     },
     "/dev/sda1": {
+      "size": "75.00 GiB",
+      "size_bytes": 80528539648
+    },
+    "/dev/sdb1": {
       "filesystem": "20.2G",
       "size": "74.89 GiB",
       "size_bytes": 80414227968,
       "uuid": "72%"
     },
-    "/dev/sda14": {
+    "/dev/sdb14": {
       "size": "4.00 MiB",
       "size_bytes": 4194304
     },
-    "/dev/sda15": {
+    "/dev/sdb15": {
       "size": "106.00 MiB",
       "size_bytes": 111149056
-    },
-    "/dev/sdb1": {
-      "size": "75.00 GiB",
-      "size_bytes": 80528539648
     }
   },
   "path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
@@ -334,7 +334,7 @@
       "AMD EPYC 7763 64-Core Processor"
     ],
     "physicalcount": 1,
-    "speed": "2.78 GHz",
+    "speed": "3.23 GHz",
     "threads": 2
   },
   "ruby": {
@@ -345,8 +345,8 @@
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 101,
-    "uptime": "0:01 hours"
+    "seconds": 189,
+    "uptime": "0:03 hours"
   },
   "timezone": "UTC",
   "virtual": "hyperv"
