@@ -2,7 +2,7 @@
 name: Rocky Linux system info via GitHub Actions
 on: [workflow_dispatch]
 env:
-  RUBY_VERSION: 3.1
+  RUBY_VERSION: 3.3
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
   VERSIONS: '9, 9.3, 9.2, 9.1, 8, 8.9, 8.8, 8.7, 8.6, 8.5'
@@ -31,7 +31,7 @@ jobs:
       - collect-data
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
       - uses: cliffano/command-loop-action@main
@@ -45,6 +45,7 @@ jobs:
       - run: git config --global user.email "${{ env.GIT_USER_EMAIL }}"
       - run: git config --global user.name "${{ env.GIT_USER_NAME }}"
       - run: git add -A
+      - run: git status
       - uses: cliffano/command-loop-action@main
         with:
           items: ${{ env.VERSIONS }}
