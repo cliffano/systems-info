@@ -2,7 +2,7 @@
 name: Rocky Linux system info via GitHub Actions
 on: [workflow_dispatch]
 env:
-  RUBY_VERSION: 3.3
+  RUBY_VERSION: 3.2
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
   VERSIONS: '9, 9.3, 9.2, 9.1, 8, 8.9, 8.8, 8.7, 8.6, 8.5'
