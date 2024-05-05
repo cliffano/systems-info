@@ -18,7 +18,7 @@ jobs:
       - run: facter --hocon > facter.hocon
       - run: facter --json > facter.json
       - run: facter --yaml > facter.yaml
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v3
         with:
           name: ruby-${{ matrix.version }}
           path: ./
