@@ -4,8 +4,8 @@
         customData=""
         isHostCompatibilityLayerVm=false
         licenseType=""
-        location=eastus2
-        name=EUS2-GCUS1U22M113M42-0078
+        location=westus
+        name=WUS-GEUS22U22X113X85-0069
         offer=""
         osProfile={
             adminUsername=""
@@ -23,8 +23,8 @@
         provider="Microsoft.Compute"
         publicKeys=[]
         publisher=""
-        resourceGroupName=gcus1u22m113m42
-        resourceId="/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22m113m42/providers/Microsoft.Compute/virtualMachines/EUS2-GCUS1U22M113M42-0078"
+        resourceGroupName=geus22u22x113x85
+        resourceId="/subscriptions/7e87e1ee-4c27-41db-9696-5de2034c6688/resourceGroups/geus22u22x113x85/providers/Microsoft.Compute/virtualMachines/WUS-GEUS22U22X113X85-0069"
         securityProfile={
             secureBootEnabled=false
             virtualTpmEnabled=false
@@ -33,7 +33,7 @@
         storageProfile={
             dataDisks=[]
             imageReference={
-                id="/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22m113m42/providers/Microsoft.Compute/galleries/gcus1u22m113m42/images/factory/versions/0.0.61933824"
+                id="/subscriptions/7e87e1ee-4c27-41db-9696-5de2034c6688/resourceGroups/geus22u22x113x85/providers/Microsoft.Compute/galleries/geus22u22x113x85/images/factory/versions/0.0.92923045"
                 offer=""
                 publisher=""
                 sku=""
@@ -53,10 +53,10 @@
                     uri=""
                 }
                 managedDisk={
-                    id="/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22m113m42/providers/Microsoft.Compute/disks/EUS2-GCUS1U22M113M42-0078-e870b658"
+                    id="/subscriptions/7e87e1ee-4c27-41db-9696-5de2034c6688/resourceGroups/geus22u22x113x85/providers/Microsoft.Compute/disks/WUS-GEUS22U22X113X85-0069-0a854546"
                     storageAccountType="Standard_LRS"
                 }
-                name=EUS2-GCUS1U22M113M42-0078-e870b658
+                name=WUS-GEUS22U22X113X85-0069-0a854546
                 osType=Linux
                 vhd={
                     uri=""
@@ -64,7 +64,7 @@
                 writeAcceleratorEnabled=false
             }
         }
-        subscriptionId=ddf4fb74-17fd-4808-a484-2394c8e0264e
+        subscriptionId="7e87e1ee-4c27-41db-9696-5de2034c6688"
         tags="OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true"
         tagsList=[
             {
@@ -96,8 +96,8 @@
                 value=true
             }
         ]
-        version="0.0.61933824"
-        vmId="859d2811-07e3-47b1-aefb-a4d18f4ed47f"
+        version="0.0.92923045"
+        vmId="8707dfd4-0f16-46a4-a8aa-4d80df815436"
         vmScaleSetName=""
         vmSize="Standard_D4ads_v5"
         zone=""
@@ -108,7 +108,7 @@
                 ipv4={
                     ipAddress=[
                         {
-                            privateIpAddress="10.1.0.91"
+                            privateIpAddress="10.1.0.90"
                             publicIpAddress=""
                         }
                     ]
@@ -122,7 +122,7 @@
                 ipv6={
                     ipAddress=[]
                 }
-                macAddress="6045BD780843"
+                macAddress="6045BD07F51D"
             }
         ]
     }
@@ -133,21 +133,21 @@ cloud={
 disks={
     sda={
         model="Virtual Disk"
-        serial="60022480c167a52db18011002c9d1852"
+        serial="6002248065c299b025bea0de6bf1797a"
         size="75.00 GiB"
         "size_bytes"=80530636800
         type=hdd
         vendor=Msft
-        wwn="0x60022480c167a52db18011002c9d1852"
+        wwn="0x6002248065c299b025bea0de6bf1797a"
     }
     sdb={
         model="Virtual Disk"
-        serial="6002248001a3f20d2b51c8cca2ae6fe4"
+        serial="600224802f80de45f16b8a88105250e7"
         size="75.00 GiB"
         "size_bytes"=80530636800
         type=hdd
         vendor=Msft
-        wwn="0x6002248001a3f20d2b51c8cca2ae6fe4"
+        wwn="0x600224802f80de45f16b8a88105250e7"
     }
 }
 dmi={
@@ -167,7 +167,7 @@ dmi={
     manufacturer="Microsoft Corporation"
     product={
         name="Virtual Machine"
-        uuid="11289d85-e307-b147-aefb-a4d18f4ed47f"
+        uuid=d4df0787-160f-a446-a8aa-4d80df815436
         version="7.0"
     }
 }
@@ -190,9 +190,9 @@ kernelmajversion="6.5"
 kernelrelease="6.5.0-1018-azure"
 kernelversion="6.5.0"
 "load_averages"={
-    "15m"=0.05
-    "1m"=0.25
-    "5m"=0.14
+    "15m"=0.1
+    "1m"=0.47
+    "5m"=0.25
 }
 memory={
     swap={
@@ -205,21 +205,21 @@ memory={
         "used_bytes"=0
     }
     system={
-        available="14.63 GiB"
-        "available_bytes"=15704055808
-        capacity="6.29%"
+        available="14.62 GiB"
+        "available_bytes"=15694606336
+        capacity="6.34%"
         total="15.61 GiB"
         "total_bytes"=16757346304
-        used="1004.50 MiB"
-        "used_bytes"=1053290496
+        used="1013.51 MiB"
+        "used_bytes"=1062739968
     }
 }
 mountpoints={}
 networking={
     dhcp="168.63.129.16"
-    domain="ykhc0jfl13aufdxrnlto1juhnc.cx.internal.cloudapp.net"
-    fqdn="fv-az1152-305.ykhc0jfl13aufdxrnlto1juhnc.cx.internal.cloudapp.net"
-    hostname=fv-az1152-305
+    domain="lnrek1131jeubcfwnjesvv4kld.dx.internal.cloudapp.net"
+    fqdn="fv-az979-264.lnrek1131jeubcfwnjesvv4kld.dx.internal.cloudapp.net"
+    hostname=fv-az979-264
     interfaces={
         docker0={
             bindings=[
@@ -230,7 +230,7 @@ networking={
                 }
             ]
             ip="172.17.0.1"
-            mac="02:42:b6:6e:7c:25"
+            mac="02:42:b0:0b:0e:c4"
             mtu=1500
             netmask="255.255.0.0"
             network="172.17.0.0"
@@ -240,14 +240,14 @@ networking={
         eth0={
             bindings=[
                 {
-                    address="10.1.0.91"
+                    address="10.1.0.90"
                     netmask="255.255.0.0"
                     network="10.1.0.0"
                 }
             ]
             bindings6=[
                 {
-                    address="fe80::6245:bdff:fe78:843"
+                    address="fe80::6245:bdff:fe07:f51d"
                     flags=[
                         permanent
                     ]
@@ -258,9 +258,9 @@ networking={
             ]
             dhcp="168.63.129.16"
             duplex=full
-            ip="10.1.0.91"
-            ip6="fe80::6245:bdff:fe78:843"
-            mac="60:45:bd:78:08:43"
+            ip="10.1.0.90"
+            ip6="fe80::6245:bdff:fe07:f51d"
+            mac="60:45:bd:07:f5:1d"
             mtu=1500
             netmask="255.255.0.0"
             netmask6="ffff:ffff:ffff:ffff::"
@@ -302,9 +302,9 @@ networking={
             scope6=host
         }
     }
-    ip="10.1.0.91"
-    ip6="fe80::6245:bdff:fe78:843"
-    mac="60:45:bd:78:08:43"
+    ip="10.1.0.90"
+    ip6="fe80::6245:bdff:fe07:f51d"
+    mac="60:45:bd:07:f5:1d"
     mtu=1500
     netmask="255.255.0.0"
     netmask6="ffff:ffff:ffff:ffff::"
@@ -355,6 +355,14 @@ partitions={
         "size_bytes"=40996864
     }
     "/dev/sda1"={
+        filesystem=ntfs
+        label="Temporary Storage"
+        partuuid="8707dfd4-01"
+        size="75.00 GiB"
+        "size_bytes"=80528539648
+        uuid="94FCA3D4FCA3AEC4"
+    }
+    "/dev/sdb1"={
         filesystem=ext4
         label=cloudimg-rootfs
         partuuid=ee9c7d94-5a1c-449f-abf6-66a8068ffd5e
@@ -362,25 +370,17 @@ partitions={
         "size_bytes"=80414227968
         uuid="6ad1c370-b98c-4944-86bd-1a0958e820a1"
     }
-    "/dev/sda14"={
+    "/dev/sdb14"={
         size="4.00 MiB"
         "size_bytes"=4194304
     }
-    "/dev/sda15"={
+    "/dev/sdb15"={
         filesystem=vfat
         label=UEFI
         partuuid="37690b3e-bb85-4541-bb5d-ecd9f26be6cd"
         size="106.00 MiB"
         "size_bytes"=111149056
         uuid="3C45-1400"
-    }
-    "/dev/sdb1"={
-        filesystem=ntfs
-        label="Temporary Storage"
-        partuuid="859d2811-01"
-        size="75.00 GiB"
-        "size_bytes"=80528539648
-        uuid="3A30A48130A445AB"
     }
 }
 path="/opt/hostedtoolcache/Ruby/3.1.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
@@ -395,7 +395,7 @@ processors={
         "AMD EPYC 7763 64-Core Processor"
     ]
     physicalcount=1
-    speed="3.09 GHz"
+    speed="2.66 GHz"
     threads=2
 }
 ruby={
@@ -406,41 +406,41 @@ ruby={
 ssh={
     dsa={
         fingerprints={
-            sha1="SSHFP 2 1 375364c26827c905fa1deb626dcc83d4a2f89d49"
-            sha256="SSHFP 2 2 088267839f6ce70b46aa7d4bcc2d6ea8d436761e7de8f4c9bd47235cd2963bba"
+            sha1="SSHFP 2 1 950cc9827577a98d68c54b7c5bb8150607d44e50"
+            sha256="SSHFP 2 2 b9efa78bf945bd8519ffc418519d1be3b2347a435482f1ab647eda54276d8ed7"
         }
-        key="AAAAB3NzaC1kc3MAAACBAK+04kRS4+fAFvR2riHwAXWvDDaGtuBof6+f6Syi5yPwsbZtlNPDXdnBLuMUr0P60pjZXgGHD5Dg6shwEy7YZuf1rLZ3cLbT8Rt8B/HTcz5hVl1O8izxrb5nddsMDf+Shyee+xeyY9QsSeuPyBJGG2VgqsSXS+rbmx8QoVZA1zbTAAAAFQDvPr6kwNW39iM9vxnwOJ1CgshmcwAAAIAixyGRj3hof/zWZVQi8y8COgJj3zYy7cdi4zoBNqbVL89Ft389+rSmzn0c1m0TNnaOB8T06DwHS74TMhAZ9VAaJq8HSS0T1C3LMEQh3zGhyR4ulBRo02fdw/fJcRzaCbArlu/B0LgqThRrj+4MFetsCXSwcjqqxJePe6bWZFZ7iwAAAIALUxa7IemNt3+QIA5FjqOSZgPOnm5VSJBDCVOOeVSnXmse+QvcMuta9HGovhaF2LfrwiTL4WmcGLHQv7i76oqVezptQWaBr+bm5i5vOMrhZBrFUOVUF4cycw6KkcrJHwZrOqhe/WxFK2AR7AUyKxkS45g1YJxlByC7riH4vZwtcQ=="
+        key="AAAAB3NzaC1kc3MAAACBAKU7EFOF6ajJyhcV9z8mYh8I3E/9k9qaDZFuf8N2GUWA8hKQn1cSe7DrsOn5D3NraUyaiSTClxPlm9dgekly+fT65RZ/y/IIFiTSnfABhnL2Peui3PxOJirMkT4xK8O5p+CcIZavURnt3DIIOa3r5mxbVXajOIhw7nkxWtJNQWOTAAAAFQCBsD/Hf/q6mXzJqU3k+GPymyjxOwAAAIBG/hi39C1rSF4SXsONt8O1SdQ1KYfqnlv2OBuAZ82uYYbFaor3PWNSSAOnbO9wBL54PsfC8D+SzcovAfMBCu2+DVfjVR47ZX/9KoO/hyNwdRxP4B6n2MQvMhJtsS8wqQVIpa/36I0CrgmjZ+Mo9z/jIG2p317k/TPpV2Ls95YffgAAAIEAjXCsjMVZu7fna37We22WgGiFv/eUMo8whp/LD5ddiFKUyLwd4ksAK3CydPUyM/eeoilpoYSIpSf8PylXZ/2kf3pAbqbsX6WCFcawadTuc9bEj3CsV12249a549hhCYTtaMrkgJqX9HCPmsfKkXRdhOlmvjhPqqDQI3Jy0rkeTFU="
         type=ssh-dss
     }
     ecdsa={
         fingerprints={
-            sha1="SSHFP 3 1 7471c7b0e1e7b146890826984c2814237af9d6d6"
-            sha256="SSHFP 3 2 52ebb39e6e3e9d11ed937cce773bb8adb5f7ee41811443b2b5fc94b7f4db52d0"
+            sha1="SSHFP 3 1 9e2418eedf56abbb2d39ca14a0ac63f8661a1964"
+            sha256="SSHFP 3 2 ab639db110afb6cb37f6bda4c280de8719fcf99977a169a7ce8704752e7612c5"
         }
-        key="AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN+95MLcwhY1+JTogEC/RE/8+CTaiBnnYoKRkJkiaRT3VoKyvRrT3Vuja06/cR8SI+KfSNLg4TM/PqlwPTu3qdw="
+        key="AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEOQYb34DcIgAK3Dg9B/ReqmcrIOJ42AhgjCRNGMmXHw+q3J9H3dz0aiOyhBCnWHZ9oBE31+LPTQ59wXrkzdBnI="
         type=ecdsa-sha2-nistp256
     }
     ed25519={
         fingerprints={
-            sha1="SSHFP 4 1 a81a7cd6148f3bf8d84e8c77584eb715cb969cd9"
-            sha256="SSHFP 4 2 9627e18ea2448929c4a71a49c2056796274401a755468a6cda714f4dfdf445f8"
+            sha1="SSHFP 4 1 f5118d31991b7bb3711d9259458a7b103630ff7a"
+            sha256="SSHFP 4 2 4870acb92cf8f06bef31b77db33f6addb996c026d7e58550dd3949979eb2ccf7"
         }
-        key=AAAAC3NzaC1lZDI1NTE5AAAAINsnVeCCMEuMydc03dpS4AH3SxVPia83VZNgjoP1Q9zv
+        key="AAAAC3NzaC1lZDI1NTE5AAAAIKJQTXCOYXYn1zY/nmw4DP9eSwSKwwxf+qnLOYBZRUMI"
         type=ssh-ed25519
     }
     rsa={
         fingerprints={
-            sha1="SSHFP 1 1 01d9b482e972a36b190d5506b7658a5c5c8eca78"
-            sha256="SSHFP 1 2 98db932506eab2048805604fe5feb32edffb9d998b55085640119f315315cbd7"
+            sha1="SSHFP 1 1 f68d40a559df46f0093abd2287394ef023c372f3"
+            sha256="SSHFP 1 2 9d0c5e66d0eeee54bb6b834e6d674375c3811667523bdc8e7afaaed7ddf06ac4"
         }
-        key="AAAAB3NzaC1yc2EAAAADAQABAAABgQDmj6++RU5XKXEu0nQskmPqiNUd4T0Ma23klzNA/TdysgCDb5bLlwLCSGKOYpGyIky5Rf4ZP+HLMkVjoJraGy5qpFMBDEKN8UaR8R4Wjir2X69cQGmhODaH/p14huEn984WxkZBcbzjcGdAEWxnobG+29jdx1ScTUizosc4Ev+uONDkf/BQfppm1rF6wx7YzFaQIPvymhWlq9bcdtOCjjr1bkhffMOL22iSEfAaX6TsDuRtxiK3EYdSlzr/JnQOmRZeU3iW0JdaSyuuH5k0R+soCsh1UgUArtcmanh9jcD+sxFns8KEgenh7+ymvSYMFlCZvLOhs0c3g+qKquf8J6yp8TU+zCkvzqhJPSq7bKr1qzsqNY4X11nhmJ8FtvNlYoGABapvMfo1X8keWKBptU0K3I/TIOi7gjJLLGBQt03Zxfypc5s7xWZybGBTilWYyVSMSS29Nt+tBZCPi/erwJoPnMqIfeub0SxXqtVLbDyFm0JvNdyYfQIpFv4Lw1xiBGM="
+        key="AAAAB3NzaC1yc2EAAAADAQABAAABgQDLoLgmJJ9w8IlcAcH5vuqO0WabRiWeE2CZEzt1kPtBC2snZynfe613QE5eiZBfva+lFpXXWwAA/7qAQIgfLHakH4vebJP/Fv7rVpC+SqSR8SASqiyGDn9wGeSHoj7dafqJZHJDj/iqFNuBRXftaj553XqnCyT8iaRIqZUxChmHuFmWBSvWu/Dj5HOWZcp1NnTEAia5Mb+VAN3W5qLZhkVVhx08eTGycFx0wByjcNCIT03/ZpCLS+H0mE6ESuiWTLsdZ178UDRbXBSLcWc9oaoDF2vN5UxFqcD2D7NhBaIb2l1K6yvJ1m+IzFzBP59LbY/Wmxev/8uA1pwIyEy+AoQ7v5l/X2ggv9437Wa9NjWe+Zlf6VfTEiNtCBkR1QNl2P72tV8UMpHSg6SfLTpLFhWGG9ZpSJvqclNILcYN3t9vX8TBWwHyE+CDWgKWFz+pob/3Zc9UEdjT7qmTkILSmEUcu3c3FyempMdDH23t1CKlJgOgsaxeknVamQIbR6dvwIU="
         type=ssh-rsa
     }
 }
 "system_uptime"={
     days=0
     hours=0
-    seconds=106
+    seconds=109
     uptime="0:01 hours"
 }
 timezone=UTC
