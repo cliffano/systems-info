@@ -4,8 +4,8 @@ az_metadata:
     customData: ""
     isHostCompatibilityLayerVm: 'false'
     licenseType: ""
-    location: westus
-    name: WUS-GEUS1U22K135K68-0107
+    location: WestUS3
+    name: WUS3-GEUS23U22H94H21-0037
     offer: ""
     osProfile:
       adminUsername: ""
@@ -21,8 +21,8 @@ az_metadata:
     provider: Microsoft.Compute
     publicKeys: []
     publisher: ""
-    resourceGroupName: geus1u22k135k68
-    resourceId: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/geus1u22k135k68/providers/Microsoft.Compute/virtualMachines/WUS-GEUS1U22K135K68-0107"
+    resourceGroupName: geus23u22h94h21
+    resourceId: "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22h94h21/providers/Microsoft.Compute/virtualMachines/WUS3-GEUS23U22H94H21-0037"
     securityProfile:
       secureBootEnabled: 'false'
       virtualTpmEnabled: 'false'
@@ -30,7 +30,7 @@ az_metadata:
     storageProfile:
       dataDisks: []
       imageReference:
-        id: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/geus1u22k135k68/providers/Microsoft.Compute/galleries/geus1u22k135k68/images/factory/versions/0.0.74394984"
+        id: "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22h94h21/providers/Microsoft.Compute/galleries/geus23u22h94h21/images/factory/versions/0.0.48066136"
         offer: ""
         publisher: ""
         sku: ""
@@ -46,14 +46,14 @@ az_metadata:
         image:
           uri: ""
         managedDisk:
-          id: "/subscriptions/f47a99bc-e25a-45b9-a376-fe6c89f7c82e/resourceGroups/geus1u22k135k68/providers/Microsoft.Compute/disks/WUS-GEUS1U22K135K68-0107-40ed16be"
+          id: "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22h94h21/providers/Microsoft.Compute/disks/WUS3-GEUS23U22H94H21-0037-dfa29d7a"
           storageAccountType: "Standard_LRS"
-        name: WUS-GEUS1U22K135K68-0107-40ed16be
+        name: WUS3-GEUS23U22H94H21-0037-dfa29d7a
         osType: "Linux"
         vhd:
           uri: ""
         writeAcceleratorEnabled: 'false'
-    subscriptionId: f47a99bc-e25a-45b9-a376-fe6c89f7c82e
+    subscriptionId: f75e3da5-d998-47ec-8c14-9212154d6c7b
     tags: OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true
     tagsList:
     - name: "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves"
@@ -70,8 +70,8 @@ az_metadata:
       value: 'true'
     - name: "platformsettings.host_environment.service.platform_optedin_for_rootcerts"
       value: 'true'
-    version: 0.0.74394984
-    vmId: e430f0aa-1aff-486d-8dbd-a6b032bd2943
+    version: 0.0.48066136
+    vmId: 76eb47a8-617d-4334-b3fe-38a7ad53ab0f
     vmScaleSetName: ""
     vmSize: "Standard_D4ads_v5"
     zone: ""
@@ -79,14 +79,14 @@ az_metadata:
     interface:
     - ipv4:
         ipAddress:
-        - privateIpAddress: 10.1.0.136
+        - privateIpAddress: 10.1.0.43
           publicIpAddress: ""
         subnet:
         - address: 10.1.0.0
           prefix: '16'
       ipv6:
         ipAddress: []
-      macAddress: 6045BD0641A4
+      macAddress: 6045BDC7BA5B
 cloud:
   provider: azure
 disks:
@@ -110,15 +110,15 @@ dmi:
   board:
     manufacturer: "Microsoft Corporation"
     product: "Virtual Machine"
-    serial_number: "0000-0010-2135-0280-5641-8655-39"
+    serial_number: "0000-0012-9698-6626-9692-2427-03"
   chassis:
     asset_tag: "7783-7084-3265-9085-8269-3286-77"
     type: Desktop
   manufacturer: "Microsoft Corporation"
   product:
     name: "Virtual Machine"
-    serial_number: "0000-0016-4429-0685-2917-7252-93"
-    uuid: aaf030e4-ff1a-6d48-8dbd-a6b032bd2943
+    serial_number: "0000-0008-5690-2150-4518-1775-88"
+    uuid: a847eb76-7d61-3443-b3fe-38a7ad53ab0f
     version: '7.0'
 facterversion: 4.7.0
 filesystems: ext2,ext3,ext4,squashfs,vfat
@@ -137,9 +137,9 @@ kernelmajversion: '6.5'
 kernelrelease: 6.5.0-1018-azure
 kernelversion: 6.5.0
 load_averages:
-  15m: 0.12
-  1m: 0.38
-  5m: 0.3
+  15m: 0.06
+  1m: 0.46
+  5m: 0.16
 memory:
   swap:
     available: 4.00 GiB
@@ -150,18 +150,18 @@ memory:
     used: "0 bytes"
     used_bytes: 0
   system:
-    available: 14.56 GiB
-    available_bytes: 15631237120
-    capacity: 6.72%
+    available: 14.55 GiB
+    available_bytes: 15626596352
+    capacity: 6.75%
     total: 15.61 GiB
     total_bytes: 16757346304
     used: 1.05 GiB
-    used_bytes: 1126109184
+    used_bytes: 1130749952
 mountpoints: {}
 networking:
-  domain: "mbrrm1wwqy3eneuh0nkjogyspa.dx.internal.cloudapp.net"
-  fqdn: "c8dc71dd9f98.mbrrm1wwqy3eneuh0nkjogyspa.dx.internal.cloudapp.net"
-  hostname: c8dc71dd9f98
+  domain: "2e4pmxhwlzfuhnev11cd0y0noa.phxx.internal.cloudapp.net"
+  fqdn: "a80b2bb63016.2e4pmxhwlzfuhnev11cd0y0noa.phxx.internal.cloudapp.net"
+  hostname: a80b2bb63016
   interfaces:
     eth0:
       bindings:
@@ -222,19 +222,19 @@ partitions:
     size: 39.10 MiB
     size_bytes: 40996864
   /dev/sda1:
+    size: 75.00 GiB
+    size_bytes: 80528539648
+  /dev/sdb1:
     filesystem: 20.2G
     size: 74.89 GiB
     size_bytes: 80414227968
     uuid: "72%"
-  /dev/sda14:
+  /dev/sdb14:
     size: 4.00 MiB
     size_bytes: 4194304
-  /dev/sda15:
+  /dev/sdb15:
     size: 106.00 MiB
     size_bytes: 111149056
-  /dev/sdb1:
-    size: 75.00 GiB
-    size_bytes: 80528539648
 path: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 processors:
   cores: 2
@@ -246,7 +246,7 @@ processors:
   - "AMD EPYC 7763 64-Core Processor"
   - "AMD EPYC 7763 64-Core Processor"
   physicalcount: 1
-  speed: 2.45 GHz
+  speed: 3.22 GHz
   threads: 2
 ruby:
   platform: "x86_64-linux"
@@ -255,7 +255,7 @@ ruby:
 system_uptime:
   days: 0
   hours: 0
-  seconds: 162
-  uptime: "0:02 hours"
+  seconds: 282
+  uptime: "0:04 hours"
 timezone: UTC
 virtual: "hyperv"
