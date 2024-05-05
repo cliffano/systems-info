@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         version: [9, 9.3, 9.2, 9.1, 8, 8.9, 8.8, 8.7, 8.6, 8.5]
-    runs-on: ubuntu-${{ matrix.version }}
+    runs-on: ubuntu-latest
     container:
       image: rockylinux:${{ matrix.version }}
     steps:
