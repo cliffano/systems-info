@@ -5,8 +5,8 @@
       "customData": "",
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
-      "location": "WestUS3",
-      "name": "WUS3-GCUS1U22J118J37-0052",
+      "location": "northcentralus",
+      "name": "NCUS-GEUS23U22J90J75-0056",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -26,8 +26,8 @@
 
       ],
       "publisher": "",
-      "resourceGroupName": "gcus1u22j118j37",
-      "resourceId": "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22j118j37/providers/Microsoft.Compute/virtualMachines/WUS3-GCUS1U22J118J37-0052",
+      "resourceGroupName": "geus23u22j90j75",
+      "resourceId": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22j90j75/providers/Microsoft.Compute/virtualMachines/NCUS-GEUS23U22J90J75-0056",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -38,7 +38,7 @@
 
         ],
         "imageReference": {
-          "id": "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22j118j37/providers/Microsoft.Compute/galleries/gcus1u22j118j37/images/factory/versions/0.0.61933777",
+          "id": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22j90j75/providers/Microsoft.Compute/galleries/geus23u22j90j75/images/factory/versions/0.0.48066164",
           "offer": "",
           "publisher": "",
           "sku": "",
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22j118j37/providers/Microsoft.Compute/disks/WUS3-GCUS1U22J118J37-0052-2cec3bda",
+            "id": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22j90j75/providers/Microsoft.Compute/disks/NCUS-GEUS23U22J90J75-0056-b7484946",
             "storageAccountType": "Standard_LRS"
           },
-          "name": "WUS3-GCUS1U22J118J37-0052-2cec3bda",
+          "name": "NCUS-GEUS23U22J90J75-0056-b7484946",
           "osType": "Linux",
           "vhd": {
             "uri": ""
@@ -69,7 +69,7 @@
           "writeAcceleratorEnabled": "false"
         }
       },
-      "subscriptionId": "ddf4fb74-17fd-4808-a484-2394c8e0264e",
+      "subscriptionId": "f75e3da5-d998-47ec-8c14-9212154d6c7b",
       "tags": "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
       "tagsList": [
         {
@@ -101,8 +101,8 @@
           "value": "true"
         }
       ],
-      "version": "0.0.61933777",
-      "vmId": "5c8921af-070a-4862-85aa-c714453f9c7b",
+      "version": "0.0.48066164",
+      "vmId": "89b0248b-f592-4ef4-b609-0ed3baccf141",
       "vmScaleSetName": "",
       "vmSize": "Standard_D4ads_v5",
       "zone": ""
@@ -113,7 +113,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.57",
+                "privateIpAddress": "10.1.0.190",
                 "publicIpAddress": ""
               }
             ],
@@ -129,7 +129,7 @@
 
             ]
           },
-          "macAddress": "6045BDADEF45"
+          "macAddress": "6045BD494B42"
         }
       ]
     }
@@ -162,7 +162,7 @@
     "board": {
       "manufacturer": "Microsoft Corporation",
       "product": "Virtual Machine",
-      "serial_number": "0000-0009-6317-2964-2960-2970-83"
+      "serial_number": "0000-0013-1170-3169-2228-1618-57"
     },
     "chassis": {
       "asset_tag": "7783-7084-3265-9085-8269-3286-77",
@@ -171,8 +171,8 @@
     "manufacturer": "Microsoft Corporation",
     "product": {
       "name": "Virtual Machine",
-      "serial_number": "0000-0006-6678-9775-8919-8377-94",
-      "uuid": "af21895c-0a07-6248-85aa-c714453f9c7b"
+      "serial_number": "0000-0009-9214-7016-2636-2631-56",
+      "uuid": "8b24b089-92f5-f44e-b609-0ed3baccf141"
     }
   },
   "facterversion": "4.3.0",
@@ -195,9 +195,9 @@
   "kernelrelease": "6.5.0-1018-azure",
   "kernelversion": "6.5.0",
   "load_averages": {
-    "15m": 0.09,
-    "1m": 0.73,
-    "5m": 0.26
+    "15m": 0.12,
+    "1m": 1.03,
+    "5m": 0.33
   },
   "memory": {
     "swap": {
@@ -211,18 +211,18 @@
     },
     "system": {
       "available": "14.58 GiB",
-      "available_bytes": 15660199936,
-      "capacity": "6.55%",
+      "available_bytes": 15654395904,
+      "capacity": "6.58%",
       "total": "15.61 GiB",
-      "total_bytes": 16757346304,
-      "used": "1.02 GiB",
-      "used_bytes": 1097146368
+      "total_bytes": 16757342208,
+      "used": "1.03 GiB",
+      "used_bytes": 1102946304
     }
   },
   "networking": {
-    "domain": "olij14r4f4eezasrnq2weippdh.phxx.internal.cloudapp.net",
-    "fqdn": "2a03f715d7cd.olij14r4f4eezasrnq2weippdh.phxx.internal.cloudapp.net",
-    "hostname": "2a03f715d7cd",
+    "domain": "kxqfgnpkrxgetcyd3drl2yrtfd.ex.internal.cloudapp.net",
+    "fqdn": "a913a29de0ed.kxqfgnpkrxgetcyd3drl2yrtfd.ex.internal.cloudapp.net",
+    "hostname": "a913a29de0ed",
     "interfaces": {
       "eth0": {
         "bindings": [
@@ -285,30 +285,30 @@
       "size_bytes": 67010560
     },
     "/dev/loop1": {
-      "backing_file": "/var/lib/snapd/snaps/snapd_21184.snap",
-      "size": "39.10 MiB",
-      "size_bytes": 40996864
-    },
-    "/dev/loop2": {
       "backing_file": "/var/lib/snapd/snaps/lxd_27948.snap",
       "size": "87.02 MiB",
       "size_bytes": 91246592
     },
-    "/dev/sda1": {
-      "size": "75.00 GiB",
-      "size_bytes": 80528539648
+    "/dev/loop2": {
+      "backing_file": "/var/lib/snapd/snaps/snapd_21184.snap",
+      "size": "39.10 MiB",
+      "size_bytes": 40996864
     },
-    "/dev/sdb1": {
+    "/dev/sda1": {
       "size": "74.89 GiB",
       "size_bytes": 80414227968
     },
-    "/dev/sdb14": {
+    "/dev/sda14": {
       "size": "4.00 MiB",
       "size_bytes": 4194304
     },
-    "/dev/sdb15": {
+    "/dev/sda15": {
       "size": "106.00 MiB",
       "size_bytes": 111149056
+    },
+    "/dev/sdb1": {
+      "size": "75.00 GiB",
+      "size_bytes": 80528539648
     }
   },
   "path": "/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin",
@@ -332,7 +332,7 @@
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 88,
+    "seconds": 80,
     "uptime": "0:01 hours"
   },
   "timezone": "UTC",
