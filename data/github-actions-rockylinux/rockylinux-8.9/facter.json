@@ -5,8 +5,8 @@
       "customData": "",
       "isHostCompatibilityLayerVm": "false",
       "licenseType": "",
-      "location": "WestUS3",
-      "name": "WUS3-GEUS23U22H94H21-0134",
+      "location": "westus",
+      "name": "WUS-GCUS1U22G115G54-0042",
       "offer": "",
       "osProfile": {
         "adminUsername": "",
@@ -26,8 +26,8 @@
 
       ],
       "publisher": "",
-      "resourceGroupName": "geus23u22h94h21",
-      "resourceId": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22h94h21/providers/Microsoft.Compute/virtualMachines/WUS3-GEUS23U22H94H21-0134",
+      "resourceGroupName": "gcus1u22g115g54",
+      "resourceId": "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22g115g54/providers/Microsoft.Compute/virtualMachines/WUS-GCUS1U22G115G54-0042",
       "securityProfile": {
         "secureBootEnabled": "false",
         "virtualTpmEnabled": "false"
@@ -38,7 +38,7 @@
 
         ],
         "imageReference": {
-          "id": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22h94h21/providers/Microsoft.Compute/galleries/geus23u22h94h21/images/factory/versions/0.0.48066136",
+          "id": "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22g115g54/providers/Microsoft.Compute/galleries/gcus1u22g115g54/images/factory/versions/0.0.61933909",
           "offer": "",
           "publisher": "",
           "sku": "",
@@ -58,10 +58,10 @@
             "uri": ""
           },
           "managedDisk": {
-            "id": "/subscriptions/f75e3da5-d998-47ec-8c14-9212154d6c7b/resourceGroups/geus23u22h94h21/providers/Microsoft.Compute/disks/WUS3-GEUS23U22H94H21-0134-36924c0a",
+            "id": "/subscriptions/ddf4fb74-17fd-4808-a484-2394c8e0264e/resourceGroups/gcus1u22g115g54/providers/Microsoft.Compute/disks/WUS-GCUS1U22G115G54-0042-70359871",
             "storageAccountType": "Standard_LRS"
           },
-          "name": "WUS3-GEUS23U22H94H21-0134-36924c0a",
+          "name": "WUS-GCUS1U22G115G54-0042-70359871",
           "osType": "Linux",
           "vhd": {
             "uri": ""
@@ -69,7 +69,7 @@
           "writeAcceleratorEnabled": "false"
         }
       },
-      "subscriptionId": "f75e3da5-d998-47ec-8c14-9212154d6c7b",
+      "subscriptionId": "ddf4fb74-17fd-4808-a484-2394c8e0264e",
       "tags": "OperatorOverridableTenantSettings.Tenant.Setting.BypassCmPeSyncForRepaves:True;SkipASMAV:true;SkipASMAzSecPack:true;SkipASMAzSecPackAutoConfig:true;SkipLinuxAzSecPack:true;SkipWindowsAzSecPack:true;platformsettings.host_environment.service.platform_optedin_for_rootcerts:true",
       "tagsList": [
         {
@@ -101,8 +101,8 @@
           "value": "true"
         }
       ],
-      "version": "0.0.48066136",
-      "vmId": "4f171970-1d97-4cd1-a0bb-293245a318a3",
+      "version": "0.0.61933909",
+      "vmId": "c6c02970-2a7e-425a-ac15-ef0b1170d902",
       "vmScaleSetName": "",
       "vmSize": "Standard_D4ads_v5",
       "zone": ""
@@ -113,7 +113,7 @@
           "ipv4": {
             "ipAddress": [
               {
-                "privateIpAddress": "10.1.0.107",
+                "privateIpAddress": "10.1.0.4",
                 "publicIpAddress": ""
               }
             ],
@@ -129,7 +129,7 @@
 
             ]
           },
-          "macAddress": "6045BD777CA1"
+          "macAddress": "000D3A35CB48"
         }
       ]
     }
@@ -162,7 +162,7 @@
     "board": {
       "manufacturer": "Microsoft Corporation",
       "product": "Virtual Machine",
-      "serial_number": "0000-0011-5818-9616-2606-7826-27"
+      "serial_number": "0000-0012-4000-7997-9850-8157-46"
     },
     "chassis": {
       "asset_tag": "7783-7084-3265-9085-8269-3286-77",
@@ -171,8 +171,8 @@
     "manufacturer": "Microsoft Corporation",
     "product": {
       "name": "Virtual Machine",
-      "serial_number": "0000-0005-6990-5182-2784-1384-49",
-      "uuid": "7019174f-971d-d14c-a0bb-293245a318a3",
+      "serial_number": "0000-0014-3214-9237-6764-1708-42",
+      "uuid": "7029c0c6-7e2a-5a42-ac15-ef0b1170d902",
       "version": "7.0"
     }
   },
@@ -196,9 +196,9 @@
   "kernelrelease": "6.5.0-1018-azure",
   "kernelversion": "6.5.0",
   "load_averages": {
-    "15m": 0.02,
-    "1m": 0.27,
-    "5m": 0.07
+    "15m": 0.12,
+    "1m": 0.73,
+    "5m": 0.33
   },
   "memory": {
     "swap": {
@@ -211,21 +211,21 @@
       "used_bytes": 0
     },
     "system": {
-      "available": "14.56 GiB",
-      "available_bytes": 15637839872,
-      "capacity": "6.68%",
+      "available": "14.57 GiB",
+      "available_bytes": 15648530432,
+      "capacity": "6.62%",
       "total": "15.61 GiB",
       "total_bytes": 16757346304,
-      "used": "1.04 GiB",
-      "used_bytes": 1119506432
+      "used": "1.03 GiB",
+      "used_bytes": 1108815872
     }
   },
   "mountpoints": {
   },
   "networking": {
-    "domain": "2e4pmxhwlzfuhnev11cd0y0noa.phxx.internal.cloudapp.net",
-    "fqdn": "9391ef8f1394.2e4pmxhwlzfuhnev11cd0y0noa.phxx.internal.cloudapp.net",
-    "hostname": "9391ef8f1394",
+    "domain": "o3ts4yn1huletmfehy03vvfvxg.dx.internal.cloudapp.net",
+    "fqdn": "5aefdd375568.o3ts4yn1huletmfehy03vvfvxg.dx.internal.cloudapp.net",
+    "hostname": "5aefdd375568",
     "interfaces": {
       "eth0": {
         "bindings": [
@@ -289,14 +289,14 @@
   },
   "partitions": {
     "/dev/loop0": {
-      "backing_file": "/var/lib/snapd/snaps/lxd_27948.snap",
-      "size": "87.02 MiB",
-      "size_bytes": 91246592
-    },
-    "/dev/loop1": {
       "backing_file": "/var/lib/snapd/snaps/core20_2182.snap",
       "size": "63.91 MiB",
       "size_bytes": 67010560
+    },
+    "/dev/loop1": {
+      "backing_file": "/var/lib/snapd/snaps/lxd_27948.snap",
+      "size": "87.02 MiB",
+      "size_bytes": 91246592
     },
     "/dev/loop2": {
       "backing_file": "/var/lib/snapd/snaps/snapd_21184.snap",
@@ -333,7 +333,7 @@
       "AMD EPYC 7763 64-Core Processor"
     ],
     "physicalcount": 1,
-    "speed": "3.24 GHz",
+    "speed": "3.18 GHz",
     "threads": 2
   },
   "ruby": {
@@ -344,7 +344,7 @@
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 82,
+    "seconds": 114,
     "uptime": "0:01 hours"
   },
   "timezone": "UTC",
