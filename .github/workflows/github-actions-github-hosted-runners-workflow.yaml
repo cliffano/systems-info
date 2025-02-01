@@ -5,12 +5,12 @@ env:
   RUBY_VERSION: 3.1.1
   GIT_USER_EMAIL: blah+pakkun@cliffano.com
   GIT_USER_NAME: pakkunbot
-  VERSIONS: 'ubuntu-latest, ubuntu-22.04, ubuntu-20.04, macos-latest, macos-14, macos-13, macos-12, macos-11, windows-latest, windows-2022, windows-2019'
+  VERSIONS: 'ubuntu-24.04, ubuntu-22.04, ubuntu-20.04, macos-latest, macos-14, macos-13, macos-12, macos-11, windows-latest, windows-2022, windows-2019'
 jobs:
   collect-data-ubuntu-macos:
     strategy:
       matrix:
-        version: [ubuntu-latest, ubuntu-22.04, ubuntu-20.04, macos-latest, macos-14, macos-13, macos-12, macos-11]
+        version: [ubuntu-24.04, ubuntu-24.04, ubuntu-20.04, macos-latest, macos-14, macos-13, macos-12, macos-11]
     runs-on: ${{ matrix.version }}
     steps:
       - uses: ruby/setup-ruby@master
@@ -49,11 +49,12 @@ jobs:
     needs:
       - collect-data-ubuntu-macos
       - collect-data-windows
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+          set-safe-directory: ${{ github.workspace }}
       - uses: cliffano/command-loop-action@main
         with:
           items: ${{ env.VERSIONS }}

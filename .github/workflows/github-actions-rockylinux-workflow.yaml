@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         version: [9, 9.3, 9.2, 9.1, 8, 8.9, 8.8, 8.7, 8.6, 8.5]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     container:
       image: rockylinux:${{ matrix.version }}
     steps:
@@ -29,11 +29,12 @@ jobs:
   consolidate-data:
     needs:
       - collect-data
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+          set-safe-directory: ${{ github.workspace }}
       - uses: cliffano/command-loop-action@main
         with:
           items: ${{ env.VERSIONS }}
